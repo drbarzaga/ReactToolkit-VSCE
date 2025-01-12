@@ -1,0 +1,77 @@
+{
+  "name": "react-toolkit",
+  "displayName": "React-Toolkit",
+  "description": "A curated list of essential libraries and tools for frontend developers, with a focus on React.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "React",
+    "Frontend",
+    "Toolkit",
+    "Essential",
+    "Curated",
+    "Development",
+    "Tools",
+    "Libraries",
+    "React-Toolkit",
+    "React-Development",
+    "React-Tools",
+    "React-Libraries",
+    "React-Resources",
+    "React-Utilities"
+  ],
+  "activationEvents": [
+    "onCommand:react-toolkit.showResources"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "react-toolkit.showResources",
+        "title": "Show React Toolkit Resources"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "react-toolkit-sidebar",
+          "title": "React Toolkit",
+          "icon": "media/toolkit-icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "react-toolkit-sidebar": [
+        {
+          "type": "webview",
+          "id": "react-toolkit",
+          "name": "Resources"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "pnpm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "pnpm run compile && pnpm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.96.0",
+    "@typescript-eslint/eslint-plugin": "^8.17.0",
+    "@typescript-eslint/parser": "^8.17.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1",
+    "eslint": "^9.16.0",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "lucide": "^0.471.0"
+  }
+}
