@@ -1,6 +1,6 @@
 {
-  "name": "react-frontend-toolkit",
-  "displayName": "React-Toolkit",
+  "name": "reacttoolkit",
+  "displayName": "ReactToolkit",
   "description": "A curated list of essential libraries and tools for frontend developers, with a focus on React.",
   "publisher": "drbarzaga",
   "repository": {
@@ -12,20 +12,9 @@
     "vscode": "^1.96.0"
   },
   "categories": [
-    "React",
-    "Frontend",
-    "Toolkit",
-    "Essential",
-    "Curated",
-    "Development",
-    "Tools",
-    "Libraries",
-    "React-Toolkit",
-    "React-Development",
-    "React-Tools",
-    "React-Libraries",
-    "React-Resources",
-    "React-Utilities"
+    "Other",
+    "Programming Languages",
+    "Visualization"
   ],
   "activationEvents": [
     "onCommand:react-toolkit.showResources"
