@@ -232,8 +232,8 @@ h1 {
 }
 
 .toolkit-icon {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   margin: 0 auto;
   display: block;
   filter: drop-shadow(0 0 2px rgba(97, 218, 251, 0.3));
