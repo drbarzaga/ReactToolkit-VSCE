@@ -8,7 +8,7 @@
     "type": "git",
     "url": "https://github.com/drbarzaga/React-Toolkit-Extension"
   },
-  "version": "0.0.3",
+  "version": "0.0.4",
   "engines": {
     "vscode": "^1.96.0"
   },
@@ -16,6 +16,13 @@
     "Other",
     "Programming Languages",
     "Visualization"
+  ],
+  "tags": [
+    "react",
+    "frontend",
+    "toolkit",
+    "libraries",
+    "tools"
   ],
   "activationEvents": [
     "onCommand:react-toolkit.showResources"

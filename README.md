@@ -1,6 +1,6 @@
 # React Toolkit for VS Code
 
-The Visual Studio Code extension to provide quick access to the resources contained in the React Toolkit, featuring a curated list of essential libraries and tools for frontend developers, focused on React.
+Access to the resources contained in the [React Toolkit](https://github.com/drbarzaga/React-Toolkit), featuring a curated list of essential libraries and tools for frontend developers, focused on React directly from Visual Studio Code.
 
 ![Version](https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
