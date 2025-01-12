@@ -5,10 +5,8 @@
     const searchInput = document.getElementById('search');
     const resourceElements = document.querySelectorAll('.resource');
 
-    // Dar foco automático a la caja de búsqueda
     searchInput.focus();
 
-    // Expandir/colapsar categorías
     categoryElements.forEach(category => {
         const title = category.querySelector('h2');
         const toggle = category.querySelector('.category-toggle');
@@ -31,7 +29,6 @@
         resources.style.display = isExpanded ? 'grid' : 'none';
     }
 
-    // Función de búsqueda
     function performSearch() {
         const searchTerm = searchInput.value.toLowerCase();
 
@@ -73,10 +70,8 @@
         }
     }
 
-    // Evento de búsqueda
     searchInput.addEventListener('input', performSearch);
 
-    // Inicialmente, expandir todas las categorías
     categoryElements.forEach(category => {
         category.classList.add('expanded');
         updateCategoryVisuals(category);
