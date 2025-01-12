@@ -51,7 +51,7 @@ export class ReactToolkitViewProvider implements vscode.WebviewViewProvider {
       vscode.Uri.joinPath(this._extensionUri, "media", "main.js")
     );
     const toolkitIconUri = webview.asWebviewUri(
-      vscode.Uri.joinPath(this._extensionUri, "media", "toolkit-icon.svg")
+      vscode.Uri.joinPath(this._extensionUri, "media", "icon.png")
     );
 
     const nonce = getNonce();
