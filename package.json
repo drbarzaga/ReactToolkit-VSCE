@@ -38,7 +38,7 @@
     "commands": [
       {
         "command": "react-toolkit.showResources",
-        "title": "Show React Toolkit Resources"
+        "title": "React Toolkit"
       }
     ],
     "viewsContainers": {

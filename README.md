@@ -9,7 +9,7 @@
 
 ## ✨ Features
 
-React Toolkit brings a curated collection of essential React resources directly into your VS Code environment:
+ReactToolkit brings a curated collection of essential React resources directly into your VS Code environment:
 
 - 📚 **Resource Library**: Access a wide range of React resources, from official documentation to popular libraries and tools.
 - 🔍 **Quick Search**: Easily find the resources you need with our built-in search functionality.
@@ -17,19 +17,26 @@ React Toolkit brings a curated collection of essential React resources directly 
 - 🖼️ **Visual Identification**: Each resource comes with its logo for quick visual reference.
 - 🌓 **Theme Compatibility**: Seamlessly integrates with VS Code's light and dark themes.
 
-## 📸 Screenshots
+## Usage
 
-![React Toolkit Overview](images/overview.png)
+![ReactToolkit sidebar](media/readme/entry-point.png)
+_Open ReactToolkit sidebar from the activity bar_
 
-_React Toolkit sidebar showing categorized resources_
+![ReactToolkit Overview](media/readme/overview.png)
+_ReactToolkit sidebar showing categorized resources_
 
-![Resource Search](images/search.png)
+![ReactToolkit search](media/readme/search.png)
+_Search for resources using the search bar_
 
-_Searching for specific React resources_
+![ReactToolkit search results](media/readme/search-results.png)
+_View search results with matching resources_
+
+![ReactToolkit open resource](media/readme/open-resource.png)
+_Open a resource in the browser with a single click_
 
 ## 🚀 Getting Started
 
-1. Install the React Toolkit extension from the VS Code Marketplace.
+1. Install the ReactToolkit extension from the VS Code Marketplace.
 2. Open the Command Palette (Ctrl+Shift+P or Cmd+Shift+P on macOS).
 3. Type "React Toolkit" and select "Open React Toolkit" to launch the sidebar.
 4. Browse through categories or use the search bar to find resources.
