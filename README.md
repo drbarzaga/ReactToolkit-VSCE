@@ -19,19 +19,19 @@ ReactToolkit brings a curated collection of essential React resources directly i
 
 ## Usage
 
-![ReactToolkit sidebar](https://raw.githubusercontent.com/drbarzaga/ReactToolkit-Extension/main/images/entry-point.png)
+![ReactToolkit sidebar](/media/readme/entry-point.png)
 _Open ReactToolkit sidebar from the activity bar_
 
-![ReactToolkit Overview](https://raw.githubusercontent.com/drbarzaga/ReactToolkit-Extension/main/images/overview.png)
+![ReactToolkit Overview](/media/readme/overview.png)
 _ReactToolkit sidebar showing categorized resources_
 
-![ReactToolkit search](https://raw.githubusercontent.com/drbarzaga/ReactToolkit-Extension/main/images/search.png)
+![ReactToolkit search](/media/readme/search.png)
 _Search for resources using the search bar_
 
-![ReactToolkit search results](https://raw.githubusercontent.com/drbarzaga/ReactToolkit-Extension/main/images/search-results.png)
+![ReactToolkit search results](/media/readme/search-results.png)
 _View search results with matching resources_
 
-![ReactToolkit open resource](https://raw.githubusercontent.com/drbarzaga/ReactToolkit-Extension/main/images/open-resource.png)
+![ReactToolkit open resource](/media/readme/open-resource.png)
 _Open a resource in the browser with a single click_
 
 ## 🚀 Getting Started
