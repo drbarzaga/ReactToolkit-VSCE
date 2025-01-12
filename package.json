@@ -2,6 +2,7 @@
   "name": "react-toolkit",
   "displayName": "React-Toolkit",
   "description": "A curated list of essential libraries and tools for frontend developers, with a focus on React.",
+  "publisher": "drbarzaga",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.96.0"
@@ -73,5 +74,6 @@
   },
   "dependencies": {
     "lucide": "^0.471.0"
-  }
+  },
+  "license": "LICENSE.md"
 }
