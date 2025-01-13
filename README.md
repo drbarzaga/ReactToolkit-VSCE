@@ -2,9 +2,9 @@
 
 A Visual Studio Code extension that provides a curated list of resources for React developers. It includes official documentation, popular libraries, tools, and more, all accessible from a convenient sidebar.
 
-![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/YourPublisherName.react-toolkit)
-![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/YourPublisherName.react-toolkit)
-![Visual Studio Marketplace Rating](https://img.shields.io/visual-studio-marketplace/r/YourPublisherName.react-toolkit)
+![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/drbarzaga.reacttoolkit)
+![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/drbarzaga.reacttoolkit)
+![Visual Studio Marketplace Rating](https://img.shields.io/visual-studio-marketplace/r/drbarzaga.reacttoolkit)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## ✨ Features
