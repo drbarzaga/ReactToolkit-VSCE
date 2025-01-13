@@ -17,55 +17,56 @@ export interface Category {
 export const categories: Category[] = [
   {
     name: "Official Resources",
-    icon: { type: "lucide", value: "book-open" },
+    icon: { type: "lucide", value: "badge-check" },
     resources: [
       {
         name: "React Website",
         description: "Official React documentation and resources",
         url: "https://react.dev/",
-        logo: "https://react.dev/favicon.ico",
+        logo: "/media/logos/official/react.svg",
       },
       {
         name: "React Repository",
         description: "Official React GitHub repository",
         url: "https://github.com/facebook/react",
-        logo: "https://github.githubassets.com/favicons/favicon.svg",
+        logo: "/media/logos/official/github.svg",
       },
       {
         name: "React Community",
         description: "Official React community resources",
         url: "https://react.dev/community",
-        logo: "https://react.dev/favicon.ico",
+        logo: "/media/logos/official/react.svg",
       },
       {
         name: "React Blog",
         description: "Official React blog",
         url: "https://react.dev/blog",
-        logo: "https://react.dev/favicon.ico",
+        logo: "/media/logos/official/react.svg",
       },
       {
         name: "React Conferences",
         description: "Information about React conferences",
         url: "https://react.dev/community/conferences",
-        logo: "https://react.dev/favicon.ico",
+        logo: "/media/logos/official/react.svg",
       },
       {
         name: "React Discord",
         description: "Official React Discord community",
         url: "https://www.reactiflux.com/",
-        logo: "https://www.reactiflux.com/favicon.ico",
+        logo: "/media/logos/official/discord.svg",
       },
       {
         name: "React Quick Start Tutorial",
         description: "Official React quick start guide",
         url: "https://react.dev/learn",
-        logo: "https://react.dev/favicon.ico",
+        logo: "/media/logos/official/react.svg",
       },
     ],
   },
+
   {
     name: "Frameworks",
-    icon: { type: "lucide", value: "layers" },
+    icon: { type: "lucide", value: "shapes" },
     resources: [
       {
         name: "Next.js",
@@ -118,6 +119,7 @@ export const categories: Category[] = [
       },
     ],
   },
+
   {
     name: "Authentication",
     icon: { type: "lucide", value: "key" },
@@ -172,6 +174,7 @@ export const categories: Category[] = [
       },
     ],
   },
+
   {
     name: "Routing",
     icon: { type: "lucide", value: "route" },
@@ -204,6 +207,7 @@ export const categories: Category[] = [
       },
     ],
   },
+
   {
     name: "Drag & Drop",
     icon: { type: "lucide", value: "move" },
@@ -265,6 +269,7 @@ export const categories: Category[] = [
       },
     ],
   },
+
   {
     name: "Tables",
     icon: { type: "lucide", value: "table" },
@@ -311,6 +316,7 @@ export const categories: Category[] = [
       },
     ],
   },
+
   {
     name: "Forms",
     icon: { type: "lucide", value: "form-input" },
@@ -349,6 +355,7 @@ export const categories: Category[] = [
       },
     ],
   },
+
   {
     name: "Hooks",
     icon: { type: "lucide", value: "anchor" },
@@ -385,6 +392,7 @@ export const categories: Category[] = [
       },
     ],
   },
+
   {
     name: "Notifications",
     icon: { type: "lucide", value: "bell" },
@@ -436,6 +444,7 @@ export const categories: Category[] = [
       },
     ],
   },
+
   {
     name: "State Management",
     icon: { type: "lucide", value: "database" },
@@ -469,6 +478,7 @@ export const categories: Category[] = [
       },
     ],
   },
+
   {
     name: "Data Fetching",
     icon: { type: "lucide", value: "download" },
@@ -508,6 +518,7 @@ export const categories: Category[] = [
       },
     ],
   },
+
   {
     name: "Styling",
     icon: { type: "lucide", value: "paintbrush" },
@@ -540,6 +551,7 @@ export const categories: Category[] = [
       },
     ],
   },
+
   {
     name: "Charts",
     icon: { type: "lucide", value: "bar-chart" },
@@ -621,6 +633,7 @@ export const categories: Category[] = [
       },
     ],
   },
+
   {
     name: "Virtualization",
     icon: { type: "lucide", value: "layers" },
@@ -640,6 +653,7 @@ export const categories: Category[] = [
       },
     ],
   },
+
   {
     name: "UI Components",
     icon: { type: "lucide", value: "layout" },
@@ -817,6 +831,7 @@ export const categories: Category[] = [
       },
     ],
   },
+
   {
     name: "Icons",
     icon: { type: "lucide", value: "image" },
@@ -874,6 +889,7 @@ export const categories: Category[] = [
       },
     ],
   },
+
   {
     name: "Animations",
     icon: { type: "lucide", value: "play" },
@@ -892,6 +908,7 @@ export const categories: Category[] = [
       },
     ],
   },
+
   {
     name: "Maps",
     icon: { type: "lucide", value: "map" },
@@ -925,6 +942,7 @@ export const categories: Category[] = [
       },
     ],
   },
+
   {
     name: "File Uploads",
     icon: { type: "lucide", value: "upload" },
@@ -943,6 +961,7 @@ export const categories: Category[] = [
       },
     ],
   },
+
   {
     name: "Real-time Communication",
     icon: { type: "lucide", value: "message-circle" },
@@ -963,6 +982,7 @@ export const categories: Category[] = [
       },
     ],
   },
+
   {
     name: "Audio & Video",
     icon: { type: "lucide", value: "video" },
@@ -989,6 +1009,7 @@ export const categories: Category[] = [
       },
     ],
   },
+
   {
     name: "Search Engine Optimization",
     icon: { type: "lucide", value: "search" },
@@ -1015,6 +1036,7 @@ export const categories: Category[] = [
       },
     ],
   },
+
   {
     name: "Validations",
     icon: { type: "lucide", value: "check-circle" },
@@ -1062,6 +1084,7 @@ export const categories: Category[] = [
       },
     ],
   },
+
   {
     name: "GraphQL",
     icon: { type: "lucide", value: "git-branch" },
@@ -1082,6 +1105,7 @@ export const categories: Category[] = [
       },
     ],
   },
+
   {
     name: "Bundlers",
     icon: { type: "lucide", value: "package" },
@@ -1108,6 +1132,7 @@ export const categories: Category[] = [
       },
     ],
   },
+
   {
     name: "Linting & Formatting",
     icon: { type: "lucide", value: "check-square" },
@@ -1128,9 +1153,10 @@ export const categories: Category[] = [
       },
     ],
   },
+
   {
     name: "DevTools",
-    icon: { type: "lucide", value: "tool" },
+    icon: { type: "lucide", value: "square-dashed-mouse-pointer" },
     resources: [
       {
         name: "React Developer Tools",
@@ -1148,9 +1174,10 @@ export const categories: Category[] = [
       },
     ],
   },
+
   {
     name: "Testing",
-    icon: { type: "lucide", value: "flask" },
+    icon: { type: "lucide", value: "flask-conical" },
     resources: [
       {
         name: "Jest",
@@ -1181,9 +1208,10 @@ export const categories: Category[] = [
       },
     ],
   },
+
   {
     name: "Documentation",
-    icon: { type: "lucide", value: "file-text" },
+    icon: { type: "lucide", value: "book-open" },
     resources: [
       {
         name: "Storybook",
@@ -1229,6 +1257,7 @@ export const categories: Category[] = [
       },
     ],
   },
+
   {
     name: "Internationalization",
     icon: { type: "lucide", value: "globe" },
@@ -1249,6 +1278,7 @@ export const categories: Category[] = [
       },
     ],
   },
+
   {
     name: "Performance Optimization",
     icon: { type: "lucide", value: "zap" },
@@ -1283,9 +1313,10 @@ export const categories: Category[] = [
       },
     ],
   },
+
   {
     name: "Error Handling",
-    icon: { type: "lucide", value: "alert-triangle" },
+    icon: { type: "lucide", value: "bug" },
     resources: [
       {
         name: "React Error Boundary",
@@ -1303,6 +1334,7 @@ export const categories: Category[] = [
       },
     ],
   },
+
   {
     name: "Code Splitting",
     icon: { type: "lucide", value: "split" },
@@ -1323,6 +1355,7 @@ export const categories: Category[] = [
       },
     ],
   },
+
   {
     name: "Hosting",
     icon: { type: "lucide", value: "cloud" },
