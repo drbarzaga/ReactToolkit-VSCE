@@ -4,11 +4,15 @@
   "description": "All the essential libraries and tools for React developers delivered in a single extension pack.",
   "publisher": "drbarzaga",
   "icon": "media/icon.png",
+  "galleryBanner": {
+    "color": "#D1D1D1",
+    "theme": "dark"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/drbarzaga/ReactToolkit-VSCE"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.96.0"
   },
