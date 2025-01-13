@@ -158,8 +158,8 @@ h1 {
 }
 
 .resource-logo-fallback {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
   color: var(--vscode-descriptionForeground);
 }
 

@@ -15,6 +15,7 @@ export interface Category {
 }
 
 export const categories: Category[] = [
+  // Official Resources
   {
     name: "Official Resources",
     icon: { type: "lucide", value: "badge-check" },
@@ -64,6 +65,7 @@ export const categories: Category[] = [
     ],
   },
 
+  // Frameworks
   {
     name: "Frameworks",
     icon: { type: "lucide", value: "shapes" },
@@ -113,6 +115,7 @@ export const categories: Category[] = [
     ],
   },
 
+  // Authentication
   {
     name: "Authentication",
     icon: { type: "lucide", value: "key" },
@@ -147,6 +150,7 @@ export const categories: Category[] = [
     ],
   },
 
+  // Routing
   {
     name: "Routing",
     icon: { type: "lucide", value: "route" },
@@ -154,9 +158,8 @@ export const categories: Category[] = [
       {
         name: "Wouter",
         description:
-          "A minimalist alternative to React Router with a small footprint.",
+          "A minimalist-friendly ~2.1KB routing for React and Preact.",
         url: "https://github.com/molefrog/wouter",
-        logo: "https://github.com/favicon.ico",
       },
       {
         name: "Tanstack Router",
@@ -180,6 +183,7 @@ export const categories: Category[] = [
     ],
   },
 
+  // Drag & Drop
   {
     name: "Drag & Drop",
     icon: { type: "lucide", value: "move" },
@@ -203,34 +207,34 @@ export const categories: Category[] = [
         description:
           "A powerful and beautiful drag-and-drop library for lists with React.",
         url: "https://github.com/atlassian/react-beautiful-dnd",
-        logo: "https://github.com/favicon.ico",
+        logo: "",
       },
       {
         name: "React DnD",
         description:
           "A set of React utilities to help you build complex drag-and-drop interfaces.",
         url: "https://react-dnd.github.io/react-dnd/about",
-        logo: "https://react-dnd.github.io/react-dnd/favicon.ico",
+        logo: "",
       },
       {
         name: "SortableJS",
         description:
           "A React wrapper for SortableJS, a library for reorderable drag-and-drop lists.",
         url: "https://github.com/SortableJS/react-sortablejs",
-        logo: "https://github.com/favicon.ico",
+        logo: "",
       },
       {
         name: "React Dragula",
         description: "A drag-and-drop library for React based on Dragula.",
         url: "https://github.com/bevacqua/react-dragula",
-        logo: "https://github.com/favicon.ico",
+        logo: "",
       },
       {
         name: "React Complex Tree",
         description:
           "Unopinionated Accessible Tree Component with Multi-Select and Drag-And-Drop.",
         url: "https://rct.lukasbach.com/",
-        logo: "https://rct.lukasbach.com/favicon.ico",
+        logo: "",
       },
       {
         name: "FormKit's Drag and Drop",
@@ -242,390 +246,7 @@ export const categories: Category[] = [
     ],
   },
 
-  {
-    name: "Tables",
-    icon: { type: "lucide", value: "table" },
-    resources: [
-      {
-        name: "Tanstack Table",
-        description:
-          "A headless UI for building powerful tables and datagrids.",
-        url: "https://tanstack.com/table/latest",
-        logo: "https://tanstack.com/favicon.ico",
-      },
-      {
-        name: "Material-UI Table",
-        description:
-          "Tables built with Material-UI, a popular React UI framework.",
-        url: "https://mui.com/components/tables/",
-        logo: "https://mui.com/static/favicon.ico",
-      },
-      {
-        name: "AG Grid",
-        description:
-          "A feature-rich datagrid designed for the major JavaScript frameworks.",
-        url: "https://www.ag-grid.com/react-data-grid/",
-        logo: "https://www.ag-grid.com/favicon.ico",
-      },
-      {
-        name: "React Data Grid",
-        description: "Excel-like grid component built with React.",
-        url: "https://adazzle.github.io/react-data-grid/",
-        logo: "https://adazzle.github.io/react-data-grid/favicon.ico",
-      },
-      {
-        name: "Griddle",
-        description: "A simple grid component for use with React.",
-        url: "https://griddlegriddle.github.io/Griddle/",
-        logo: "https://griddlegriddle.github.io/Griddle/favicon.ico",
-      },
-      {
-        name: "React Virtualized",
-        description:
-          "A set of React components for efficiently rendering large lists and tabular data.",
-        url: "https://github.com/bvaughn/react-virtualized",
-        logo: "https://github.com/favicon.ico",
-      },
-    ],
-  },
-
-  {
-    name: "Forms",
-    icon: { type: "lucide", value: "form-input" },
-    resources: [
-      {
-        name: "React Hook Form",
-        description:
-          "Performant, flexible, and extensible forms with easy-to-use validation.",
-        url: "https://react-hook-form.com/",
-        logo: "https://react-hook-form.com/favicon.ico",
-      },
-      {
-        name: "Tanstack Form",
-        description: "A powerful form library for React applications.",
-        url: "https://tanstack.com/form/latest",
-        logo: "https://tanstack.com/favicon.ico",
-      },
-      {
-        name: "Formik",
-        description: "Build forms in React, without the tears.",
-        url: "https://formik.org/",
-        logo: "https://formik.org/favicon.ico",
-      },
-      {
-        name: "React Json Schema Form",
-        description:
-          "A React component for building Web forms from JSON Schema.",
-        url: "https://rjsf-team.github.io/react-jsonschema-form/docs/",
-        logo: "https://rjsf-team.github.io/react-jsonschema-form/favicon.ico",
-      },
-      {
-        name: "Formily",
-        description: "Alibaba Group Unified Form Solution.",
-        url: "https://formilyjs.org/",
-        logo: "https://formilyjs.org/favicon.ico",
-      },
-    ],
-  },
-
-  {
-    name: "Hooks",
-    icon: { type: "lucide", value: "anchor" },
-    resources: [
-      {
-        name: "usehooks-ts",
-        description: "React hook library, ready to use, written in Typescript.",
-        url: "https://usehooks-ts.com/",
-        logo: "https://usehooks-ts.com/favicon.ico",
-      },
-      {
-        name: "Novajs",
-        description: "A collection of dependency-free React hooks.",
-        url: "https://novajs.co/",
-        logo: "https://novajs.co/favicon.ico",
-      },
-      {
-        name: "useHooks",
-        description: "A collection of reusable React hooks.",
-        url: "https://usehooks.com/",
-        logo: "https://usehooks.com/favicon.ico",
-      },
-      {
-        name: "React Use",
-        description: "A library of essential React hooks.",
-        url: "https://github.com/streamich/react-use",
-        logo: "https://github.com/favicon.ico",
-      },
-      {
-        name: "ahooks",
-        description: "A set of high-quality and reliable React hooks.",
-        url: "https://ahooks.js.org/",
-        logo: "https://ahooks.js.org/favicon.ico",
-      },
-    ],
-  },
-
-  {
-    name: "Notifications",
-    icon: { type: "lucide", value: "bell" },
-    resources: [
-      {
-        name: "Sonner",
-        description: "An opinionated toast component for React.",
-        url: "https://sonner.emilkowal.ski/",
-        logo: "https://sonner.emilkowal.ski/favicon.ico",
-      },
-      {
-        name: "React Toastify",
-        description:
-          "A popular library for adding customizable and easy-to-use toast notifications to your React applications.",
-        url: "https://fkhadra.github.io/react-toastify/introduction/",
-        logo: "https://fkhadra.github.io/react-toastify/img/favicon.ico",
-      },
-      {
-        name: "Notistack",
-        description:
-          "Highly customizable notification snackbars (toasts) that can be stacked on top of each other.",
-        url: "https://notistack.com/",
-        logo: "https://notistack.com/favicon.ico",
-      },
-      {
-        name: "Reapop",
-        description: "A simple and customizable React notifications system.",
-        url: "https://louisbarranqueiro.github.io/reapop/",
-        logo: "https://louisbarranqueiro.github.io/reapop/favicon.ico",
-      },
-      {
-        name: "React Hot Toast",
-        description: "A super easy toast library for React.",
-        url: "https://react-hot-toast.com/",
-        logo: "https://react-hot-toast.com/favicon.ico",
-      },
-      {
-        name: "React Notification System",
-        description:
-          "A complete and totally customizable component for notifications in React.",
-        url: "https://igorprado.github.io/react-notification-system/",
-        logo: "https://igorprado.github.io/react-notification-system/favicon.ico",
-      },
-      {
-        name: "React Toast Notifications",
-        description: "A toast notification system for react.",
-        url: "https://jossmac.github.io/react-toast-notifications/",
-        logo: "https://jossmac.github.io/react-toast-notifications/favicon.ico",
-      },
-    ],
-  },
-
-  {
-    name: "State Management",
-    icon: { type: "lucide", value: "database" },
-    resources: [
-      {
-        name: "Zustand",
-        description:
-          "A small, fast, and scalable bearbones state-management solution.",
-        url: "https://zustand-demo.pmnd.rs/",
-        logo: "https://zustand-demo.pmnd.rs/favicon.ico",
-      },
-      {
-        name: "Tanstack Store",
-        description:
-          "A powerful state management library for React applications.",
-        url: "https://tanstack.com/store/latest",
-        logo: "https://tanstack.com/favicon.ico",
-      },
-      {
-        name: "Redux Toolkit",
-        description: "The official, recommended way to write Redux logic.",
-        url: "https://redux-toolkit.js.org/",
-        logo: "https://redux-toolkit.js.org/img/favicon/favicon.ico",
-      },
-      {
-        name: "Recoil",
-        description:
-          "A state management library for React that makes it easy to share state across components.",
-        url: "https://recoiljs.org/",
-        logo: "https://recoiljs.org/img/favicon.ico",
-      },
-    ],
-  },
-
-  {
-    name: "Data Fetching",
-    icon: { type: "lucide", value: "download" },
-    resources: [
-      {
-        name: "Axios",
-        description: "A promise-based HTTP client for the browser and Node.js.",
-        url: "https://axios-http.com/",
-        logo: "https://axios-http.com/assets/favicon.ico",
-      },
-      {
-        name: "Fetch API",
-        description:
-          "A modern interface for making HTTP requests in the browser.",
-        url: "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
-        logo: "https://developer.mozilla.org/favicon-48x48.cbbd161b.png",
-      },
-      {
-        name: "SWR",
-        description: "React Hooks library for remote data fetching.",
-        url: "https://swr.vercel.app/",
-        logo: "https://swr.vercel.app/favicon.ico",
-      },
-      {
-        name: "Tanstack Query",
-        description:
-          "Powerful asynchronous state management, server-state utilities, and data fetching for TS/JS, React, Solid, Vue, Svelte, and more.",
-        url: "https://tanstack.com/query/latest",
-        logo: "https://tanstack.com/favicon.ico",
-      },
-      {
-        name: "GraphQL Request",
-        description:
-          "A minimal GraphQL client for making requests to GraphQL endpoints.",
-        url: "https://github.com/graffle-js/graffle",
-        logo: "https://github.com/favicon.ico",
-      },
-    ],
-  },
-
-  {
-    name: "Styling",
-    icon: { type: "lucide", value: "paintbrush" },
-    resources: [
-      {
-        name: "TailwindCSS",
-        description:
-          "A utility-first CSS framework for rapidly building custom user interfaces.",
-        url: "https://tailwindcss.com/",
-        logo: "https://tailwindcss.com/favicon.ico",
-      },
-      {
-        name: "Styled Components",
-        description:
-          "Utilizes tagged template literals to style your components.",
-        url: "https://styled-components.com/",
-        logo: "https://styled-components.com/favicon.ico",
-      },
-      {
-        name: "Emotion",
-        description: "A performant and flexible CSS-in-JS library.",
-        url: "https://emotion.sh/docs/introduction",
-        logo: "https://emotion.sh/favicon.ico",
-      },
-      {
-        name: "Vanilla Extract",
-        description: "Zero-runtime Stylesheets-in-TypeScript",
-        url: "https://vanilla-extract.style/",
-        logo: "https://vanilla-extract.style/favicon.ico",
-      },
-    ],
-  },
-
-  {
-    name: "Charts",
-    icon: { type: "lucide", value: "bar-chart" },
-    resources: [
-      {
-        name: "Recharts",
-        description: "A composable charting library built on React components.",
-        url: "https://recharts.org/en-US",
-        logo: "https://recharts.org/favicon.ico",
-      },
-      {
-        name: "Victory",
-        description:
-          "A collection of composable React components for building interactive data visualizations.",
-        url: "https://formidable.com/open-source/victory/",
-        logo: "https://formidable.com/favicon.ico",
-      },
-      {
-        name: "Nivo",
-        description:
-          "Provides a rich set of data visualization components, built on top of D3 and React.",
-        url: "https://nivo.rocks/",
-        logo: "https://nivo.rocks/favicon.ico",
-      },
-      {
-        name: "Chart.js",
-        description:
-          "Simple yet flexible JavaScript charting for designers & developers.",
-        url: "https://www.chartjs.org",
-        logo: "https://www.chartjs.org/favicon.ico",
-      },
-      {
-        name: "React-Vis",
-        description:
-          "A collection of react components to render common data visualization charts.",
-        url: "https://uber.github.io/react-vis/",
-        logo: "https://uber.github.io/react-vis/favicon.ico",
-      },
-      {
-        name: "ECharts for React",
-        description: "A React wrapper for Apache ECharts.",
-        url: "https://git.hust.cc/echarts-for-react/",
-        logo: "https://git.hust.cc/echarts-for-react/favicon.ico",
-      },
-      {
-        name: "Visx",
-        description:
-          "A collection of low-level visualization components for React.",
-        url: "https://airbnb.io/visx/",
-        logo: "https://airbnb.io/visx/favicon.ico",
-      },
-      {
-        name: "React Flow",
-        description:
-          "A customizable React component for building node-based editors and interactive diagrams.",
-        url: "https://reactflow.dev/",
-        logo: "https://reactflow.dev/img/favicon.ico",
-      },
-      {
-        name: "Apache ECharts",
-        description:
-          "Apache ECharts is a powerful, interactive charting and data visualization library for browser.",
-        url: "https://echarts.apache.org/",
-        logo: "https://echarts.apache.org/favicon.ico",
-      },
-      {
-        name: "Unovis",
-        description:
-          "A modular data visualization framework for React, Angular, Svelte, Vue, Solid.",
-        url: "https://unovis.dev/",
-        logo: "https://unovis.dev/favicon.ico",
-      },
-      {
-        name: "Mermaid Js",
-        description:
-          "JavaScript based diagramming and charting tool that renders Markdown-inspired text definitions to create and modify diagrams dynamically.",
-        url: "https://mermaid.js.org/",
-        logo: "https://mermaid.js.org/favicon.ico",
-      },
-    ],
-  },
-
-  {
-    name: "Virtualization",
-    icon: { type: "lucide", value: "layers" },
-    resources: [
-      {
-        name: "Virtua",
-        description: "A virtual list and grid library for React.",
-        url: "https://github.com/inokawa/virtua",
-        logo: "https://github.com/favicon.ico",
-      },
-      {
-        name: "Tanstack Virtual",
-        description:
-          "A powerful virtual list and grid library for React applications.",
-        url: "https://tanstack.com/virtual/latest",
-        logo: "https://tanstack.com/favicon.ico",
-      },
-    ],
-  },
-
+  // UI Components
   {
     name: "UI Components",
     icon: { type: "lucide", value: "layout" },
@@ -638,18 +259,18 @@ export const categories: Category[] = [
         logo: "https://ui.shadcn.com/favicon.ico",
       },
       {
+        name: "Radix UI",
+        description:
+          "An open source component library optimized for fast development, easy maintenance, and accessibility.",
+        url: "https://www.radix-ui.com/",
+        logo: "/media/logos/ui-components/radix-ui.svg",
+      },
+      {
         name: "Eldora UI",
         description:
           "An open-source animated components built with React, Typescript, Tailwind CSS, and Framer Motion.",
         url: "https://www.eldoraui.site/",
         logo: "https://www.eldoraui.site/favicon.ico",
-      },
-      {
-        name: "Radix UI",
-        description:
-          "An open source component library optimized for fast development, easy maintenance, and accessibility.",
-        url: "https://www.radix-ui.com/",
-        logo: "https://www.radix-ui.com/favicon.ico",
       },
       {
         name: "Material UI",
@@ -745,7 +366,7 @@ export const categories: Category[] = [
         name: "React Bootstrap",
         description: "Bootstrap components built with React.",
         url: "https://react-bootstrap.github.io/",
-        logo: "https://react-bootstrap.github.io/favicon.ico",
+        logo: "/media/logos/ui-components/react-bootstrap.svg",
       },
       {
         name: "Grommet",
@@ -804,6 +425,400 @@ export const categories: Category[] = [
     ],
   },
 
+  // Tables
+  {
+    name: "Tables",
+    icon: { type: "lucide", value: "table" },
+    resources: [
+      {
+        name: "Tanstack Table",
+        description:
+          "A headless UI for building powerful tables and datagrids.",
+        url: "https://tanstack.com/table/latest",
+        logo: "https://tanstack.com/favicon.ico",
+      },
+      {
+        name: "Material-UI Table",
+        description:
+          "Tables built with Material-UI, a popular React UI framework.",
+        url: "https://mui.com/components/tables/",
+        logo: "https://mui.com/static/favicon.ico",
+      },
+      {
+        name: "AG Grid",
+        description:
+          "A feature-rich datagrid designed for the major JavaScript frameworks.",
+        url: "https://www.ag-grid.com/react-data-grid/",
+        logo: "https://www.ag-grid.com/favicon.ico",
+      },
+      {
+        name: "React Data Grid",
+        description: "Excel-like grid component built with React.",
+        url: "https://adazzle.github.io/react-data-grid/",
+        logo: "https://adazzle.github.io/react-data-grid/favicon.ico",
+      },
+      {
+        name: "Griddle",
+        description: "A simple grid component for use with React.",
+        url: "https://griddlegriddle.github.io/Griddle/",
+        logo: "https://griddlegriddle.github.io/Griddle/favicon.ico",
+      },
+      {
+        name: "React Virtualized",
+        description:
+          "A set of React components for efficiently rendering large lists and tabular data.",
+        url: "https://github.com/bvaughn/react-virtualized",
+        logo: "https://github.com/favicon.ico",
+      },
+    ],
+  },
+
+  // Forms
+  {
+    name: "Forms",
+    icon: { type: "lucide", value: "form-input" },
+    resources: [
+      {
+        name: "React Hook Form",
+        description:
+          "Performant, flexible, and extensible forms with easy-to-use validation.",
+        url: "https://react-hook-form.com/",
+        logo: "/media/logos/forms/react-hook-form.png",
+      },
+      {
+        name: "Tanstack Form",
+        description: "A powerful form library for React applications.",
+        url: "https://tanstack.com/form/latest",
+        logo: "https://tanstack.com/favicon.ico",
+      },
+      {
+        name: "Formik",
+        description: "Build forms in React, without the tears.",
+        url: "https://formik.org/",
+        logo: "/media/logos/forms/formik.png",
+      },
+      {
+        name: "React Json Schema Form",
+        description:
+          "A React component for building Web forms from JSON Schema.",
+        url: "https://rjsf-team.github.io/react-jsonschema-form/docs/",
+        logo: "https://rjsf-team.github.io/react-jsonschema-form/favicon.ico",
+      },
+      {
+        name: "Formily",
+        description: "Alibaba Group Unified Form Solution.",
+        url: "https://formilyjs.org/",
+        logo: "https://formilyjs.org/favicon.ico",
+      },
+    ],
+  },
+
+  // Hooks
+  {
+    name: "Hooks",
+    icon: { type: "lucide", value: "anchor" },
+    resources: [
+      {
+        name: "usehooks-ts",
+        description: "React hook library, ready to use, written in Typescript.",
+        url: "https://usehooks-ts.com/",
+        logo: "https://usehooks-ts.com/favicon.ico",
+      },
+      {
+        name: "Novajs",
+        description: "A collection of dependency-free React hooks.",
+        url: "https://novajs.co/",
+        logo: "https://novajs.co/favicon.ico",
+      },
+      {
+        name: "useHooks",
+        description: "A collection of reusable React hooks.",
+        url: "https://usehooks.com/",
+        logo: "",
+      },
+      {
+        name: "React Use",
+        description: "A library of essential React hooks.",
+        url: "https://github.com/streamich/react-use",
+        logo: "",
+      },
+      {
+        name: "ahooks",
+        description: "A set of high-quality and reliable React hooks.",
+        url: "https://ahooks.js.org/",
+        logo: "",
+      },
+    ],
+  },
+
+  // Notifications
+  {
+    name: "Notifications",
+    icon: { type: "lucide", value: "bell" },
+    resources: [
+      {
+        name: "Sonner",
+        description: "An opinionated toast component for React.",
+        url: "https://sonner.emilkowal.ski/",
+        logo: "https://sonner.emilkowal.ski/favicon.ico",
+      },
+      {
+        name: "React Toastify",
+        description:
+          "A popular library for adding customizable and easy-to-use toast notifications to your React applications.",
+        url: "https://fkhadra.github.io/react-toastify/introduction/",
+        logo: "https://fkhadra.github.io/react-toastify/img/favicon.ico",
+      },
+      {
+        name: "Notistack",
+        description:
+          "Highly customizable notification snackbars (toasts) that can be stacked on top of each other.",
+        url: "https://notistack.com/",
+        logo: "https://notistack.com/favicon.ico",
+      },
+      {
+        name: "Reapop",
+        description: "A simple and customizable React notifications system.",
+        url: "https://louisbarranqueiro.github.io/reapop/",
+        logo: "https://louisbarranqueiro.github.io/reapop/favicon.ico",
+      },
+      {
+        name: "React Hot Toast",
+        description: "A super easy toast library for React.",
+        url: "https://react-hot-toast.com/",
+        logo: "https://react-hot-toast.com/favicon.ico",
+      },
+      {
+        name: "React Notification System",
+        description:
+          "A complete and totally customizable component for notifications in React.",
+        url: "https://igorprado.github.io/react-notification-system/",
+        logo: "https://igorprado.github.io/react-notification-system/favicon.ico",
+      },
+      {
+        name: "React Toast Notifications",
+        description: "A toast notification system for react.",
+        url: "https://jossmac.github.io/react-toast-notifications/",
+        logo: "https://jossmac.github.io/react-toast-notifications/favicon.ico",
+      },
+    ],
+  },
+
+  // State Management
+  {
+    name: "State Management",
+    icon: { type: "lucide", value: "database" },
+    resources: [
+      {
+        name: "Zustand",
+        description:
+          "A small, fast, and scalable bearbones state-management solution.",
+        url: "https://zustand-demo.pmnd.rs/",
+        logo: "https://zustand-demo.pmnd.rs/favicon.ico",
+      },
+      {
+        name: "Tanstack Store",
+        description:
+          "A powerful state management library for React applications.",
+        url: "https://tanstack.com/store/latest",
+        logo: "https://tanstack.com/favicon.ico",
+      },
+      {
+        name: "Redux Toolkit",
+        description: "The official, recommended way to write Redux logic.",
+        url: "https://redux-toolkit.js.org/",
+        logo: "https://redux-toolkit.js.org/img/favicon/favicon.ico",
+      },
+      {
+        name: "Recoil",
+        description:
+          "A state management library for React that makes it easy to share state across components.",
+        url: "https://recoiljs.org/",
+        logo: "https://recoiljs.org/img/favicon.ico",
+      },
+    ],
+  },
+
+  // Data Fetching
+  {
+    name: "Data Fetching",
+    icon: { type: "lucide", value: "download" },
+    resources: [
+      {
+        name: "Axios",
+        description: "A promise-based HTTP client for the browser and Node.js.",
+        url: "https://axios-http.com/",
+        logo: "https://axios-http.com/assets/favicon.ico",
+      },
+      {
+        name: "Tanstack Query",
+        description:
+          "Powerful asynchronous state management, server-state utilities, and data fetching for TS/JS, React, Solid, Vue, Svelte, and more.",
+        url: "https://tanstack.com/query/latest",
+        logo: "https://tanstack.com/favicon.ico",
+      },
+      {
+        name: "Apollo Client",
+        description:
+          "A fully-featured, production ready caching GraphQL client.",
+        url: "https://www.apollographql.com/docs/react/",
+        logo: "/media/logos/data-fetching/apollo-client.png",
+      },
+      {
+        name: "SWR",
+        description: "React Hooks library for remote data fetching.",
+        url: "https://swr.vercel.app/",
+        logo: "/media/logos/data-fetching/swr.png",
+      },
+      {
+        name: "Fetch API",
+        description:
+          "A modern interface for making HTTP requests in the browser.",
+        url: "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
+        logo: "https://developer.mozilla.org/favicon-48x48.cbbd161b.png",
+      },
+    ],
+  },
+
+  // Styling
+  {
+    name: "Styling",
+    icon: { type: "lucide", value: "paintbrush" },
+    resources: [
+      {
+        name: "TailwindCSS",
+        description:
+          "A utility-first CSS framework for rapidly building custom user interfaces.",
+        url: "https://tailwindcss.com/",
+        logo: "/media/logos/styling/tailwindcss.svg",
+      },
+      {
+        name: "Styled Components",
+        description:
+          "Utilizes tagged template literals to style your components.",
+        url: "https://styled-components.com/",
+        logo: "/media/logos/styling/styled-components.svg",
+      },
+      {
+        name: "Emotion",
+        description: "A performant and flexible CSS-in-JS library.",
+        url: "https://emotion.sh/docs/introduction",
+        logo: "/media/logos/styling/emotion.png",
+      },
+      {
+        name: "Vanilla Extract",
+        description: "Zero-runtime Stylesheets-in-TypeScript",
+        url: "https://vanilla-extract.style/",
+        logo: "https://vanilla-extract.style/favicon.ico",
+      },
+    ],
+  },
+
+  // Charts
+  {
+    name: "Charts",
+    icon: { type: "lucide", value: "bar-chart" },
+    resources: [
+      {
+        name: "Recharts",
+        description: "A composable charting library built on React components.",
+        url: "https://recharts.org/en-US",
+        logo: "https://recharts.org/favicon.ico",
+      },
+      {
+        name: "Victory",
+        description:
+          "A collection of composable React components for building interactive data visualizations.",
+        url: "https://formidable.com/open-source/victory/",
+        logo: "https://formidable.com/favicon.ico",
+      },
+      {
+        name: "Nivo",
+        description:
+          "Provides a rich set of data visualization components, built on top of D3 and React.",
+        url: "https://nivo.rocks/",
+        logo: "https://nivo.rocks/favicon.ico",
+      },
+      {
+        name: "Chart.js",
+        description:
+          "Simple yet flexible JavaScript charting for designers & developers.",
+        url: "https://www.chartjs.org",
+        logo: "https://www.chartjs.org/favicon.ico",
+      },
+      {
+        name: "React-Vis",
+        description:
+          "A collection of react components to render common data visualization charts.",
+        url: "https://uber.github.io/react-vis/",
+        logo: "https://uber.github.io/react-vis/favicon.ico",
+      },
+      {
+        name: "ECharts for React",
+        description: "A React wrapper for Apache ECharts.",
+        url: "https://git.hust.cc/echarts-for-react/",
+        logo: "https://git.hust.cc/echarts-for-react/favicon.ico",
+      },
+      {
+        name: "Visx",
+        description:
+          "A collection of low-level visualization components for React.",
+        url: "https://airbnb.io/visx/",
+        logo: "https://airbnb.io/visx/favicon.ico",
+      },
+      {
+        name: "React Flow",
+        description:
+          "A customizable React component for building node-based editors and interactive diagrams.",
+        url: "https://reactflow.dev/",
+        logo: "https://reactflow.dev/img/favicon.ico",
+      },
+      {
+        name: "Apache ECharts",
+        description:
+          "Apache ECharts is a powerful, interactive charting and data visualization library for browser.",
+        url: "https://echarts.apache.org/",
+        logo: "https://echarts.apache.org/favicon.ico",
+      },
+      {
+        name: "Unovis",
+        description:
+          "A modular data visualization framework for React, Angular, Svelte, Vue, Solid.",
+        url: "https://unovis.dev/",
+        logo: "https://unovis.dev/favicon.ico",
+      },
+      {
+        name: "Mermaid Js",
+        description:
+          "JavaScript based diagramming and charting tool that renders Markdown-inspired text definitions to create and modify diagrams dynamically.",
+        url: "https://mermaid.js.org/",
+        logo: "https://mermaid.js.org/favicon.ico",
+      },
+    ],
+  },
+
+  // Virtualization
+  {
+    name: "Virtualization",
+    icon: { type: "lucide", value: "layers" },
+    resources: [
+      {
+        name: "Tanstack Virtual",
+        description:
+          "A powerful virtual list and grid library for React applications.",
+        url: "https://tanstack.com/virtual/latest",
+        logo: "https://tanstack.com/favicon.ico",
+      },
+      {
+        name: "Virtua",
+        description: "A virtual list and grid library for React.",
+        url: "https://github.com/inokawa/virtua",
+        logo: "",
+      },
+    ],
+  },
+
+  // Icons
   {
     name: "Icons",
     icon: { type: "lucide", value: "image" },
@@ -862,6 +877,7 @@ export const categories: Category[] = [
     ],
   },
 
+  // Animations
   {
     name: "Animations",
     icon: { type: "lucide", value: "play" },
@@ -881,6 +897,7 @@ export const categories: Category[] = [
     ],
   },
 
+  // Maps
   {
     name: "Maps",
     icon: { type: "lucide", value: "map" },
@@ -915,6 +932,7 @@ export const categories: Category[] = [
     ],
   },
 
+  // File Uploads
   {
     name: "File Uploads",
     icon: { type: "lucide", value: "upload" },
@@ -934,6 +952,7 @@ export const categories: Category[] = [
     ],
   },
 
+  // Real-time Communication
   {
     name: "Real-time Communication",
     icon: { type: "lucide", value: "message-circle" },
@@ -943,7 +962,7 @@ export const categories: Category[] = [
         description:
           "Enables real-time, bidirectional and event-based communication.",
         url: "https://socket.io/",
-        logo: "https://socket.io/favicon.ico",
+        logo: "/media/logos/real-time-communication/socket-io.svg",
       },
       {
         name: "Pusher",
@@ -955,6 +974,7 @@ export const categories: Category[] = [
     ],
   },
 
+  // Audio & Video
   {
     name: "Audio & Video",
     icon: { type: "lucide", value: "video" },
@@ -982,6 +1002,7 @@ export const categories: Category[] = [
     ],
   },
 
+  // Seo
   {
     name: "Search Engine Optimization",
     icon: { type: "lucide", value: "search" },
@@ -1009,6 +1030,7 @@ export const categories: Category[] = [
     ],
   },
 
+  // Validations
   {
     name: "Validations",
     icon: { type: "lucide", value: "check-circle" },
@@ -1057,27 +1079,7 @@ export const categories: Category[] = [
     ],
   },
 
-  {
-    name: "GraphQL",
-    icon: { type: "lucide", value: "git-branch" },
-    resources: [
-      {
-        name: "Apollo Client",
-        description:
-          "A comprehensive state management library for JavaScript that enables you to manage both local and remote data with GraphQL.",
-        url: "https://www.apollographql.com/docs/react/",
-        logo: "https://www.apollographql.com/favicon.ico",
-      },
-      {
-        name: "Relay",
-        description:
-          "A JavaScript framework for building data-driven React applications powered by GraphQL.",
-        url: "https://relay.dev/",
-        logo: "https://relay.dev/favicon.ico",
-      },
-    ],
-  },
-
+  // Bundlers
   {
     name: "Bundlers",
     icon: { type: "lucide", value: "package" },
@@ -1087,24 +1089,25 @@ export const categories: Category[] = [
         description:
           "A static module bundler for modern JavaScript applications.",
         url: "https://webpack.js.org/",
-        logo: "https://webpack.js.org/favicon.ico",
+        logo: "/media/logos/bundlers/webpack.svg",
       },
       {
         name: "Vite",
         description:
           "A next-generation frontend tooling that focuses on speed and performance.",
         url: "https://vitejs.dev/",
-        logo: "https://vitejs.dev/favicon.ico",
+        logo: "/media/logos/bundlers/vitejs.svg",
       },
       {
         name: "Parcel",
         description: "A zero-configuration build tool for the web.",
         url: "https://parceljs.org/",
-        logo: "https://parceljs.org/favicon.ico",
+        logo: "/media/logos/bundlers/parcel.svg",
       },
     ],
   },
 
+  // Linting & Formatting
   {
     name: "Linting & Formatting",
     icon: { type: "lucide", value: "check-square" },
@@ -1121,11 +1124,12 @@ export const categories: Category[] = [
         description:
           "An opinionated code formatter that supports many languages and integrates with most editors.",
         url: "https://prettier.io/",
-        logo: "https://prettier.io/favicon.ico",
+        logo: "/media/logos/linting/prettier.svg",
       },
     ],
   },
 
+  // Dev Tools
   {
     name: "DevTools",
     icon: { type: "lucide", value: "square-dashed-mouse-pointer" },
@@ -1147,6 +1151,7 @@ export const categories: Category[] = [
     ],
   },
 
+  // Testing
   {
     name: "Testing",
     icon: { type: "lucide", value: "flask-conical" },
@@ -1169,18 +1174,19 @@ export const categories: Category[] = [
         description:
           "End-to-end testing framework for web apps, with support for multiple browsers.",
         url: "https://playwright.dev/",
-        logo: "https://playwright.dev/favicon.ico",
+        logo: "/media/logos/testing/playwright.svg",
       },
       {
         name: "Cypress",
         description:
           "Fast, easy and reliable testing for anything that runs in a browser.",
         url: "https://www.cypress.io/",
-        logo: "https://www.cypress.io/favicon.ico",
+        logo: "/media/logos/testing/cypress.svg",
       },
     ],
   },
 
+  // Documentation
   {
     name: "Documentation",
     icon: { type: "lucide", value: "book-open" },
@@ -1190,7 +1196,7 @@ export const categories: Category[] = [
         description:
           "A tool for UI development that allows you to create and test components in isolation.",
         url: "https://storybook.js.org/",
-        logo: "https://storybook.js.org/favicon.ico",
+        logo: "/media/logos/documentation/storybook.svg",
       },
       {
         name: "Docz",
@@ -1204,7 +1210,7 @@ export const categories: Category[] = [
         description:
           "A project for building, deploying, and maintaining open source project websites easily.",
         url: "https://docusaurus.io/",
-        logo: "https://docusaurus.io/favicon.ico",
+        logo: "/media/logos/documentation/docusaurus.svg",
       },
       {
         name: "MDX",
@@ -1230,6 +1236,7 @@ export const categories: Category[] = [
     ],
   },
 
+  // Internationalization
   {
     name: "Internationalization",
     icon: { type: "lucide", value: "globe" },
@@ -1251,6 +1258,7 @@ export const categories: Category[] = [
     ],
   },
 
+  // Performance Optimization
   {
     name: "Performance Optimization",
     icon: { type: "lucide", value: "zap" },
@@ -1260,32 +1268,33 @@ export const categories: Category[] = [
         description:
           "A library that helps you defer loading content in your React application until it becomes visible in the viewport.",
         url: "https://github.com/loktar00/react-lazy-load",
-        logo: "https://github.com/favicon.ico",
+        logo: "",
       },
       {
         name: "React Window",
         description:
           "A library for rendering large lists and tabular data efficiently.",
         url: "https://react-window.vercel.app/",
-        logo: "https://react-window.vercel.app/favicon.ico",
+        logo: "",
       },
       {
         name: "React Scan",
         description:
           "Scan for React performance issues and eliminate slow renders in your app.",
         url: "https://react-scan.million.dev/",
-        logo: "https://react-scan.million.dev/favicon.ico",
+        logo: "",
       },
       {
         name: "Million",
         description:
           "A React performance tool that helps you identify and fix performance issues in your React applications.",
         url: "https://million.dev/",
-        logo: "https://million.dev/favicon.ico",
+        logo: "/media/logos/performance/million.svg",
       },
     ],
   },
 
+  // Error Handling
   {
     name: "Error Handling",
     icon: { type: "lucide", value: "bug" },
@@ -1302,11 +1311,12 @@ export const categories: Category[] = [
         description:
           "A monitoring platform that helps you identify and fix issues in your React applications in real-time.",
         url: "https://sentry.io/for/react/",
-        logo: "https://sentry.io/favicon.ico",
+        logo: "/media/logos/error-handling/sentry.svg",
       },
     ],
   },
 
+  // Code Splitting
   {
     name: "Code Splitting",
     icon: { type: "lucide", value: "split" },
@@ -1328,6 +1338,7 @@ export const categories: Category[] = [
     ],
   },
 
+  // Hosting
   {
     name: "Hosting",
     icon: { type: "lucide", value: "cloud" },
@@ -1351,7 +1362,7 @@ export const categories: Category[] = [
         description:
           "A comprehensive app development platform that provides hosting for static and dynamic content, as well as backend services.",
         url: "https://firebase.google.com/",
-        logo: "https://www.gstatic.com/devrel-devsite/prod/v2210075187f059b839246c2c03840474501c3c6024a99fb78f6293c1b4c0f664/firebase/images/favicon.png",
+        logo: "/media/logos/hosting/firebase.svg",
       },
       {
         name: "AWS Amplify",
