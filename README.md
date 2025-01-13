@@ -1,6 +1,6 @@
 # ReactToolkit for VS Code
 
-ReactToolkit is a VS Code extension that provides a curated list of resources for React developers. It includes official documentation, popular libraries, tools, and more, all accessible from a convenient sidebar.
+A Visual Studio Code extension that provides a curated list of resources for React developers. It includes official documentation, popular libraries, tools, and more, all accessible from a convenient sidebar.
 
 ![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/YourPublisherName.react-toolkit)
 ![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/YourPublisherName.react-toolkit)
