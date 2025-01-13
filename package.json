@@ -5,7 +5,7 @@
   "publisher": "drbarzaga",
   "icon": "media/icon.png",
   "galleryBanner": {
-    "color": "#D1D1D1",
+    "color": "##403f3f",
     "theme": "dark"
   },
   "repository": {
