@@ -170,6 +170,13 @@ h1 {
   flex: 1;
 }
 
+.resource-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 .resource h3 {
   font-size: 1em;
   margin: 0;

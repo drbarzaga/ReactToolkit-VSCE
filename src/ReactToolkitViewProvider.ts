@@ -119,7 +119,7 @@ export class ReactToolkitViewProvider implements vscode.WebviewViewProvider {
       </div>
       <div class="resource-info">
         <h3>${resource.name}</h3>
-        <p>${resource.description}</p>
+        <p class="resource-text">${resource.description}</p>
       </div>
     </div>
     <a href="${resource.url}" target="_blank">Visit</a>

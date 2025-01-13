@@ -124,46 +124,25 @@ export const categories: Category[] = [
         logo: "https://authjs.dev/favicon.ico",
       },
       {
-        name: "Firebase Authentication",
-        description:
-          "Provides backend services to help authenticate users in your app.",
-        url: "https://firebase.google.com/docs/auth",
-        logo: "https://www.gstatic.com/devrel-devsite/prod/v2210075187f059b839246c2c03840474501c3c6024a99fb78f6293c1b4c0f664/firebase/images/favicon.png",
-      },
-      {
         name: "Auth0",
         description:
           "A platform for securing access to your applications, devices, and users.",
         url: "https://auth0.com/",
-        logo: "https://cdn.auth0.com/website/new-homepage/dark-favicon.png",
+        logo: "/media/logos/authentication/auth0.svg",
       },
       {
         name: "Okta",
         description:
           "A complete identity management solution for your web and mobile apps.",
         url: "https://developer.okta.com/docs/guides/sign-into-spa/react/before-you-begin/",
-        logo: "https://developer.okta.com/favicon.ico",
-      },
-      {
-        name: "AWS Amplify Auth",
-        description:
-          "Provides authentication APIs and building blocks for developers who want to create secure applications.",
-        url: "https://docs.amplify.aws/lib/auth/getting-started/q/platform/js/",
-        logo: "https://docs.amplify.aws/assets/favicon.ico",
-      },
-      {
-        name: "Supabase Auth",
-        description:
-          "An open-source Firebase alternative that offers authentication services.",
-        url: "https://supabase.io/docs/guides/auth",
-        logo: "https://supabase.com/favicon.ico",
+        logo: "/media/logos/authentication/okta.svg",
       },
       {
         name: "Clerk",
         description:
           "Authentication and user management for modern applications.",
         url: "https://clerk.dev/",
-        logo: "https://clerk.dev/favicon.ico",
+        logo: "/media/logos/authentication/clerk.png",
       },
     ],
   },
