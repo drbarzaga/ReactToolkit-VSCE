@@ -5,14 +5,14 @@
   "publisher": "drbarzaga",
   "icon": "media/icon.png",
   "galleryBanner": {
-    "color": "##403f3f",
+    "color": "#403f3f",
     "theme": "dark"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/drbarzaga/ReactToolkit-VSCE"
   },
-  "version": "1.0.1",
+  "version": "1.0.2",
   "engines": {
     "vscode": "^1.96.0"
   },
