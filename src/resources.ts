@@ -80,42 +80,35 @@ export const categories: Category[] = [
         description:
           "A React-based open-source framework for creating fast, secure, and powerful websites using modern web technologies.",
         url: "https://www.gatsbyjs.com/",
-        logo: "https://www.gatsbyjs.com/favicon-32x32.png",
+        logo: "/media/logos/frameworks/gatsby.svg",
       },
       {
         name: "Remix",
         description:
           "A full stack web framework that lets you focus on the user interface and works seamlessly with React.",
         url: "https://remix.run/",
-        logo: "https://remix.run/favicon.ico",
+        logo: "/media/logos/frameworks/remix.svg",
       },
       {
         name: "Blitz.js",
         description:
           "A framework built on top of Next.js, providing a full-stack experience with a focus on developer productivity.",
         url: "https://blitzjs.com/",
-        logo: "https://blitzjs.com/favicon.ico",
+        logo: "/media/logos/frameworks/blitz.svg",
       },
       {
         name: "RedwoodJS",
         description:
           "An opinionated, full-stack, serverless web application framework built on React, GraphQL, and Prisma.",
         url: "https://redwoodjs.com/",
-        logo: "https://redwoodjs.com/favicon.ico",
-      },
-      {
-        name: "React Admin",
-        description:
-          "A frontend Framework for single-page applications on top of REST/GraphQL APIs, using TypeScript, React and Material Design.",
-        url: "https://marmelab.com/react-admin/",
-        logo: "https://marmelab.com/react-admin/favicon.ico",
+        logo: "/media/logos/frameworks/redwoodjs.svg",
       },
       {
         name: "Refine",
         description:
           "A React Framework for building internal tools, admin panels, dashboards & B2B apps with unmatched flexibility.",
         url: "https://refine.dev/",
-        logo: "https://refine.dev/img/refine_favicon.png",
+        logo: "/media/logos/frameworks/refine.svg",
       },
     ],
   },
