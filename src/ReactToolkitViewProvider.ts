@@ -113,7 +113,7 @@ export class ReactToolkitViewProvider implements vscode.WebviewViewProvider {
           >`
             : ""
         }
-        <i data-lucide="box" class="resource-logo-fallback" style="display:${
+        <i data-lucide="package" class="resource-logo-fallback" style="display:${
           resource.logo ? "none" : "flex"
         }"></i>
       </div>

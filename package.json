@@ -3,6 +3,10 @@
   "displayName": "ReactToolkit",
   "description": "All the essential libraries and tools for React developers delivered in a single extension pack.",
   "publisher": "drbarzaga",
+  "author": {
+    "name": "Dayan Perez",
+    "email": "dayan.perez9012@gmail.com"
+  },
   "icon": "media/icon-marketplace.png",
   "galleryBanner": {
     "color": "#373a3b",
@@ -14,7 +18,7 @@
   },
   "version": "1.0.6",
   "engines": {
-    "vscode": "^1.96.0"
+    "vscode": "^1.60.0"
   },
   "categories": [
     "Other",

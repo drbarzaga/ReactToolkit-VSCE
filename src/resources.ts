@@ -527,8 +527,8 @@ export const categories: Category[] = [
       {
         name: "Novajs",
         description: "A collection of dependency-free React hooks.",
-        url: "https://novajs.co/",
-        logo: "https://novajs.co/favicon.ico",
+        url: "https://www.novajs.dev/",
+        logo: "https://www.novajs.dev/favicon.ico",
       },
       {
         name: "useHooks",
@@ -893,6 +893,20 @@ export const categories: Category[] = [
         description: "A spring-physics-based animation library for React.",
         url: "https://www.react-spring.dev/",
         logo: "https://www.react-spring.dev/favicon.ico",
+      },
+      {
+        name: "Reactbits",
+        description:
+          "An open source React.js snippet library for animated components.",
+        url: "https://reactbits.dev/",
+        logo: "https://reactbits.dev/favicon.ico",
+      },
+      {
+        name: "simpleParallax.js",
+        description:
+          "simpleParallax.js is a lightweight and easy-to-use React and JS library that adds parallax animations to any image.",
+        url: "https://simpleparallax.com/",
+        logo: "https://simpleparallax.com/favicon.ico",
       },
     ],
   },
