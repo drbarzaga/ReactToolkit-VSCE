@@ -57,89 +57,112 @@ export class ReactToolkitViewProvider implements vscode.WebviewViewProvider {
     const nonce = getNonce();
 
     return `<!DOCTYPE html>
-      <html lang="en">
-      <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="${styleResetUri}" rel="stylesheet">
-        <link href="${styleVSCodeUri}" rel="stylesheet">
-        <link href="${styleMainUri}" rel="stylesheet">
-        <title>React Toolkit</title>
-      </head>
-      <body>
-        <header>
-          <img class="toolkit-icon" src="${toolkitIconUri}" alt="React Toolkit Icon">
-          <div class="header-text">
-            <h1>React Toolkit</h1>
-            <p class="info-text">Explore a curated list of essential React resources. Build robust, scalable applications with these powerful tools.</p>
-          </div>
-        </header>
-        <div class="search-container">
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="${styleResetUri}" rel="stylesheet">
+      <link href="${styleVSCodeUri}" rel="stylesheet">
+      <link href="${styleMainUri}" rel="stylesheet">
+      <title>React Toolkit</title>
+    </head>
+    <body>
+      <header>
+        <img class="toolkit-icon" src="${toolkitIconUri}" alt="React Toolkit Icon">
+        <h1>React Toolkit</h1>
+        <p class="info-text">Explore a curated list of essential React resources. Build robust, scalable applications with these powerful tools.</p>
+      </header>
+      <div class="search-container">
+        <div class="search-wrapper">
           <i data-lucide="search" class="search-icon"></i>
           <input type="text" id="search" placeholder="Search resources...">
+          <span id="search-results" class="search-results"></span>
         </div>
-        <div id="categories">
-          ${categories
-            .map(
-              (category) => `
-  <div class="category expanded">
-    <h2>
-      <span class="category-icon">
-        ${this.getCategoryIcon(category, webview)}
-      </span>
-      ${category.name}
-      <span class="category-toggle">
-        <i data-lucide="chevron-down"></i>
-      </span>
-    </h2>
-    <div class="resources">
-      ${category.resources
-        .map(
-          (resource) => `
-  <div class="resource" data-name="${resource.name.toLowerCase()}" data-category="${category.name.toLowerCase()}">
-    <div class="resource-content">
-      <div class="resource-logo-container">
-        ${
-          resource.logo
-            ? `<img class="resource-logo" src="${
-                resource.logo.startsWith("http")
-                  ? resource.logo
-                  : webview.asWebviewUri(
-                      vscode.Uri.joinPath(this._extensionUri, resource.logo)
-                    )
-              }" 
-            alt="${resource.name} logo"
-            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
-          >`
-            : ""
-        }
-        <i data-lucide="package" class="resource-logo-fallback" style="display:${
-          resource.logo ? "none" : "flex"
-        }"></i>
       </div>
-      <div class="resource-info">
-        <h3>${resource.name}</h3>
-        <p class="resource-text">${resource.description}</p>
-      </div>
+      <div id="categories">
+        ${categories
+          .map(
+            (category) => `
+<div class="category expanded">
+  <h2>
+    <span class="category-icon">
+      ${this.getCategoryIcon(category, webview)}
+    </span>
+    ${category.name}
+    <span class="category-toggle">
+      <i data-lucide="chevron-down"></i>
+    </span>
+  </h2>
+  <div class="resources">
+    ${category.resources
+      .map(
+        (resource) => `
+<div class="resource" data-name="${resource.name.toLowerCase()}" data-category="${category.name.toLowerCase()}">
+  <div class="resource-content">
+    <div class="resource-logo-container">
+      ${
+        resource.logo
+          ? `<img class="resource-logo" src="${
+              resource.logo.startsWith("http")
+                ? resource.logo
+                : webview.asWebviewUri(
+                    vscode.Uri.joinPath(this._extensionUri, resource.logo)
+                  )
+            }" 
+          alt="${resource.name} logo"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+        >`
+          : ""
+      }
+      <i data-lucide="package" class="resource-logo-fallback" style="display:${
+        resource.logo ? "none" : "flex"
+      }"></i>
     </div>
-    <a href="${resource.url}" target="_blank">Visit</a>
-  </div>
-`
-        )
-        .join("")}
+    <div class="resource-info">
+      <h3>${resource.name}</h3>
+      <p class="resource-text">${resource.description}</p>
     </div>
   </div>
+  <a href="${resource.url}" target="_blank">Visit</a>
+</div>
 `
-            )
-            .join("")}
+      )
+      .join("")}
+  </div>
+</div>
+`
+          )
+          .join("")}
+      </div>
+      <div id="empty-state" class="empty-state" style="display: none;">
+        <i data-lucide="search-x" class="empty-state-icon"></i>
+        <h2>No results found</h2>
+        <p>Try adjusting your search or explore our categories.</p>
+        <button id="clear-search" class="clear-search-button">Clear search</button>
+      </div>
+      <footer class="footer">
+        <div class="footer-content">
+          <a href="https://github.com/drbarzaga/ReactToolkit-VSCE/issues/new" target="_blank" class="footer-button" title="Suggest a resource">
+            <i data-lucide="package-plus"></i>
+            <span>Suggest</span>
+          </a>
+          <a href="https://github.com/drbarzaga/ReactToolkit-VSCE" target="_blank" class="footer-button" title="Star on GitHub">
+            <i data-lucide="star"></i>
+            <span>Star</span>
+          </a>
+          <a href="https://ko-fi.com/dayanperez" target="_blank" class="footer-button" title="Support me on Ko-fi">
+            <i data-lucide="coffee "></i>
+            <span>Support me</span>
+          </a>
         </div>
-        <script src="https://unpkg.com/lucide@latest"></script>
-        <script>
-          lucide.createIcons();
-        </script>
-        <script nonce="${nonce}" src="${scriptUri}"></script>
-      </body>
-      </html>`;
+      </footer>
+      <script src="https://unpkg.com/lucide@latest"></script>
+      <script>
+        lucide.createIcons();
+      </script>
+      <script nonce="${nonce}" src="${scriptUri}"></script>
+    </body>
+    </html>`;
   }
 }
 

@@ -4,6 +4,25 @@
     const categoryElements = document.querySelectorAll('.category');
     const searchInput = document.getElementById('search');
     const resourceElements = document.querySelectorAll('.resource');
+    const searchContainer = document.querySelector('.search-container');
+    const emptyState = document.getElementById('empty-state');
+    const clearSearchButton = document.getElementById('clear-search');
+    const searchResults = document.getElementById('search-results');
+    let isSticky = false;
+
+    function handleScroll() {
+        const shouldBeSticky = window.pageYOffset > 0;
+        if (shouldBeSticky !== isSticky) {
+            isSticky = shouldBeSticky;
+            if (isSticky) {
+                searchContainer.classList.add('sticky');
+            } else {
+                searchContainer.classList.remove('sticky');
+            }
+        }
+    }
+
+    window.addEventListener('scroll', handleScroll);
 
     searchInput.focus();
 
@@ -29,10 +48,17 @@
         resources.style.display = isExpanded ? 'grid' : 'none';
     }
 
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+
     function performSearch() {
         const searchTerm = searchInput.value.toLowerCase();
 
-        let hasVisibleResources = false;
+        let visibleResourcesCount = 0;
         categoryElements.forEach(category => {
             const resources = category.querySelectorAll('.resource');
             let categoryHasMatch = false;
@@ -44,7 +70,7 @@
                 resource.style.display = isVisible ? '' : 'none';
                 if (isVisible) {
                     categoryHasMatch = true;
-                    hasVisibleResources = true;
+                    visibleResourcesCount++;
                 }
             });
 
@@ -63,18 +89,55 @@
             }
         });
 
-        // Show/hide "No results" message
-        const noResultsMessage = document.getElementById('no-results-message');
-        if (noResultsMessage) {
-            noResultsMessage.style.display = hasVisibleResources || !searchTerm ? 'none' : 'block';
+        // Update search results count
+        if (searchTerm) {
+            searchResults.textContent = `${visibleResourcesCount} result${visibleResourcesCount !== 1 ? 's' : ''}`;
+        } else {
+            searchResults.textContent = '';
+        }
+
+        // Show/hide empty state
+        if (visibleResourcesCount === 0 && searchTerm) {
+            emptyState.style.display = 'flex';
+            document.getElementById('categories').style.display = 'none';
+        } else {
+            emptyState.style.display = 'none';
+            document.getElementById('categories').style.display = 'block';
+        }
+
+        // Scroll to top if not already there
+        if (window.pageYOffset > 0) {
+            scrollToTop();
         }
     }
 
     searchInput.addEventListener('input', performSearch);
 
+    clearSearchButton.addEventListener('click', () => {
+        searchInput.value = '';
+        performSearch();
+        searchInput.focus();
+    });
+
     categoryElements.forEach(category => {
         category.classList.add('expanded');
         updateCategoryVisuals(category);
     });
+
+    // Trigger initial check for sticky state
+    handleScroll();
+
+    // Footer button click handlers
+    document.querySelectorAll('.footer-button').forEach(button => {
+        button.addEventListener('click', (e) => {
+            e.preventDefault();
+            vscode.postMessage({
+                command: 'openExternalLink',
+                url: button.href
+            });
+        });
+    });
 })();
+
+
 
