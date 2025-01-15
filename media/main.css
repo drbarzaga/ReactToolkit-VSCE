@@ -1,11 +1,10 @@
 body {
-  padding: 10px;
   font-family: var(--vscode-font-family);
-  font-size: var(--vscode-font-size);
+  font-size: 14px;
+  line-height: 1.4;
   color: var(--vscode-foreground);
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+  margin: 0;
+  padding: 20px 20px 30px 20px;
 }
 
 header {
@@ -13,7 +12,7 @@ header {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .header-text {
@@ -21,48 +20,85 @@ header {
 }
 
 h1 {
-  font-size: 1.5em;
-  margin: 15px 0 5px;
+  font-size: 1.3em;
+  margin: 10px 0 5px;
 }
 
 .info-text {
-  margin-bottom: 15px;
+  font-size: 0.9em;
+  margin-bottom: 10px;
   color: var(--vscode-descriptionForeground);
 }
 
 .search-container {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--vscode-editor-background);
+  padding: 10px 0;
+  margin: 0 -20px 20px -20px;
+  transition: box-shadow 0.3s ease, padding 0.3s ease;
+}
+
+.search-container.sticky {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+}
+
+.search-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
   position: relative;
-  margin-bottom: 20px;
-  width: 100%;
+  padding: 0 20px;
+  transition: transform 0.3s ease;
+}
+
+.search-container.sticky .search-wrapper {
+  transform: scale(1.02);
 }
 
 .search-icon {
   position: absolute;
-  left: 8px;
+  left: 28px;
   top: 50%;
   transform: translateY(-50%);
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   color: var(--vscode-input-placeholderForeground);
   pointer-events: none;
   z-index: 1;
+  transition: left 0.3s ease;
+}
+
+.search-container.sticky .search-icon {
+  left: 32px;
 }
 
 #search {
   width: 100%;
-  height: 32px;
+  height: 28px;
   box-sizing: border-box;
   padding: 4px 8px 4px 32px;
   border-radius: 4px;
   background-color: var(--vscode-input-background);
   color: var(--vscode-input-foreground);
   border: 1px solid var(--vscode-input-border);
-  font-size: var(--vscode-font-size);
+  font-size: 0.9em;
+  transition: all 0.3s ease;
 }
 
-#search:focus {
-  outline: 1px solid var(--vscode-focusBorder);
-  outline-offset: -1px;
+.search-container.sticky #search {
+  height: 32px;
+}
+
+.search-results {
+  position: absolute;
+  right: 28px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.8em;
+  color: var(--vscode-descriptionForeground);
+  pointer-events: none;
 }
 
 .category {
@@ -70,16 +106,17 @@ h1 {
 }
 
 .category h2 {
-  font-size: 1em;
+  font-size: 0.95em;
   cursor: pointer;
   user-select: none;
   display: flex;
   align-items: center;
-
   transition: color 0.3s;
-  &:hover {
-    color: var(--vscode-descriptionForeground);
-  }
+  padding: 8px 0;
+}
+
+.category h2:hover {
+  color: var(--vscode-descriptionForeground);
 }
 
 .category-toggle {
@@ -106,14 +143,14 @@ h1 {
 .resource {
   background-color: var(--vscode-editor-background);
   border: 1px solid var(--vscode-panel-border);
-  padding: 15px;
+  padding: 12px;
   border-radius: 8px;
   transition: transform 0.2s ease-in-out, background-color 0.3s ease;
   position: relative;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
 }
 
 .resource::before {
@@ -178,19 +215,19 @@ h1 {
 }
 
 .resource h3 {
-  font-size: 1em;
+  font-size: 0.95em;
   margin: 0;
 }
 
 .resource p {
-  font-size: 0.9em;
+  font-size: 0.85em;
   margin: 0;
   color: var(--vscode-descriptionForeground);
 }
 
 .resource a {
   display: inline-flex;
-  padding: 8px 16px;
+  padding: 6px 12px;
   background-color: var(--vscode-button-background);
   color: var(--vscode-button-foreground);
   text-decoration: none;
@@ -200,6 +237,7 @@ h1 {
   overflow: hidden;
   transition: color 0.3s ease;
   align-self: flex-start;
+  font-size: 0.85em;
 }
 
 .resource a::before {
@@ -239,9 +277,9 @@ h1 {
 }
 
 .toolkit-icon {
-  width: 120px;
-  height: 120px;
-  margin: 0 auto;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 10px auto;
   display: block;
   filter: drop-shadow(0 0 2px rgba(97, 218, 251, 0.3));
 }
@@ -251,4 +289,103 @@ h1 {
     text-align: center;
   }
 }
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1.5rem;
+  background-color: var(--vscode-editor-background);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  margin-top: 1.5rem;
+}
+
+.empty-state-icon {
+  width: 48px;
+  height: 48px;
+  color: var(--vscode-descriptionForeground);
+  margin-bottom: 0.75rem;
+}
+
+.empty-state h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+  color: var(--vscode-foreground);
+}
+
+.empty-state p {
+  color: var(--vscode-descriptionForeground);
+  margin-bottom: 0.75rem;
+  font-size: 0.9em;
+}
+
+.clear-search-button {
+  background-color: var(--vscode-button-background);
+  color: var(--vscode-button-foreground);
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background-color 0.3s ease;
+}
+
+.clear-search-button:hover {
+  background-color: var(--vscode-button-hoverBackground);
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--vscode-editor-background);
+  border-top: 1px solid var(--vscode-panel-border);
+  padding: 5px 10px;
+  z-index: 1000;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-button {
+  display: inline-flex;
+  align-items: center;
+  color: var(--vscode-foreground);
+  text-decoration: none;
+  font-size: 0.70em;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+  gap: 4px;
+}
+
+.footer-button:hover {
+  opacity: 1;
+}
+
+.footer-button i {
+  margin-right: 6px;
+  width: 8px;
+  height: 8px;
+}
+
+@media (max-width: 400px) {
+  .footer-content {
+    gap: 12px;
+  }
+  
+  .footer-button {
+    font-size: 0.8em;
+  }
+}
+
 
