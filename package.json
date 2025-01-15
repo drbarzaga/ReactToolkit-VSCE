@@ -16,7 +16,7 @@
     "type": "git",
     "url": "https://github.com/drbarzaga/ReactToolkit-VSCE"
   },
-  "version": "1.0.7",
+  "version": "1.0.8",
   "engines": {
     "vscode": "^1.60.0"
   },

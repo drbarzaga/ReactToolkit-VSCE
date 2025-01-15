@@ -142,7 +142,7 @@ export class ReactToolkitViewProvider implements vscode.WebviewViewProvider {
       </div>
       <footer class="footer">
         <div class="footer-content">
-          <a href="https://github.com/drbarzaga/ReactToolkit-VSCE/issues/new" target="_blank" class="footer-button" title="Suggest a resource">
+          <a href="https://github.com/drbarzaga/ReactToolkit-VSCE/issues/new??template=request-new-resource.md&title=[Resource Request]&body=**Resource Title:**%0A%0A[Enter the title of the resource]%0A%0A**Resource Description:**%0A%0A[Describe what the resource does]%0A%0A**Resource URL or GitHub Repository:**%0A%0A[Provide the URL of the resource or its GitHub repository]%0A%0A**Category (Required):**%0A%0A[Specify the category this resource belongs to]%0A%0A**Additional Comments:**%0A%0A[Optional: Add any additional comments]" target="_blank" class="footer-button" title="Suggest a resource">
             <i data-lucide="package-plus"></i>
             <span>Suggest</span>
           </a>
