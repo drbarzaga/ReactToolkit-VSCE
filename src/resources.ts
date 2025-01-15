@@ -62,6 +62,12 @@ export const categories: Category[] = [
         url: "https://react.dev/learn",
         logo: "/media/logos/official/react.svg",
       },
+      {
+        name: "Using React in VS Code Tutorial",
+        description: "Official VS Code tutorial about using React",
+        url: "https://code.visualstudio.com/docs/nodejs/reactjs-tutorial",
+        logo: "/media/logos/official/vscode.svg",
+      },
     ],
   },
 
@@ -711,6 +717,13 @@ export const categories: Category[] = [
         url: "https://vanilla-extract.style/",
         logo: "https://vanilla-extract.style/favicon.ico",
       },
+      {
+        name: "Stitches",
+        description:
+          "CSS-in-JS with near-zero runtime, SSR, multi-variant support.",
+        url: "https://stitches.dev/",
+        logo: "/media/logos/styling/stitches.svg",
+      },
     ],
   },
 
@@ -942,6 +955,25 @@ export const categories: Category[] = [
         description: "A React wrapper for Mapbox GL JS.",
         url: "https://visgl.github.io/react-map-gl/",
         logo: "https://visgl.github.io/react-map-gl/favicon.ico",
+      },
+    ],
+  },
+
+  // PDF's
+  {
+    name: "PDF's",
+    icon: { type: "lucide", value: "file-text" },
+    resources: [
+      {
+        name: "React PDF",
+        description: " A React renderer for creating PDF files.",
+        url: "https://react-pdf.org/",
+        logo: "/media/logos/pdfs/react-pdf.png",
+      },
+      {
+        name: "React PDF Viewer",
+        description: "A PDF viewer for React applications.",
+        url: "https://react-pdf-viewer.dev/",
       },
     ],
   },
