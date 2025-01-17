@@ -118,6 +118,13 @@ export const categories: Category[] = [
         url: "https://refine.dev/",
         logo: "/media/logos/frameworks/refine.svg",
       },
+      {
+        name: "Tuono",
+        description:
+          "A full-stack web framework for building React applications using Rust as the backend with a strong focus on usability and performance.",
+        url: "https://tuono.dev/",
+        logo: "https://tuono.dev/favicon.ico",
+      },
     ],
   },
 
