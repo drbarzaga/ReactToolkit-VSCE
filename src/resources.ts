@@ -675,13 +675,20 @@ export const categories: Category[] = [
         description:
           "A fully-featured, production ready caching GraphQL client.",
         url: "https://www.apollographql.com/docs/react/",
-        logo: "/media/logos/data-fetching/apollo-client.png",
+        logo: "/media/logos/data-fetching/apollo-client.svg",
       },
       {
         name: "SWR",
         description: "React Hooks library for remote data fetching.",
         url: "https://swr.vercel.app/",
         logo: "/media/logos/data-fetching/swr.png",
+      },
+      {
+        name: "Relay",
+        description:
+          "A JavaScript framework for building data-driven React applications",
+        url: "https://relay.dev/",
+        logo: "/media/logos/data-fetching/relay.svg",
       },
       {
         name: "Fetch API",
