@@ -1333,6 +1333,20 @@ export const categories: Category[] = [
     icon: { type: "lucide", value: "zap" },
     resources: [
       {
+        name: "React Scan",
+        description:
+          "Scan for React performance issues and eliminate slow renders in your app.",
+        url: "https://react-scan.million.dev/",
+        logo: "/media/logos/performance/react-scan.svg",
+      },
+      {
+        name: "Million",
+        description:
+          "A React performance tool that helps you identify and fix performance issues in your React applications.",
+        url: "https://million.dev/",
+        logo: "/media/logos/performance/million.svg",
+      },
+      {
         name: "React Lazy Load",
         description:
           "A library that helps you defer loading content in your React application until it becomes visible in the viewport.",
@@ -1345,21 +1359,7 @@ export const categories: Category[] = [
           "A library for rendering large lists and tabular data efficiently.",
         url: "https://react-window.vercel.app/",
         logo: "",
-      },
-      {
-        name: "React Scan",
-        description:
-          "Scan for React performance issues and eliminate slow renders in your app.",
-        url: "https://react-scan.million.dev/",
-        logo: "",
-      },
-      {
-        name: "Million",
-        description:
-          "A React performance tool that helps you identify and fix performance issues in your React applications.",
-        url: "https://million.dev/",
-        logo: "/media/logos/performance/million.svg",
-      },
+      }
     ],
   },
 
