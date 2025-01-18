@@ -173,6 +173,7 @@ export const categories: Category[] = [
         description:
           "A minimalist-friendly ~2.1KB routing for React and Preact.",
         url: "https://github.com/molefrog/wouter",
+        logo: "/media/logos/routing/wouter.svg",
       },
       {
         name: "Tanstack Router",
@@ -329,7 +330,7 @@ export const categories: Category[] = [
         description:
           "A React UI Framework for building ambitious products on the web.",
         url: "https://evergreen.segment.com/",
-        logo: "https://evergreen.segment.com/favicon.ico",
+        logo: "/media/logos/ui-components/evergreen.svg",
       },
       {
         name: "Chakra UI",
@@ -356,7 +357,7 @@ export const categories: Category[] = [
         name: "Blueprint",
         description: "A React-based UI toolkit for the web.",
         url: "https://blueprintjs.com/",
-        logo: "https://blueprintjs.com/assets/favicon.ico",
+        logo: "/media/logos/ui-components/blueprintjs.svg",
       },
       {
         name: "FluentUI",
@@ -410,14 +411,13 @@ export const categories: Category[] = [
         description:
           "An Tailwind CSS components library for any needs. Comes with UI examples & blocks, templates, Icons, Color Palette and more.",
         url: "https://zenui.net/",
-        logo: "https://zenui.net/favicon.ico",
       },
       {
         name: "FlyonUI",
         description:
           "An open-source Tailwind CSS Components Library with semantic classes and powerful JS plugins.",
         url: "https://flyonui.com/",
-        logo: "https://flyonui.com/favicon.ico",
+        logo: "/media/logos/ui-components/flyonui.png",
       },
       {
         name: "DaisyUI",
@@ -437,7 +437,7 @@ export const categories: Category[] = [
         description:
           "An open source component library optimized for fast development, easy maintenance, and accessibility.",
         url: "https://react.email/",
-        logo: "https://react.email/favicon.ico",
+        logo: "/media/logos/ui-components/react-email.webp",
       },
     ],
   },
@@ -1359,7 +1359,7 @@ export const categories: Category[] = [
           "A library for rendering large lists and tabular data efficiently.",
         url: "https://react-window.vercel.app/",
         logo: "",
-      }
+      },
     ],
   },
 
