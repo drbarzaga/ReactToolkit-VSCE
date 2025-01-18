@@ -480,13 +480,6 @@ export const categories: Category[] = [
         url: "https://griddlegriddle.github.io/Griddle/",
         logo: "https://griddlegriddle.github.io/Griddle/favicon.ico",
       },
-      {
-        name: "React Virtualized",
-        description:
-          "A set of React components for efficiently rendering large lists and tabular data.",
-        url: "https://github.com/bvaughn/react-virtualized",
-        logo: "https://github.com/favicon.ico",
-      },
     ],
   },
 
@@ -845,6 +838,13 @@ export const categories: Category[] = [
         description: "A virtual list and grid library for React.",
         url: "https://github.com/inokawa/virtua",
         logo: "",
+      },
+      {
+        name: "React Virtualized",
+        description:
+          "A set of React components for efficiently rendering large lists and tabular data.",
+        url: "https://github.com/bvaughn/react-virtualized",
+        logo: "/media/logos/virtualization/react-virtualized.png",
       },
     ],
   },
