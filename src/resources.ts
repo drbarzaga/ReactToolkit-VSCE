@@ -992,22 +992,27 @@ export const categories: Category[] = [
     ],
   },
 
-  // File Uploads
+  // File Handling
   {
-    name: "File Uploads",
+    name: "File Handling",
     icon: { type: "lucide", value: "upload" },
     resources: [
       {
         name: "React Dropzone",
         description: "Simple HTML5 drag-and-drop zone with React.",
         url: "https://react-dropzone.js.org/",
-        logo: "https://react-dropzone.js.org/favicon.ico",
+        logo: "/media/logos/file-handling/react-dropzone.png",
       },
       {
         name: "Uppy",
         description: "Sleek, modular file uploader for React.",
         url: "https://uppy.io/",
-        logo: "https://uppy.io/favicon.ico",
+        logo: "/media/logos/file-handling/uppy.svg",
+      },
+      {
+        name: "react-uploady",
+        description: "Modern file-upload components & hooks for React.",
+        url: "https://react-uploady.org/",
       },
     ],
   },
