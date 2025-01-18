@@ -466,7 +466,7 @@ export const categories: Category[] = [
         description:
           "A feature-rich datagrid designed for the major JavaScript frameworks.",
         url: "https://www.ag-grid.com/react-data-grid/",
-        logo: "https://www.ag-grid.com/favicon.ico",
+        logo: "/media/logos/tables/ag-grid.png",
       },
       {
         name: "React Data Grid",
@@ -512,13 +512,13 @@ export const categories: Category[] = [
         description:
           "A React component for building Web forms from JSON Schema.",
         url: "https://rjsf-team.github.io/react-jsonschema-form/docs/",
-        logo: "https://rjsf-team.github.io/react-jsonschema-form/favicon.ico",
+        logo: "/media/logos/forms/react-json-schema-form.png",
       },
       {
         name: "Formily",
         description: "Alibaba Group Unified Form Solution.",
         url: "https://formilyjs.org/",
-        logo: "https://formilyjs.org/favicon.ico",
+        logo: "/media/logos/forms/formily.png",
       },
     ],
   },
@@ -529,22 +529,21 @@ export const categories: Category[] = [
     icon: { type: "lucide", value: "anchor" },
     resources: [
       {
+        name: "useHooks",
+        description: "A collection of reusable React hooks.",
+        url: "https://usehooks.com/",
+        logo: "/media/logos/hooks/use-hooks.svg",
+      },
+      {
         name: "usehooks-ts",
         description: "React hook library, ready to use, written in Typescript.",
         url: "https://usehooks-ts.com/",
-        logo: "https://usehooks-ts.com/favicon.ico",
       },
       {
         name: "Novajs",
         description: "A collection of dependency-free React hooks.",
         url: "https://www.novajs.dev/",
         logo: "https://www.novajs.dev/favicon.ico",
-      },
-      {
-        name: "useHooks",
-        description: "A collection of reusable React hooks.",
-        url: "https://usehooks.com/",
-        logo: "",
       },
       {
         name: "React Use",
@@ -556,7 +555,6 @@ export const categories: Category[] = [
         name: "ahooks",
         description: "A set of high-quality and reliable React hooks.",
         url: "https://ahooks.js.org/",
-        logo: "",
       },
     ],
   },
@@ -644,7 +642,7 @@ export const categories: Category[] = [
         description:
           "A state management library for React that makes it easy to share state across components.",
         url: "https://recoiljs.org/",
-        logo: "https://recoiljs.org/img/favicon.ico",
+        logo: "/media/logos/state-management/recoil.svg",
       },
     ],
   },
