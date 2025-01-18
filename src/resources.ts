@@ -220,7 +220,6 @@ export const categories: Category[] = [
         description:
           "A powerful and beautiful drag-and-drop library for lists with React.",
         url: "https://github.com/atlassian/react-beautiful-dnd",
-        logo: "",
       },
       {
         name: "React DnD",
@@ -240,14 +239,14 @@ export const categories: Category[] = [
         name: "React Dragula",
         description: "A drag-and-drop library for React based on Dragula.",
         url: "https://github.com/bevacqua/react-dragula",
-        logo: "",
+        logo: "https://bevacqua.github.io/react-dragula/favicon.ico",
       },
       {
         name: "React Complex Tree",
         description:
           "Unopinionated Accessible Tree Component with Multi-Select and Drag-And-Drop.",
         url: "https://rct.lukasbach.com/",
-        logo: "",
+        logo: "/media/logos/drag-and-drop/react-complex-tree.svg",
       },
       {
         name: "FormKit's Drag and Drop",
@@ -255,6 +254,11 @@ export const categories: Category[] = [
           "A small library for adding data-first drag and drop sorting and transferring for lists in your app.",
         url: "https://drag-and-drop.formkit.com/",
         logo: "https://formkit.com/favicon.png",
+      },
+      {
+        name: "react-movable",
+        description: "Drag and drop for your React lists and tables.",
+        url: "https://react-movable.pages.dev",
       },
     ],
   },
