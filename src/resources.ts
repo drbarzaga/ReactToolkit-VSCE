@@ -903,6 +903,12 @@ export const categories: Category[] = [
         url: "https://icons.getbootstrap.com/",
         logo: "https://icons.getbootstrap.com/favicon.ico",
       },
+      {
+        name: "Svgl",
+        description: "A beautiful library with SVG logos.",
+        url: "https://svgl.app/",
+        logo: "/media/logos/icons/svgl.svg",
+      },
     ],
   },
 
