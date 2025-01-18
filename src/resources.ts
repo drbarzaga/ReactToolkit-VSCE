@@ -939,6 +939,13 @@ export const categories: Category[] = [
         url: "https://simpleparallax.com/",
         logo: "https://simpleparallax.com/favicon.ico",
       },
+      {
+        name: "Blendy",
+        description:
+          "A framework-agnostic tool that smoothly transitions one element into another with just a few lines of code.",
+        url: "https://blendy.tahazsh.com/",
+        logo: "https://blendy.tahazsh.com/favicon.ico",
+      },
     ],
   },
 
