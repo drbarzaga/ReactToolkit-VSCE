@@ -480,6 +480,12 @@ export const categories: Category[] = [
         url: "https://griddlegriddle.github.io/Griddle/",
         logo: "https://griddlegriddle.github.io/Griddle/favicon.ico",
       },
+      {
+        name: "Tabulator",
+        description: "Interactive Tables and Data Grids.",
+        url: "https://tabulator.info/",
+        logo: "/media/logos/tables/tabulator.png",
+      },
     ],
   },
 
