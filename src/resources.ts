@@ -264,9 +264,9 @@ export const categories: Category[] = [
     ],
   },
 
-  // UI Components
+  // UI Frameworks & Libraries
   {
-    name: "UI Components",
+    name: "UI Frameworks & Libraries",
     icon: { type: "lucide", value: "layout" },
     resources: [
       {
@@ -281,7 +281,7 @@ export const categories: Category[] = [
         description:
           "An open source component library optimized for fast development, easy maintenance, and accessibility.",
         url: "https://www.radix-ui.com/",
-        logo: "/media/logos/ui-components/radix-ui.svg",
+        logo: "/media/logos/ui-frameworks-libraries/radix-ui.svg",
       },
       {
         name: "Eldora UI",
@@ -330,7 +330,7 @@ export const categories: Category[] = [
         description:
           "A React UI Framework for building ambitious products on the web.",
         url: "https://evergreen.segment.com/",
-        logo: "/media/logos/ui-components/evergreen.svg",
+        logo: "/media/logos/ui-frameworks-libraries/evergreen.svg",
       },
       {
         name: "Chakra UI",
@@ -357,7 +357,7 @@ export const categories: Category[] = [
         name: "Blueprint",
         description: "A React-based UI toolkit for the web.",
         url: "https://blueprintjs.com/",
-        logo: "/media/logos/ui-components/blueprintjs.svg",
+        logo: "/media/logos/ui-frameworks-libraries/blueprintjs.svg",
       },
       {
         name: "FluentUI",
@@ -384,7 +384,7 @@ export const categories: Category[] = [
         name: "React Bootstrap",
         description: "Bootstrap components built with React.",
         url: "https://react-bootstrap.github.io/",
-        logo: "/media/logos/ui-components/react-bootstrap.svg",
+        logo: "/media/logos/ui-frameworks-libraries/react-bootstrap.svg",
       },
       {
         name: "Grommet",
@@ -417,7 +417,7 @@ export const categories: Category[] = [
         description:
           "An open-source Tailwind CSS Components Library with semantic classes and powerful JS plugins.",
         url: "https://flyonui.com/",
-        logo: "/media/logos/ui-components/flyonui.png",
+        logo: "/media/logos/ui-frameworks-libraries/flyonui.png",
       },
       {
         name: "DaisyUI",
@@ -437,7 +437,14 @@ export const categories: Category[] = [
         description:
           "An open source component library optimized for fast development, easy maintenance, and accessibility.",
         url: "https://react.email/",
-        logo: "/media/logos/ui-components/react-email.webp",
+        logo: "/media/logos/ui-frameworks-libraries/react-email.webp",
+      },
+      {
+        name: "Polaris",
+        description:
+          "Shopify’s design system to help us work together to build a great experience for all of our merchants.",
+        url: "https://polaris.shopify.com/",
+        logo: "/media/logos/ui-frameworks-libraries/polaris.svg",
       },
     ],
   },
