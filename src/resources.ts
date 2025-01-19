@@ -446,6 +446,13 @@ export const categories: Category[] = [
         url: "https://polaris.shopify.com/",
         logo: "/media/logos/ui-frameworks-libraries/polaris.svg",
       },
+      {
+        name: "Apsara",
+        description:
+          "An elegant and beautiful re-usable React UI components build using Radix UI and Stitches CSS-in-JS.",
+        url: "https://apsara-raystack.vercel.app/",
+        logo: "/media/logos/ui-frameworks-libraries/apsara.svg",
+      },
     ],
   },
 
