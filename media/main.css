@@ -12,7 +12,6 @@ header {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-bottom: 10px;
 }
 
 .header-text {
@@ -350,10 +349,9 @@ h1 {
 
 .footer-content {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 10px;
-  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -363,7 +361,7 @@ h1 {
   color: var(--vscode-foreground);
   text-decoration: none;
   font-size: 0.70em;
-  opacity: 0.8;
+  opacity: 0.7;
   transition: opacity 0.2s ease;
   gap: 4px;
 }
@@ -374,8 +372,7 @@ h1 {
 
 .footer-button i {
   margin-right: 6px;
-  width: 8px;
-  height: 8px;
+  font-size: 0.3em;
 }
 
 @media (max-width: 400px) {

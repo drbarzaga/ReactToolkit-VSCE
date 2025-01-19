@@ -142,15 +142,15 @@ export class ReactToolkitViewProvider implements vscode.WebviewViewProvider {
       </div>
       <footer class="footer">
         <div class="footer-content">
-          <a href="https://github.com/drbarzaga/ReactToolkit-VSCE/issues/new??template=request-new-resource.md&title=[Resource Request]&body=**Resource Title:**%0A%0A[Enter the title of the resource]%0A%0A**Resource Description:**%0A%0A[Describe what the resource does]%0A%0A**Resource URL or GitHub Repository:**%0A%0A[Provide the URL of the resource or its GitHub repository]%0A%0A**Category (Required):**%0A%0A[Specify the category this resource belongs to]%0A%0A**Additional Comments:**%0A%0A[Optional: Add any additional comments]" target="_blank" class="footer-button" title="Suggest a resource">
+          <a href="https://github.com/drbarzaga/ReactToolkit-VSCE/issues/new" target="_blank" class="footer-button" title="Suggest a new resource">
             <i data-lucide="package-plus"></i>
-            <span>Suggest</span>
+            <span>New Resource</span>
           </a>
-          <a href="https://github.com/drbarzaga/ReactToolkit-VSCE" target="_blank" class="footer-button" title="Star on GitHub">
+          <a href="https://github.com/drbarzaga/ReactToolkit-VSCE" target="_blank" class="footer-button" title="Star this project on GitHub">
             <i data-lucide="star"></i>
-            <span>Star</span>
+            <span>Star on GitHub</span>
           </a>
-          <a href="https://ko-fi.com/dayanperez" target="_blank" class="footer-button" title="Support me on Ko-fi">
+          <a href="https://ko-fi.com/dayanperez" target="_blank" class="footer-button" title="Support me on Ko-fi, every donation is appreciated">
             <i data-lucide="coffee "></i>
             <span>Support me</span>
           </a>

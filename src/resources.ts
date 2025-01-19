@@ -118,6 +118,13 @@ export const categories: Category[] = [
         url: "https://refine.dev/",
         logo: "/media/logos/frameworks/refine.svg",
       },
+      {
+        name: "Tuono",
+        description:
+          "A full-stack web framework for building React applications using Rust as the backend with a strong focus on usability and performance.",
+        url: "https://tuono.dev/",
+        logo: "https://tuono.dev/favicon.ico",
+      },
     ],
   },
 
@@ -166,6 +173,7 @@ export const categories: Category[] = [
         description:
           "A minimalist-friendly ~2.1KB routing for React and Preact.",
         url: "https://github.com/molefrog/wouter",
+        logo: "/media/logos/routing/wouter.svg",
       },
       {
         name: "Tanstack Router",
@@ -213,7 +221,6 @@ export const categories: Category[] = [
         description:
           "A powerful and beautiful drag-and-drop library for lists with React.",
         url: "https://github.com/atlassian/react-beautiful-dnd",
-        logo: "",
       },
       {
         name: "React DnD",
@@ -233,14 +240,14 @@ export const categories: Category[] = [
         name: "React Dragula",
         description: "A drag-and-drop library for React based on Dragula.",
         url: "https://github.com/bevacqua/react-dragula",
-        logo: "",
+        logo: "https://bevacqua.github.io/react-dragula/favicon.ico",
       },
       {
         name: "React Complex Tree",
         description:
           "Unopinionated Accessible Tree Component with Multi-Select and Drag-And-Drop.",
         url: "https://rct.lukasbach.com/",
-        logo: "",
+        logo: "/media/logos/drag-and-drop/react-complex-tree.svg",
       },
       {
         name: "FormKit's Drag and Drop",
@@ -249,12 +256,17 @@ export const categories: Category[] = [
         url: "https://drag-and-drop.formkit.com/",
         logo: "https://formkit.com/favicon.png",
       },
+      {
+        name: "react-movable",
+        description: "Drag and drop for your React lists and tables.",
+        url: "https://react-movable.pages.dev",
+      },
     ],
   },
 
-  // UI Components
+  // UI Frameworks & Libraries
   {
-    name: "UI Components",
+    name: "UI Frameworks & Libraries",
     icon: { type: "lucide", value: "layout" },
     resources: [
       {
@@ -269,7 +281,7 @@ export const categories: Category[] = [
         description:
           "An open source component library optimized for fast development, easy maintenance, and accessibility.",
         url: "https://www.radix-ui.com/",
-        logo: "/media/logos/ui-components/radix-ui.svg",
+        logo: "/media/logos/ui-frameworks-libraries/radix-ui.svg",
       },
       {
         name: "Eldora UI",
@@ -318,7 +330,7 @@ export const categories: Category[] = [
         description:
           "A React UI Framework for building ambitious products on the web.",
         url: "https://evergreen.segment.com/",
-        logo: "https://evergreen.segment.com/favicon.ico",
+        logo: "/media/logos/ui-frameworks-libraries/evergreen.svg",
       },
       {
         name: "Chakra UI",
@@ -345,7 +357,7 @@ export const categories: Category[] = [
         name: "Blueprint",
         description: "A React-based UI toolkit for the web.",
         url: "https://blueprintjs.com/",
-        logo: "https://blueprintjs.com/assets/favicon.ico",
+        logo: "/media/logos/ui-frameworks-libraries/blueprintjs.svg",
       },
       {
         name: "FluentUI",
@@ -372,7 +384,7 @@ export const categories: Category[] = [
         name: "React Bootstrap",
         description: "Bootstrap components built with React.",
         url: "https://react-bootstrap.github.io/",
-        logo: "/media/logos/ui-components/react-bootstrap.svg",
+        logo: "/media/logos/ui-frameworks-libraries/react-bootstrap.svg",
       },
       {
         name: "Grommet",
@@ -399,14 +411,13 @@ export const categories: Category[] = [
         description:
           "An Tailwind CSS components library for any needs. Comes with UI examples & blocks, templates, Icons, Color Palette and more.",
         url: "https://zenui.net/",
-        logo: "https://zenui.net/favicon.ico",
       },
       {
         name: "FlyonUI",
         description:
           "An open-source Tailwind CSS Components Library with semantic classes and powerful JS plugins.",
         url: "https://flyonui.com/",
-        logo: "https://flyonui.com/favicon.ico",
+        logo: "/media/logos/ui-frameworks-libraries/flyonui.png",
       },
       {
         name: "DaisyUI",
@@ -426,7 +437,21 @@ export const categories: Category[] = [
         description:
           "An open source component library optimized for fast development, easy maintenance, and accessibility.",
         url: "https://react.email/",
-        logo: "https://react.email/favicon.ico",
+        logo: "/media/logos/ui-frameworks-libraries/react-email.webp",
+      },
+      {
+        name: "Polaris",
+        description:
+          "Shopify’s design system to help us work together to build a great experience for all of our merchants.",
+        url: "https://polaris.shopify.com/",
+        logo: "/media/logos/ui-frameworks-libraries/polaris.svg",
+      },
+      {
+        name: "Apsara",
+        description:
+          "An elegant and beautiful re-usable React UI components build using Radix UI and Stitches CSS-in-JS.",
+        url: "https://apsara-raystack.vercel.app/",
+        logo: "/media/logos/ui-frameworks-libraries/apsara.svg",
       },
     ],
   },
@@ -455,7 +480,7 @@ export const categories: Category[] = [
         description:
           "A feature-rich datagrid designed for the major JavaScript frameworks.",
         url: "https://www.ag-grid.com/react-data-grid/",
-        logo: "https://www.ag-grid.com/favicon.ico",
+        logo: "/media/logos/tables/ag-grid.png",
       },
       {
         name: "React Data Grid",
@@ -470,11 +495,10 @@ export const categories: Category[] = [
         logo: "https://griddlegriddle.github.io/Griddle/favicon.ico",
       },
       {
-        name: "React Virtualized",
-        description:
-          "A set of React components for efficiently rendering large lists and tabular data.",
-        url: "https://github.com/bvaughn/react-virtualized",
-        logo: "https://github.com/favicon.ico",
+        name: "Tabulator",
+        description: "Interactive Tables and Data Grids.",
+        url: "https://tabulator.info/",
+        logo: "/media/logos/tables/tabulator.png",
       },
     ],
   },
@@ -508,13 +532,13 @@ export const categories: Category[] = [
         description:
           "A React component for building Web forms from JSON Schema.",
         url: "https://rjsf-team.github.io/react-jsonschema-form/docs/",
-        logo: "https://rjsf-team.github.io/react-jsonschema-form/favicon.ico",
+        logo: "/media/logos/forms/react-json-schema-form.png",
       },
       {
         name: "Formily",
         description: "Alibaba Group Unified Form Solution.",
         url: "https://formilyjs.org/",
-        logo: "https://formilyjs.org/favicon.ico",
+        logo: "/media/logos/forms/formily.png",
       },
     ],
   },
@@ -525,22 +549,21 @@ export const categories: Category[] = [
     icon: { type: "lucide", value: "anchor" },
     resources: [
       {
+        name: "useHooks",
+        description: "A collection of reusable React hooks.",
+        url: "https://usehooks.com/",
+        logo: "/media/logos/hooks/use-hooks.svg",
+      },
+      {
         name: "usehooks-ts",
         description: "React hook library, ready to use, written in Typescript.",
         url: "https://usehooks-ts.com/",
-        logo: "https://usehooks-ts.com/favicon.ico",
       },
       {
         name: "Novajs",
         description: "A collection of dependency-free React hooks.",
         url: "https://www.novajs.dev/",
         logo: "https://www.novajs.dev/favicon.ico",
-      },
-      {
-        name: "useHooks",
-        description: "A collection of reusable React hooks.",
-        url: "https://usehooks.com/",
-        logo: "",
       },
       {
         name: "React Use",
@@ -552,7 +575,6 @@ export const categories: Category[] = [
         name: "ahooks",
         description: "A set of high-quality and reliable React hooks.",
         url: "https://ahooks.js.org/",
-        logo: "",
       },
     ],
   },
@@ -640,7 +662,7 @@ export const categories: Category[] = [
         description:
           "A state management library for React that makes it easy to share state across components.",
         url: "https://recoiljs.org/",
-        logo: "https://recoiljs.org/img/favicon.ico",
+        logo: "/media/logos/state-management/recoil.svg",
       },
     ],
   },
@@ -668,13 +690,20 @@ export const categories: Category[] = [
         description:
           "A fully-featured, production ready caching GraphQL client.",
         url: "https://www.apollographql.com/docs/react/",
-        logo: "/media/logos/data-fetching/apollo-client.png",
+        logo: "/media/logos/data-fetching/apollo-client.svg",
       },
       {
         name: "SWR",
         description: "React Hooks library for remote data fetching.",
         url: "https://swr.vercel.app/",
         logo: "/media/logos/data-fetching/swr.png",
+      },
+      {
+        name: "Relay",
+        description:
+          "A JavaScript framework for building data-driven React applications",
+        url: "https://relay.dev/",
+        logo: "/media/logos/data-fetching/relay.svg",
       },
       {
         name: "Fetch API",
@@ -828,6 +857,13 @@ export const categories: Category[] = [
         url: "https://github.com/inokawa/virtua",
         logo: "",
       },
+      {
+        name: "React Virtualized",
+        description:
+          "A set of React components for efficiently rendering large lists and tabular data.",
+        url: "https://github.com/bvaughn/react-virtualized",
+        logo: "/media/logos/virtualization/react-virtualized.png",
+      },
     ],
   },
 
@@ -887,6 +923,12 @@ export const categories: Category[] = [
         url: "https://icons.getbootstrap.com/",
         logo: "https://icons.getbootstrap.com/favicon.ico",
       },
+      {
+        name: "Svgl",
+        description: "A beautiful library with SVG logos.",
+        url: "https://svgl.app/",
+        logo: "/media/logos/icons/svgl.svg",
+      },
     ],
   },
 
@@ -920,6 +962,13 @@ export const categories: Category[] = [
           "simpleParallax.js is a lightweight and easy-to-use React and JS library that adds parallax animations to any image.",
         url: "https://simpleparallax.com/",
         logo: "https://simpleparallax.com/favicon.ico",
+      },
+      {
+        name: "Blendy",
+        description:
+          "A framework-agnostic tool that smoothly transitions one element into another with just a few lines of code.",
+        url: "https://blendy.tahazsh.com/",
+        logo: "https://blendy.tahazsh.com/favicon.ico",
       },
     ],
   },
@@ -978,22 +1027,27 @@ export const categories: Category[] = [
     ],
   },
 
-  // File Uploads
+  // File Handling
   {
-    name: "File Uploads",
+    name: "File Handling",
     icon: { type: "lucide", value: "upload" },
     resources: [
       {
         name: "React Dropzone",
         description: "Simple HTML5 drag-and-drop zone with React.",
         url: "https://react-dropzone.js.org/",
-        logo: "https://react-dropzone.js.org/favicon.ico",
+        logo: "/media/logos/file-handling/react-dropzone.png",
       },
       {
         name: "Uppy",
         description: "Sleek, modular file uploader for React.",
         url: "https://uppy.io/",
-        logo: "https://uppy.io/favicon.ico",
+        logo: "/media/logos/file-handling/uppy.svg",
+      },
+      {
+        name: "react-uploady",
+        description: "Modern file-upload components & hooks for React.",
+        url: "https://react-uploady.org/",
       },
     ],
   },
@@ -1310,6 +1364,20 @@ export const categories: Category[] = [
     icon: { type: "lucide", value: "zap" },
     resources: [
       {
+        name: "React Scan",
+        description:
+          "Scan for React performance issues and eliminate slow renders in your app.",
+        url: "https://react-scan.million.dev/",
+        logo: "/media/logos/performance/react-scan.svg",
+      },
+      {
+        name: "Million",
+        description:
+          "A React performance tool that helps you identify and fix performance issues in your React applications.",
+        url: "https://million.dev/",
+        logo: "/media/logos/performance/million.svg",
+      },
+      {
         name: "React Lazy Load",
         description:
           "A library that helps you defer loading content in your React application until it becomes visible in the viewport.",
@@ -1322,20 +1390,6 @@ export const categories: Category[] = [
           "A library for rendering large lists and tabular data efficiently.",
         url: "https://react-window.vercel.app/",
         logo: "",
-      },
-      {
-        name: "React Scan",
-        description:
-          "Scan for React performance issues and eliminate slow renders in your app.",
-        url: "https://react-scan.million.dev/",
-        logo: "",
-      },
-      {
-        name: "Million",
-        description:
-          "A React performance tool that helps you identify and fix performance issues in your React applications.",
-        url: "https://million.dev/",
-        logo: "/media/logos/performance/million.svg",
       },
     ],
   },
