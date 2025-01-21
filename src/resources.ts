@@ -466,6 +466,13 @@ export const categories: Category[] = [
           "Modern UI library built with Tailwind CSS focusing on design consistency.",
         url: "https://ui.tailus.io/",
       },
+      {
+        name: "Aceternity UI",
+        description:
+          "Copy paste the most trending components and use them in your websites without having to worry about styling and animations.",
+        url: "https://ui.aceternity.com/",
+        logo: "/media/logos/ui-frameworks-libraries/aceternity-ui.webp",
+      },
     ],
   },
 
