@@ -473,6 +473,13 @@ export const categories: Category[] = [
         url: "https://ui.aceternity.com/",
         logo: "/media/logos/ui-frameworks-libraries/aceternity-ui.webp",
       },
+      {
+        name: "Justd",
+        description:
+          "Accessible React UI components similar to Shadcn/ui but using React Area instead of Radix.",
+        url: "https://getjustd.com/",
+        logo: "https://getjustd.com/favicon.ico",
+      },
     ],
   },
 

@@ -16,7 +16,7 @@
     "type": "git",
     "url": "https://github.com/drbarzaga/ReactToolkit-VSCE"
   },
-  "version": "1.0.9",
+  "version": "1.1.0",
   "engines": {
     "vscode": "^1.60.0"
   },
@@ -26,14 +26,14 @@
   ],
   "keywords": [
     "react",
-    "frontend",
     "toolkit",
+    "frontend",
+    "curated",
+    "tools",
+    "essential",
     "extension",
     "pack",
     "libraries",
-    "tools",
-    "essential",
-    "curated",
     "development",
     "web",
     "javascript",
