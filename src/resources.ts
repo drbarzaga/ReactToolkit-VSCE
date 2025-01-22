@@ -430,7 +430,7 @@ export const categories: Category[] = [
         description:
           "A set of completely unstyled, fully accessible UI components, designed to integrate beautifully with Tailwind CSS.",
         url: "https://headlessui.dev/",
-        logo: "https://headlessui.dev/favicon.ico",
+        logo: "/media/logos/ui-frameworks-libraries/headless-ui.svg",
       },
       {
         name: "React Email",
@@ -452,6 +452,26 @@ export const categories: Category[] = [
           "An elegant and beautiful re-usable React UI components build using Radix UI and Stitches CSS-in-JS.",
         url: "https://apsara-raystack.vercel.app/",
         logo: "/media/logos/ui-frameworks-libraries/apsara.svg",
+      },
+      {
+        name: "dotUI",
+        description:
+          "Minimalist component library focused on simplicity and performance.",
+        url: "https://dotui.org/",
+        logo: "https://dotui.org/favicon.ico",
+      },
+      {
+        name: "TailusUI",
+        description:
+          "Modern UI library built with Tailwind CSS focusing on design consistency.",
+        url: "https://ui.tailus.io/",
+      },
+      {
+        name: "Aceternity UI",
+        description:
+          "Copy paste the most trending components and use them in your websites without having to worry about styling and animations.",
+        url: "https://ui.aceternity.com/",
+        logo: "/media/logos/ui-frameworks-libraries/aceternity-ui.webp",
       },
     ],
   },
@@ -628,6 +648,11 @@ export const categories: Category[] = [
         description: "A toast notification system for react.",
         url: "https://jossmac.github.io/react-toast-notifications/",
         logo: "https://jossmac.github.io/react-toast-notifications/favicon.ico",
+      },
+      {
+        name: "pheralb/toast",
+        description: "An accessible and beautiful toast library for React.",
+        url: "https://toast.pheralb.dev/",
       },
     ],
   },

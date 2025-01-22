@@ -3,7 +3,6 @@
 
     const categoryElements = document.querySelectorAll('.category');
     const searchInput = document.getElementById('search');
-    const resourceElements = document.querySelectorAll('.resource');
     const searchContainer = document.querySelector('.search-container');
     const emptyState = document.getElementById('empty-state');
     const clearSearchButton = document.getElementById('clear-search');
@@ -117,11 +116,6 @@
         searchInput.value = '';
         performSearch();
         searchInput.focus();
-    });
-
-    categoryElements.forEach(category => {
-        category.classList.add('expanded');
-        updateCategoryVisuals(category);
     });
 
     // Trigger initial check for sticky state
