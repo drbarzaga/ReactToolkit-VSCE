@@ -649,6 +649,11 @@ export const categories: Category[] = [
         url: "https://jossmac.github.io/react-toast-notifications/",
         logo: "https://jossmac.github.io/react-toast-notifications/favicon.ico",
       },
+      {
+        name: "pheralb/toast",
+        description: "An accessible and beautiful toast library for React.",
+        url: "https://toast.pheralb.dev/",
+      },
     ],
   },
 

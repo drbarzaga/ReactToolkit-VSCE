@@ -83,7 +83,7 @@ export class ReactToolkitViewProvider implements vscode.WebviewViewProvider {
         ${categories
           .map(
             (category) => `
-<div class="category expanded">
+<div class="category">
   <h2>
     <span class="category-icon">
       ${this.getCategoryIcon(category, webview)}
