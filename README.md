@@ -20,7 +20,7 @@ A Visual Studio Code extension that provides a curated list of resources for Rea
 React Toolkit includes resources in various categories:
 
 - Official Resources
-- Component Libraries
+- UI Frameworks & Libraries
 - State Management
 - Routing
 - Forms
@@ -47,17 +47,21 @@ React Toolkit includes resources in various categories:
 
 ![ReactToolkit Overview](https://www.dayanperez.com/reacttoolkit/overview.png)
 
-### Expand categories to view resources
-
-![ReactToolkit expanded category](https://www.dayanperez.com/reacttoolkit/overview-1.png)
-
-### Search for resources using the search bar
+### Search for resources using the search box
 
 ![ReactToolkit search](https://www.dayanperez.com/reacttoolkit/search.png)
 
-### View found results with matching resources
+### Search results with matching resources
 
 ![ReactToolkit search results](https://www.dayanperez.com/reacttoolkit/search-results.png)
+
+### Search results without matching resources
+
+![ReactToolkit no search results](https://www.dayanperez.com/reacttoolkit/no-search-results.png)
+
+### Expand categories to view resources
+
+![ReactToolkit expanded category](https://www.dayanperez.com/reacttoolkit/expanding-category.png)
 
 ### Click on a resource to open its website or documentation
 
