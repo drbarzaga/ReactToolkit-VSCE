@@ -68,8 +68,8 @@ export class ReactToolkitViewProvider implements vscode.WebviewViewProvider {
     </head>
     <body>
       <header>
-        <img class="toolkit-icon" src="${toolkitIconUri}" alt="React Toolkit Icon">
-        <h1>React Toolkit</h1>
+        <img class="toolkit-icon" src="${toolkitIconUri}" alt="ReactToolkit Icon">
+        <h1>ReactToolkit</h1>
         <p class="info-text">Explore a curated list of essential React resources. Build robust, scalable applications with these powerful tools.</p>
       </header>
       <div class="search-container">
