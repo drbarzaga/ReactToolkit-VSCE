@@ -1523,6 +1523,11 @@ export const categories: Category[] = [
         description: "A collection of loading spinner components for react.",
         url: "https://www.davidhu.io/react-spinners/",
       },
+      {
+        name: "ReactTooltip",
+        description: "Awesome React Tooltip component.",
+        url: "https://react-tooltip.com/",
+      },
     ],
   },
 ];
