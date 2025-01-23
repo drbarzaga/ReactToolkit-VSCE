@@ -480,6 +480,13 @@ export const categories: Category[] = [
         url: "https://getjustd.com/",
         logo: "https://getjustd.com/favicon.ico",
       },
+      {
+        name: "rsuitejs",
+        description:
+          "A suite of React components, sensible UI design, and a friendly development experience.",
+        url: "https://rsuitejs.com/",
+        logo: "https://rsuitejs.com/favicon.ico",
+      },
     ],
   },
 
