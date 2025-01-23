@@ -1512,4 +1512,17 @@ export const categories: Category[] = [
       },
     ],
   },
+
+  // Miscellaneous
+  {
+    name: "Miscellaneous",
+    icon: { type: "lucide", value: "more-horizontal" },
+    resources: [
+      {
+        name: "ReactSpinners",
+        description: "A collection of loading spinner components for react.",
+        url: "https://www.davidhu.io/react-spinners/",
+      },
+    ],
+  },
 ];
