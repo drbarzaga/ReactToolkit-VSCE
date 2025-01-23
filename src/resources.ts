@@ -1524,6 +1524,12 @@ export const categories: Category[] = [
         url: "https://www.davidhu.io/react-spinners/",
       },
       {
+        name: "React Loader Spinner",
+        description:
+          "Collection sets of a spinners for async operations for ReactJS",
+        url: "https://mhnpd.github.io/react-loader-spinner/",
+      },
+      {
         name: "ReactTooltip",
         description: "Awesome React Tooltip component.",
         url: "https://react-tooltip.com/",
