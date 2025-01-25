@@ -1571,6 +1571,11 @@ export const categories: Category[] = [
         url: "https://cmdk.paco.me/",
         logo: "https://cmdk.paco.me/favicon.ico",
       },
+      {
+        name: "React Compare Image",
+        description: "React component to compare two images using slider.",
+        url: "https://github.com/tam315/react-compare-image",
+      },
     ],
   },
 ];
