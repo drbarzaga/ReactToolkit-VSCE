@@ -1576,6 +1576,11 @@ export const categories: Category[] = [
         description: "React component to compare two images using slider.",
         url: "https://github.com/tam315/react-compare-image",
       },
+      {
+        name: "React Intense",
+        description: "A React component for viewing large images up close.",
+        url: "https://bryce.io/react-intense/",
+      },
     ],
   },
 ];
