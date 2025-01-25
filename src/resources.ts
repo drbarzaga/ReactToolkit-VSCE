@@ -889,6 +889,11 @@ export const categories: Category[] = [
         url: "https://software.es.net/react-timeseries-charts",
         logo: "https://software.es.net/react-timeseries-charts/favicon.ico",
       },
+      {
+        name: "Semiotic",
+        description: "A data visualization framework for React.",
+        url: "https://semiotic.nteract.io/",
+      },
     ],
   },
 
