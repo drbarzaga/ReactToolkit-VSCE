@@ -1559,6 +1559,18 @@ export const categories: Category[] = [
           "SVG-Powered component to easily create skeleton loadings.",
         url: "https://skeletonreact.com/",
       },
+      {
+        name: "Kbar",
+        description:
+          "Fast, portable, and extensible command+k interface for React.",
+        url: "https://kbar.vercel.app/",
+      },
+      {
+        name: "Cmdk",
+        description: "Fast, composable, unstyled command menu for React.",
+        url: "https://cmdk.paco.me/",
+        logo: "https://cmdk.paco.me/favicon.ico",
+      },
     ],
   },
 ];
