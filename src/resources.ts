@@ -882,6 +882,13 @@ export const categories: Category[] = [
         url: "https://www.react-google-charts.com/",
         logo: "/media/logos/charts/react-google-charts.svg",
       },
+      {
+        name: "React Timeseries Charts",
+        description:
+          "Declarative and modular timeseries charting components for React.",
+        url: "https://software.es.net/react-timeseries-charts",
+        logo: "https://software.es.net/react-timeseries-charts/favicon.ico",
+      },
     ],
   },
 
