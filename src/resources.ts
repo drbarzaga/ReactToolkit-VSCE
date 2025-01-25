@@ -875,6 +875,13 @@ export const categories: Category[] = [
         url: "https://mermaid.js.org/",
         logo: "https://mermaid.js.org/favicon.ico",
       },
+      {
+        name: "React Google Charts",
+        description:
+          "A thin, typed, React wrapper over Google Charts Visualization and Charts API.",
+        url: "https://www.react-google-charts.com/",
+        logo: "/media/logos/charts/react-google-charts.svg",
+      },
     ],
   },
 
