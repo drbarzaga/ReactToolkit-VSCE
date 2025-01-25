@@ -1534,6 +1534,12 @@ export const categories: Category[] = [
         description: "Awesome React Tooltip component.",
         url: "https://react-tooltip.com/",
       },
+      {
+        name: "React Content Loader",
+        description:
+          "SVG-Powered component to easily create skeleton loadings.",
+        url: "https://skeletonreact.com/",
+      },
     ],
   },
 ];
