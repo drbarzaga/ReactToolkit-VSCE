@@ -1593,6 +1593,13 @@ export const categories: Category[] = [
         url: "https://video-react.js.org/",
       },
       {
+        name: "Advanced Cropper",
+        description:
+          "The react cropper library that embraces power of the advanced cropper core to give the possibility to create croppers that exactly suited for your website design.",
+        url: "https://advanced-cropper.github.io/react-advanced-cropper/",
+        logo: "/media/logos/miscellaneous/advanced-cropper.svg",
+      },
+      {
         name: "React Easy Crop",
         description: "A React component to crop images with easy interactions.",
         url: "https://valentinh.github.io/react-easy-crop/",
