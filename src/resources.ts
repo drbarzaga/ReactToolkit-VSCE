@@ -1586,6 +1586,12 @@ export const categories: Category[] = [
         description: "React.js powered YouTube player component.",
         url: "https://tjallingt.github.io/react-youtube/",
       },
+      {
+        name: "Video React",
+        description:
+          "The web video player built from the ground up for an HTML5 world using React library.",
+        url: "https://video-react.js.org/",
+      },
     ],
   },
 ];
