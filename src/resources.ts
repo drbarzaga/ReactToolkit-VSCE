@@ -1609,6 +1609,13 @@ export const categories: Category[] = [
         description: "A responsive image cropping tool for React.",
         url: "https://github.com/DominicTobias/react-image-crop",
       },
+      {
+        name: "Interweave",
+        description:
+          "React library to safely render HTML, filter attributes, autowrap text with matchers, render emoji characters, and much more.",
+        url: "https://interweave.dev/",
+        logo: "/media/logos/miscellaneous/interweave.svg",
+      },
     ],
   },
 ];
