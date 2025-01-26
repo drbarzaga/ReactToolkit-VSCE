@@ -1597,6 +1597,11 @@ export const categories: Category[] = [
         description: "A React component to crop images with easy interactions.",
         url: "https://valentinh.github.io/react-easy-crop/",
       },
+      {
+        name: "React Image Crop",
+        description: "A responsive image cropping tool for React.",
+        url: "https://github.com/DominicTobias/react-image-crop",
+      },
     ],
   },
 ];
