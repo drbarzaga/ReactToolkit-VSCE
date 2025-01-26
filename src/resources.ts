@@ -1581,6 +1581,11 @@ export const categories: Category[] = [
         description: "A React component for viewing large images up close.",
         url: "https://bryce.io/react-intense/",
       },
+      {
+        name: "React Youtube",
+        description: "React.js powered YouTube player component.",
+        url: "https://tjallingt.github.io/react-youtube/",
+      },
     ],
   },
 ];
