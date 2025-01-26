@@ -1592,6 +1592,11 @@ export const categories: Category[] = [
           "The web video player built from the ground up for an HTML5 world using React library.",
         url: "https://video-react.js.org/",
       },
+      {
+        name: "React Easy Crop",
+        description: "A React component to crop images with easy interactions.",
+        url: "https://valentinh.github.io/react-easy-crop/",
+      },
     ],
   },
 ];
