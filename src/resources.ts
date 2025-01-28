@@ -1616,6 +1616,12 @@ export const categories: Category[] = [
         url: "https://interweave.dev/",
         logo: "/media/logos/miscellaneous/interweave.svg",
       },
+      {
+        name: "React Blur",
+        description:
+          "React component for creating blurred backgrounds using canvas.",
+        url: "https://javier.xyz/react-blur",
+      },
     ],
   },
 ];
