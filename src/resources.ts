@@ -703,6 +703,13 @@ export const categories: Category[] = [
         url: "https://recoiljs.org/",
         logo: "/media/logos/state-management/recoil.svg",
       },
+      {
+        name: "Stan Js",
+        description:
+          "Fast and elegant state management solution with minimal configuration for your React, React Native and even vanilla-js apps.",
+        url: "https://codemask-labs.github.io/stan-js/",
+        logo: "/media/logos/state-management/stan-js.svg",
+      },
     ],
   },
 
