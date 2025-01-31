@@ -710,6 +710,13 @@ export const categories: Category[] = [
         url: "https://codemask-labs.github.io/stan-js/",
         logo: "/media/logos/state-management/stan-js.svg",
       },
+      {
+        name: "Jotai",
+        description:
+          "Primitive and flexible state management for React applications.",
+        url: "https://jotai.org/",
+        logo: "/media/logos/state-management/jotai.png",
+      },
     ],
   },
 
