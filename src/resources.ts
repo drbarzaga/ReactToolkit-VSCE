@@ -1121,6 +1121,19 @@ export const categories: Category[] = [
         description: "Modern file-upload components & hooks for React.",
         url: "https://react-uploady.org/",
       },
+      {
+        name: "React Spreadsheet",
+        description:
+          "Simple, customizable yet performant spreadsheet for React.",
+        url: "https://iddan.github.io/react-spreadsheet/",
+      },
+      {
+        name: "Jspreadsheet",
+        description:
+          "Fully customizable JavaScript spreadsheet library, offering various components to enhance web development projects.",
+        url: "https://bossanova.uk/jspreadsheet/",
+        logo: "/media/logos/file-handling/jspreadsheet.png",
+      },
     ],
   },
 
