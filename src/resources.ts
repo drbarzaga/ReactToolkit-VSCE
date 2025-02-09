@@ -1366,7 +1366,7 @@ export const categories: Category[] = [
         description:
           "Fast, easy and reliable testing for anything that runs in a browser.",
         url: "https://www.cypress.io/",
-        logo: "/media/logos/testing/cypress.svg",
+        logo: "/media/logos/testing/cypress.png",
       },
       {
         name: "React Testing Library",
