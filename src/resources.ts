@@ -494,6 +494,13 @@ export const categories: Category[] = [
         url: "https://parkui.com/",
         logo: "/media/logos/ui-frameworks-libraries/park-ui.png",
       },
+      {
+        name: "Theme UI",
+        description:
+          "Build consistent, themeable React apps based on constraint-based design principles.",
+        url: "https://theme-ui.com/",
+        logo: "/media/logos/ui-frameworks-libraries/theme-ui.png",
+      },
     ],
   },
 
