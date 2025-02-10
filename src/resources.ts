@@ -501,6 +501,13 @@ export const categories: Category[] = [
         url: "https://theme-ui.com/",
         logo: "/media/logos/ui-frameworks-libraries/theme-ui.png",
       },
+      {
+        name: "Gestalt",
+        description:
+          "A set of React UI components that supports Pinterest’s design language.",
+        url: "https://gestalt.pinterest.systems",
+        logo: "/media/logos/ui-frameworks-libraries/gestalt.png",
+      },
     ],
   },
 
