@@ -89,6 +89,7 @@
     "typescript": "^5.7.2"
   },
   "dependencies": {
+    "@million/lint": "^1.0.14",
     "lucide": "^0.471.0"
   },
   "license": "LICENSE.md"

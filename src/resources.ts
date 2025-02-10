@@ -487,6 +487,13 @@ export const categories: Category[] = [
         url: "https://rsuitejs.com/",
         logo: "https://rsuitejs.com/favicon.ico",
       },
+      {
+        name: "Park UI",
+        description:
+          "Beautiful designed components build with Ark UI and Panda CSS.",
+        url: "https://parkui.com/",
+        logo: "/media/logos/ui-frameworks-libraries/park-ui.png",
+      },
     ],
   },
 
