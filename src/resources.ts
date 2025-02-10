@@ -1165,6 +1165,13 @@ export const categories: Category[] = [
     icon: { type: "lucide", value: "video" },
     resources: [
       {
+        name: "Remotion",
+        description:
+          "A framework for creating videos programmatically using React.",
+        url: "https://www.remotion.dev/",
+        logo: "/media/logos/audio-video/remotion.png",
+      },
+      {
         name: "React Player",
         description:
           "A React component for playing a variety of URLs, including YouTube, SoundCloud, and more.",
