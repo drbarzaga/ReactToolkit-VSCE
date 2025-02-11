@@ -508,6 +508,13 @@ export const categories: Category[] = [
         url: "https://gestalt.pinterest.systems",
         logo: "/media/logos/ui-frameworks-libraries/gestalt.png",
       },
+      {
+        name: "Elastic UI",
+        description:
+          "The Elastic UI framework (EUI) is a design library in use at Elastic to build internal products that need to share our aesthetics.",
+        url: "https://eui.elastic.co",
+        logo: "/media/logos/ui-frameworks-libraries/elastic-ui.svg",
+      },
     ],
   },
 
