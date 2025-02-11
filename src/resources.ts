@@ -521,6 +521,12 @@ export const categories: Category[] = [
         url: "https://tremor.so",
         logo: "https://tremor.so/favicon.ico",
       },
+      {
+        name: "Sailboat UI",
+        description: "A modern UI component library for Tailwind CSS.",
+        url: "https://sailboatui.com/",
+        logo: "https://sailboatui.com/favicon.ico",
+      },
     ],
   },
 
