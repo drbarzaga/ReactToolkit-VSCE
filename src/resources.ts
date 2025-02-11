@@ -1691,6 +1691,13 @@ export const categories: Category[] = [
           "React component for creating blurred backgrounds using canvas.",
         url: "https://javier.xyz/react-blur",
       },
+      {
+        name: "Number Flow",
+        description:
+          "An animated number component. Dependency-free. Accessible and customizable.",
+        url: "https://number-flow.barvian.me/",
+        logo: "/media/logos/miscellaneous/number-flow.ico",
+      },
     ],
   },
 ];
