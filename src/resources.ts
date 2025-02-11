@@ -515,6 +515,12 @@ export const categories: Category[] = [
         url: "https://eui.elastic.co",
         logo: "/media/logos/ui-frameworks-libraries/elastic-ui.svg",
       },
+      {
+        name: "Tremor",
+        description: "React components to build charts and dashboards.",
+        url: "https://tremor.so",
+        logo: "https://tremor.so/favicon.ico",
+      },
     ],
   },
 
