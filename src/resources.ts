@@ -533,6 +533,13 @@ export const categories: Category[] = [
         url: "https://jetbrains.github.io/ring-ui/master/index.html",
         logo: "/media/logos/ui-frameworks-libraries/ring-ui.png",
       },
+      {
+        name: "Orbit",
+        description:
+          "React components of open-source Orbit design system by Kiwi.com.",
+        url: "https://orbit.kiwi/",
+        logo: "/media/logos/ui-frameworks-libraries/orbit.png",
+      },
     ],
   },
 
