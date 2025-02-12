@@ -527,6 +527,12 @@ export const categories: Category[] = [
         url: "https://sailboatui.com/",
         logo: "https://sailboatui.com/favicon.ico",
       },
+      {
+        name: "Ring UI",
+        description: "A collection of JetBrains Web UI components.",
+        url: "https://jetbrains.github.io/ring-ui/master/index.html",
+        logo: "/media/logos/ui-frameworks-libraries/ring-ui.png",
+      },
     ],
   },
 
