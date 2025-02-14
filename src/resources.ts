@@ -859,6 +859,12 @@ export const categories: Category[] = [
         url: "https://stitches.dev/",
         logo: "/media/logos/styling/stitches.svg",
       },
+      {
+        name: "Linaria",
+        description: "Zero-runtime CSS in JS library.",
+        url: "https://linaria.dev/",
+        logo: "/media/logos/styling/linaria.png",
+      },
     ],
   },
 
