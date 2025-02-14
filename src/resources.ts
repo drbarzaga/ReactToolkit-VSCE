@@ -865,6 +865,12 @@ export const categories: Category[] = [
         url: "https://linaria.dev/",
         logo: "/media/logos/styling/linaria.png",
       },
+      {
+        name: "styletron",
+        description: "Toolkit for component-oriented styling.",
+        url: "https://styletron.org/",
+        logo: "/media/logos/styling/styletron.png",
+      },
     ],
   },
 
