@@ -1641,7 +1641,7 @@ export const categories: Category[] = [
   // Utilities
   {
     name: "Utilities",
-    icon: { type: "lucide", value: "pencil-ruler" },
+    icon: { type: "lucide", value: "wrench" },
     resources: [
       {
         name: "Axios",
