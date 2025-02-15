@@ -1649,6 +1649,13 @@ export const categories: Category[] = [
         url: "https://axios-http.com/",
         logo: "https://axios-http.com/assets/favicon.ico",
       },
+      {
+        name: "Lodash",
+        description:
+          "A modern JavaScript utility library delivering modularity, performance & extras.",
+        url: "https://lodash.com/",
+        logo: "https://lodash.com/favicon.ico",
+      },
     ],
   },
 
