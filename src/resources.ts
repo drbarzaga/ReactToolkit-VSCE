@@ -1638,6 +1638,20 @@ export const categories: Category[] = [
     ],
   },
 
+  // Utility Libraries
+  {
+    name: "Utility Libraries",
+    icon: { type: "lucide", value: "pencil-ruler" },
+    resources: [
+      {
+        name: "Axios",
+        description: "A promise-based HTTP client for the browser and Node.js.",
+        url: "https://axios-http.com/",
+        logo: "https://axios-http.com/assets/favicon.ico",
+      },
+    ],
+  },
+
   // Miscellaneous
   {
     name: "Miscellaneous",
