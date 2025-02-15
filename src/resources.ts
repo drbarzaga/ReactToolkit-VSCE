@@ -1656,6 +1656,12 @@ export const categories: Category[] = [
         url: "https://lodash.com/",
         logo: "https://lodash.com/favicon.ico",
       },
+      {
+        name: "date-fns",
+        description: "Modern JavaScript date utility library.",
+        url: "https://date-fns.org/",
+        logo: "/media/logos/utilities/date-fns.svg",
+      },
     ],
   },
 
