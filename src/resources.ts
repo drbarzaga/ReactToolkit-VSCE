@@ -1638,9 +1638,9 @@ export const categories: Category[] = [
     ],
   },
 
-  // Utility Libraries
+  // Utilities
   {
-    name: "Utility Libraries",
+    name: "Utilities",
     icon: { type: "lucide", value: "pencil-ruler" },
     resources: [
       {
