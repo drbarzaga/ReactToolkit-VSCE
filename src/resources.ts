@@ -1662,6 +1662,13 @@ export const categories: Category[] = [
         url: "https://date-fns.org/",
         logo: "/media/logos/utilities/date-fns.svg",
       },
+      {
+        name: "Day.js",
+        description:
+          "Fast 2kB alternative to Moment.js with the same modern API.",
+        url: "https://day.js.org/",
+        logo: "/media/logos/utilities/dayjs.png",
+      },
     ],
   },
 
