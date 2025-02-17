@@ -547,6 +547,13 @@ export const categories: Category[] = [
         url: "https://preline.co/",
         logo: "/media/logos/ui-frameworks-libraries/preline.png",
       },
+      {
+        name: "MagicUI",
+        description:
+          "150+ free and open-source animated components and effects built with React, Typescript, Tailwind CSS, and Motion.",
+        url: "https://magicui.design/",
+        logo: "/media/logos/ui-frameworks-libraries/magicui.png",
+      },
     ],
   },
 
