@@ -1510,14 +1510,14 @@ export const categories: Category[] = [
         description:
           "Internationalization library for React, part of FormatJS.",
         url: "https://formatjs.github.io/",
-        logo: "https://formatjs.github.io/favicon.ico",
+        logo: "/media/logos/internationalization/formatjs.svg",
       },
       {
         name: "i18next",
         description:
           "A powerful internationalization framework for JavaScript, including React.",
         url: "https://www.i18next.com/",
-        logo: "https://www.i18next.com/favicon.ico",
+        logo: "/media/logos/internationalization/i18next.png",
       },
     ],
   },
