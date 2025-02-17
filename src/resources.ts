@@ -540,6 +540,13 @@ export const categories: Category[] = [
         url: "https://orbit.kiwi/",
         logo: "/media/logos/ui-frameworks-libraries/orbit.png",
       },
+      {
+        name: "Preline",
+        description:
+          "An open-source Tailwind CSS components library for any needs.",
+        url: "https://preline.co/",
+        logo: "/media/logos/ui-frameworks-libraries/preline.png",
+      },
     ],
   },
 
