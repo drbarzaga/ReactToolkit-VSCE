@@ -1789,6 +1789,13 @@ export const categories: Category[] = [
         url: "https://number-flow.barvian.me/",
         logo: "/media/logos/miscellaneous/number-flow.ico",
       },
+      {
+        name: "ui-snippets",
+        description:
+          "Collection of dark mode components and effects crafted wiht React and Tailwind CSS.",
+        url: "https://ui.ibelick.com/",
+        logo: "/media/logos/miscellaneous/ui-snippets.jpeg",
+      },
     ],
   },
 ];
