@@ -1796,6 +1796,13 @@ export const categories: Category[] = [
         url: "https://ui.ibelick.com/",
         logo: "/media/logos/miscellaneous/ui-snippets.jpeg",
       },
+      {
+        name: "background-snippets",
+        description:
+          "A collection of modern, background snippets ready-to-use, simply copy and paste into your next project.",
+        url: "https://bg.ibelick.com/",
+        logo: "https://bg.ibelick.com/favicon.ico",
+      },
     ],
   },
 ];
