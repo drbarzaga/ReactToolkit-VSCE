@@ -1792,7 +1792,7 @@ export const categories: Category[] = [
       {
         name: "ui-snippets",
         description:
-          "Collection of dark mode components and effects crafted wiht React and Tailwind CSS.",
+          "A collection of dark mode components and effects crafted with React and Tailwind CSS.",
         url: "https://ui.ibelick.com/",
         logo: "/media/logos/miscellaneous/ui-snippets.jpeg",
       },
