@@ -463,8 +463,9 @@ export const categories: Category[] = [
       {
         name: "TailusUI",
         description:
-          "Modern UI library built with Tailwind CSS focusing on design consistency.",
+          "Highly customizable React components for crafting modern, personalized websites and applications.",
         url: "https://ui.tailus.io/",
+        logo: "/media/logos/ui-frameworks-libraries/tailus.png",
       },
       {
         name: "Aceternity UI",
