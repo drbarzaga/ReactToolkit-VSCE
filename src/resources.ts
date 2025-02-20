@@ -554,6 +554,13 @@ export const categories: Category[] = [
         url: "https://magicui.design/",
         logo: "/media/logos/ui-frameworks-libraries/magicui.png",
       },
+      {
+        name: "CuiCui",
+        description:
+          "A collection of components, tools, and hooks that are designed to be simple, customizable and educational.",
+        url: "https://cuicui.day",
+        logo: "https://cuicui.day/favicon.ico",
+      },
     ],
   },
 
