@@ -81,7 +81,7 @@ export const categories: Category[] = [
         description:
           "A React framework that enables server-side rendering and static site generation for building fast and SEO-friendly web applications.",
         url: "https://nextjs.org/",
-        logo: "https://nextjs.org/static/favicon/favicon.ico",
+        logo: "/media/logos/frameworks/nextjs.svg",
       },
       {
         name: "Gatsby",
@@ -192,7 +192,7 @@ export const categories: Category[] = [
         description:
           "A routing library with a focus on accessibility and simplicity.",
         url: "https://reach.tech/router",
-        logo: "https://reach.tech/favicon.ico",
+        logo: "/media/logos/routing/reach.png",
       },
     ],
   },
