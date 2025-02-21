@@ -562,6 +562,13 @@ export const categories: Category[] = [
         url: "https://cuicui.day",
         logo: "https://cuicui.day/favicon.ico",
       },
+      {
+        name: "Kokonut UI",
+        description:
+          "Open Source UI components built with Tailwind CSS for React and Next.js.",
+        url: "https://kokonutui.com/",
+        logo: "/media/logos/ui-frameworks-libraries/kokonutui.svg",
+      },
     ],
   },
 
