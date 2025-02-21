@@ -569,6 +569,13 @@ export const categories: Category[] = [
         url: "https://kokonutui.com/",
         logo: "/media/logos/ui-frameworks-libraries/kokonutui.svg",
       },
+      {
+        name: "EverUI",
+        description:
+          "Unstyled highly composable components that you can copy/paste in your own codebase.",
+        url: "https://www.ever-ui.com/",
+        logo: "/media/logos/ui-frameworks-libraries/everui.svg",
+      },
     ],
   },
 
