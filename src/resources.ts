@@ -576,6 +576,13 @@ export const categories: Category[] = [
         url: "https://www.ever-ui.com/",
         logo: "/media/logos/ui-frameworks-libraries/everui.svg",
       },
+      {
+        name: "Indie UI",
+        description:
+          "Rich Styled UI Components built with Reactjs, shadcn and Framer Motion for animation.",
+        url: "https://ui.indie-starter.dev/",
+        logo: "/media/logos/ui-frameworks-libraries/indieui.ico",
+      },
     ],
   },
 
