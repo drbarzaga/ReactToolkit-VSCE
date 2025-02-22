@@ -479,7 +479,7 @@ export const categories: Category[] = [
         description:
           "Accessible React UI components similar to Shadcn/ui but using React Area instead of Radix.",
         url: "https://getjustd.com/",
-        logo: "https://getjustd.com/favicon.ico",
+        logo: "/media/logos/ui-frameworks-libraries/justd.png",
       },
       {
         name: "rsuitejs",
