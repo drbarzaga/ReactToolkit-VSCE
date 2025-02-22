@@ -221,20 +221,21 @@ export const categories: Category[] = [
         description:
           "A powerful and beautiful drag-and-drop library for lists with React.",
         url: "https://github.com/atlassian/react-beautiful-dnd",
+        logo: "/media/logos/drag-and-drop/react-beautiful-dnd.png",
       },
       {
         name: "React DnD",
         description:
           "A set of React utilities to help you build complex drag-and-drop interfaces.",
         url: "https://react-dnd.github.io/react-dnd/about",
-        logo: "",
+        logo: "/media/logos/drag-and-drop/react-dnd.png",
       },
       {
         name: "SortableJS",
         description:
           "A React wrapper for SortableJS, a library for reorderable drag-and-drop lists.",
         url: "https://github.com/SortableJS/react-sortablejs",
-        logo: "",
+        logo: "/media/logos/drag-and-drop/react-sortablejs.png",
       },
       {
         name: "React Dragula",
@@ -254,12 +255,13 @@ export const categories: Category[] = [
         description:
           "A small library for adding data-first drag and drop sorting and transferring for lists in your app.",
         url: "https://drag-and-drop.formkit.com/",
-        logo: "https://formkit.com/favicon.png",
+        logo: "/media/logos/drag-and-drop/formkit-dnd.png",
       },
       {
         name: "react-movable",
         description: "Drag and drop for your React lists and tables.",
         url: "https://react-movable.pages.dev",
+        logo: "/media/logos/drag-and-drop/react-movable.svg",
       },
     ],
   },
