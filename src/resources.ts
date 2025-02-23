@@ -965,14 +965,13 @@ export const categories: Category[] = [
         name: "ECharts for React",
         description: "A React wrapper for Apache ECharts.",
         url: "https://git.hust.cc/echarts-for-react/",
-        logo: "https://git.hust.cc/echarts-for-react/favicon.ico",
       },
       {
         name: "Visx",
         description:
           "A collection of low-level visualization components for React.",
         url: "https://airbnb.io/visx/",
-        logo: "https://airbnb.io/visx/favicon.ico",
+        logo: "/media/logos/charts/visx.png",
       },
       {
         name: "React Flow",
@@ -993,7 +992,7 @@ export const categories: Category[] = [
         description:
           "A modular data visualization framework for React, Angular, Svelte, Vue, Solid.",
         url: "https://unovis.dev/",
-        logo: "https://unovis.dev/favicon.ico",
+        logo: "/media/logos/charts/unovis.svg",
       },
       {
         name: "Mermaid Js",
