@@ -691,6 +691,7 @@ export const categories: Category[] = [
         name: "usehooks-ts",
         description: "React hook library, ready to use, written in Typescript.",
         url: "https://usehooks-ts.com/",
+        logo: "/media/logos/hooks/usehooksts.ico",
       },
       {
         name: "Novajs",
@@ -708,6 +709,7 @@ export const categories: Category[] = [
         name: "ahooks",
         description: "A set of high-quality and reliable React hooks.",
         url: "https://ahooks.js.org/",
+        logo: "/media/logos/hooks/ahooks.svg",
       },
     ],
   },
