@@ -393,13 +393,13 @@ export const categories: Category[] = [
         description:
           "Build responsive and accessible mobile-first projects for the web with an easy to use component library.",
         url: "https://v2.grommet.io/",
-        logo: "https://v2.grommet.io/favicon.ico",
+        logo: "/media/logos/ui-frameworks-libraries/grommet.png",
       },
       {
         name: "Reakit",
         description: "Toolkit for building accessible web apps with React.",
         url: "https://reakit.io/",
-        logo: "https://reakit.io/favicon.ico",
+        logo: "/media/logos/ui-frameworks-libraries/reakit.png",
       },
       {
         name: "PrimeReact",
@@ -413,6 +413,7 @@ export const categories: Category[] = [
         description:
           "An Tailwind CSS components library for any needs. Comes with UI examples & blocks, templates, Icons, Color Palette and more.",
         url: "https://zenui.net/",
+        logo: "/media/logos/ui-frameworks-libraries/zenui.png",
       },
       {
         name: "FlyonUI",
@@ -460,7 +461,7 @@ export const categories: Category[] = [
         description:
           "Minimalist component library focused on simplicity and performance.",
         url: "https://dotui.org/",
-        logo: "https://dotui.org/favicon.ico",
+        logo: "/media/logos/ui-frameworks-libraries/dotui.png",
       },
       {
         name: "TailusUI",
