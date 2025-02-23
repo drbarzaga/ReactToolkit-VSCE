@@ -749,7 +749,7 @@ export const categories: Category[] = [
         name: "React Hot Toast",
         description: "A super easy toast library for React.",
         url: "https://react-hot-toast.com/",
-        logo: "https://react-hot-toast.com/favicon.ico",
+        logo: "/media/logos/notifications/react-hot-toast.png",
       },
       {
         name: "React Notification System",
@@ -959,7 +959,7 @@ export const categories: Category[] = [
         description:
           "A collection of react components to render common data visualization charts.",
         url: "https://uber.github.io/react-vis/",
-        logo: "https://uber.github.io/react-vis/favicon.ico",
+        logo: "/media/logos/charts/react-vis.ico",
       },
       {
         name: "ECharts for React",
