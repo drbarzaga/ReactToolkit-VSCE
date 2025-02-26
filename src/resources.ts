@@ -1207,6 +1207,7 @@ export const categories: Category[] = [
         name: "React PDF Viewer",
         description: "A PDF viewer for React applications.",
         url: "https://react-pdf-viewer.dev/",
+        logo: "/media/logos/pdfs/react-pdf-viewer.svg",
       },
     ],
   },
@@ -1232,6 +1233,7 @@ export const categories: Category[] = [
         name: "react-uploady",
         description: "Modern file-upload components & hooks for React.",
         url: "https://react-uploady.org/",
+        logo: "/media/logos/file-handling/react-uploady.png",
       },
       {
         name: "React Spreadsheet",
