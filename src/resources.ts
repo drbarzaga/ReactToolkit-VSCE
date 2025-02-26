@@ -1093,13 +1093,13 @@ export const categories: Category[] = [
         description:
           "Premium icons for use in web, iOS, Android, and desktop apps.",
         url: "https://ionicons.com/",
-        logo: "https://ionicons.com/favicon.ico",
+        logo: "/media/logos/icons/ionicons.png",
       },
       {
         name: "Material Icons",
         description: "Material design icons by Google.",
         url: "https://material.io/resources/icons/",
-        logo: "https://material.io/favicon.ico",
+        logo: "/media/logos/icons/materialicons.svg",
       },
       {
         name: "Bootstrap Icons",
