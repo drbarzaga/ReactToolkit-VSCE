@@ -978,7 +978,7 @@ export const categories: Category[] = [
         description:
           "A customizable React component for building node-based editors and interactive diagrams.",
         url: "https://reactflow.dev/",
-        logo: "https://reactflow.dev/img/favicon.ico",
+        logo: "/media/logos/charts/reactflow.svg",
       },
       {
         name: "Apache ECharts",
