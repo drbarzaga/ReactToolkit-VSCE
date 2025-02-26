@@ -1122,10 +1122,10 @@ export const categories: Category[] = [
     icon: { type: "lucide", value: "play" },
     resources: [
       {
-        name: "Framer Motion",
-        description: "A production-ready motion library for React.",
-        url: "https://www.framer.com/motion/",
-        logo: "https://www.framer.com/favicon.ico",
+        name: "Motion",
+        description: "A modern animation library for JavaScript and React.",
+        url: "https://motion.dev/",
+        logo: "/media/logos/animations/motion.png",
       },
       {
         name: "React Spring",
@@ -1152,7 +1152,7 @@ export const categories: Category[] = [
         description:
           "A framework-agnostic tool that smoothly transitions one element into another with just a few lines of code.",
         url: "https://blendy.tahazsh.com/",
-        logo: "https://blendy.tahazsh.com/favicon.ico",
+        logo: "/media/logos/animations/blendy.svg",
       },
     ],
   },
@@ -1167,27 +1167,27 @@ export const categories: Category[] = [
         description:
           "React components and hooks for the Google Maps JavaScript API",
         url: "https://visgl.github.io/react-google-maps/",
-        logo: "https://visgl.github.io/react-google-maps/favicon.ico",
+        logo: "/media/logos/maps/react-google-maps.png",
       },
       {
         name: "React Leaflet",
         description:
           "A React wrapper for Leaflet, an open-source JavaScript library for mobile-friendly interactive maps.",
         url: "https://react-leaflet.js.org/",
-        logo: "https://react-leaflet.js.org/favicon.ico",
+        logo: "/media/logos/maps/react-leaflet.png",
       },
       {
         name: "Google Maps React",
         description:
           "A library for embedding Google Maps into React applications.",
         url: "https://github.com/google-map-react/google-map-react",
-        logo: "https://github.com/favicon.ico",
+        logo: "/media/logos/maps/google-map-react.png",
       },
       {
         name: "React Map GL",
         description: "A React wrapper for Mapbox GL JS.",
         url: "https://visgl.github.io/react-map-gl/",
-        logo: "https://visgl.github.io/react-map-gl/favicon.ico",
+        logo: "/media/logos/maps/react-map-gl.png",
       },
     ],
   },
