@@ -1346,27 +1346,27 @@ export const categories: Category[] = [
         description:
           "A JavaScript schema builder for value parsing and validation.",
         url: "https://www.npmjs.com/package/yup",
-        logo: "https://static.npmjs.com/favicon.ico",
+        logo: "/media/logos/validations/yup.png",
       },
       {
         name: "Joi",
         description:
           "A powerful schema description language and data validator for JavaScript.",
         url: "https://joi.dev/",
-        logo: "https://joi.dev/favicon.ico",
+        logo: "/media/logos/validations/joi.png",
       },
       {
         name: "Validator",
         description: "A library for string validation and sanitization.",
         url: "https://github.com/validatorjs/validator.js",
-        logo: "https://github.com/favicon.ico",
+        logo: "/media/logos/validations/validatorjs.png",
       },
       {
         name: "Superstruct",
         description:
           "A simple and composable way to validate data in JavaScript and TypeScript.",
         url: "https://docs.superstructjs.org/",
-        logo: "https://docs.superstructjs.org/favicon.ico",
+        logo: "/media/logos/validations/superstruct.avif",
       },
       {
         name: "Vest",
@@ -1380,7 +1380,7 @@ export const categories: Category[] = [
         description:
           "A TypeScript-first schema declaration and validation library.",
         url: "https://zod.dev/",
-        logo: "https://zod.dev/favicon.ico",
+        logo: "/media/logos/validations/zod.ico",
       },
     ],
   },
