@@ -1516,7 +1516,7 @@ export const categories: Category[] = [
         description:
           "It makes it easy to write and publish beautiful interactive documentation for your code.",
         url: "https://www.docz.site/",
-        logo: "https://www.docz.site/favicon.ico",
+        logo: "/media/logos/documentation/docz.png",
       },
       {
         name: "Docusaurus",
@@ -1537,7 +1537,7 @@ export const categories: Category[] = [
         description:
           "Isolated React component development environment with a living style guide.",
         url: "https://react-styleguidist.js.org/",
-        logo: "https://react-styleguidist.js.org/favicon.ico",
+        logo: "/media/logos/documentation/react-styleguidist.ico",
       },
       {
         name: "Nextra",
