@@ -71,6 +71,27 @@ export const categories: Category[] = [
     ],
   },
 
+  // Forums
+  {
+    name: "Forums",
+    icon: { type: "lucide", value: "message-square" },
+    resources: [
+      {
+        name: `DEV's React Community`,
+        description:
+          "Official tag for Facebook's React JavaScript library for building user interfaces.",
+        url: "https://dev.to/t/react",
+        logo: "/media/logos/forums/dev-react.png",
+      },
+      {
+        name: "Hashnode",
+        description: "A friendly and inclusive dev community.",
+        url: "https://hashnode.com/n/react",
+        logo: "/media/logos/forums/hashnode.png",
+      },
+    ],
+  },
+
   // Frameworks
   {
     name: "Frameworks",
