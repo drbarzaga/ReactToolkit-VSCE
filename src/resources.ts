@@ -1755,7 +1755,7 @@ export const categories: Category[] = [
     resources: [
       {
         name: "Awesome Loaders",
-        description: "Free & Open source loading animations",
+        description: "Free & Open source loading animations.",
         url: "https://awesome-loaders.netlify.app/",
         logo: "/media/logos/miscellaneous/awesome-loaders.png",
       },
