@@ -21,6 +21,7 @@ React Toolkit includes resources in various categories:
 
 - Official Resources
 - Forums
+- Authentication
 - Frameworks
 - UI Frameworks & Libraries
 - State Management
