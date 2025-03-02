@@ -1754,15 +1754,24 @@ export const categories: Category[] = [
     icon: { type: "lucide", value: "more-horizontal" },
     resources: [
       {
+        name: "Awesome Loaders",
+        description: "Free & Open source loading animations",
+        url: "https://awesome-loaders.netlify.app/",
+        logo: "/media/logos/miscellaneous/awesome-loaders.png",
+      },
+      {
         name: "ReactSpinners",
-        description: "A collection of loading spinner components for react.",
+        description:
+          "Create high-quality, super-responsive and customizable loading animations to insert into your website.",
         url: "https://www.davidhu.io/react-spinners/",
+        logo: "/media/logos/miscellaneous/react-spinners.png",
       },
       {
         name: "React Loader Spinner",
         description:
           "Collection sets of a spinners for async operations for ReactJS",
         url: "https://mhnpd.github.io/react-loader-spinner/",
+        logo: "/media/logos/miscellaneous/react-loader-spinner.ico",
       },
       {
         name: "ReactTooltip",
