@@ -20,6 +20,8 @@ A Visual Studio Code extension that provides a curated list of resources for Rea
 React Toolkit includes resources in various categories:
 
 - Official Resources
+- Forums
+- Frameworks
 - UI Frameworks & Libraries
 - State Management
 - Routing
