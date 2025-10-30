@@ -181,6 +181,13 @@ export const categories: Category[] = [
         url: "https://clerk.dev/",
         logo: "/media/logos/authentication/clerk.png",
       },
+      {
+        name: "BetterAuth",
+        description:
+          "Authentication and authorization for modern web applications.",
+        url: "ttps://www.better-auth.com/",
+        logo: "/media/logos/authentication/better-auth.png",
+      },
     ],
   },
 
