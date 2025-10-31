@@ -614,6 +614,13 @@ export const categories: Category[] = [
         url: "https://ui.indie-starter.dev/",
         logo: "/media/logos/ui-frameworks-libraries/indieui.ico",
       },
+      {
+        name: "Reui",
+        description:
+          "Open-source collection of UI components and animated effects built with React, Typescript, Tailwind CSS, and Motion. Pairs beautifully with shadcn/ui.",
+        url: "https://reui.io/",
+        logo: "https://reui.io/favicon.ico",
+      },
     ],
   },
 
