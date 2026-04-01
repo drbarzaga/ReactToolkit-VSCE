@@ -39,33 +39,3 @@ React Toolkit includes resources in various categories:
 3. You can also open the sidebar by pressing `Ctrl+Shift+P` or `Cmd+Shift+P` and typing "ReactToolkit".
 4. Browse through categories or use the search bar to find resources.
 5. Click on a resource to visit its website or documentation.
-
-## Screenshots
-
-### Click on the ReactToolkit icon in the activity bar to open the sidebar
-
-![ReactToolkit sidebar](https://www.dayanperez.com/reacttoolkit/entry-point.png)
-
-### Initial view of ReactToolkit sidebar
-
-![ReactToolkit Overview](https://www.dayanperez.com/reacttoolkit/overview.png)
-
-### Search for resources using the search box
-
-![ReactToolkit search](https://www.dayanperez.com/reacttoolkit/search.png)
-
-### Search results with matching resources
-
-![ReactToolkit search results](https://www.dayanperez.com/reacttoolkit/search-results.png)
-
-### Search results without matching resources
-
-![ReactToolkit no search results](https://www.dayanperez.com/reacttoolkit/no-search-results.png)
-
-### Expand categories to view resources
-
-![ReactToolkit expanded category](https://www.dayanperez.com/reacttoolkit/expanding-category.png)
-
-### Click on a resource to open its website or documentation
-
-![ReactToolkit open resource](https://www.dayanperez.com/reacttoolkit/open-resource.png)
