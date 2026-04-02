@@ -50,11 +50,19 @@ export class ReactToolkitViewProvider implements vscode.WebviewViewProvider {
     const scriptUri = webview.asWebviewUri(
       vscode.Uri.joinPath(this._extensionUri, "media", "main.js")
     );
+    const lucideUri = webview.asWebviewUri(
+      vscode.Uri.joinPath(this._extensionUri, "media", "lucide.min.js")
+    );
     const toolkitIconUri = webview.asWebviewUri(
       vscode.Uri.joinPath(this._extensionUri, "media", "icon.png")
     );
 
     const nonce = getNonce();
+    const totalResources = categories.reduce(
+      (sum, cat) => sum + cat.resources.length,
+      0
+    );
+    const totalCategories = categories.length;
 
     return `<!DOCTYPE html>
     <html lang="en">
@@ -71,6 +79,11 @@ export class ReactToolkitViewProvider implements vscode.WebviewViewProvider {
         <img class="toolkit-icon" src="${toolkitIconUri}" alt="ReactToolkit Icon">
         <h1>ReactToolkit</h1>
         <p class="info-text">Explore a curated list of essential React resources. Build robust, scalable applications with these powerful tools.</p>
+        <div class="stats">
+          <span class="stat"><i data-lucide="layers"></i>${totalResources} resources</span>
+          <span class="stat-sep"></span>
+          <span class="stat"><i data-lucide="folder"></i>${totalCategories} categories</span>
+        </div>
       </header>
       <div class="search-container">
         <div class="search-wrapper">
@@ -89,6 +102,7 @@ export class ReactToolkitViewProvider implements vscode.WebviewViewProvider {
       ${this.getCategoryIcon(category, webview)}
     </span>
     ${category.name}
+    <span class="category-count">${category.resources.length}</span>
     <span class="category-toggle">
       <i data-lucide="chevron-down"></i>
     </span>
@@ -110,6 +124,7 @@ export class ReactToolkitViewProvider implements vscode.WebviewViewProvider {
                   )
             }" 
           alt="${resource.name} logo"
+          loading="lazy"
           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
         >`
           : ""
@@ -123,7 +138,7 @@ export class ReactToolkitViewProvider implements vscode.WebviewViewProvider {
       <p class="resource-text">${resource.description}</p>
     </div>
   </div>
-  <a href="${resource.url}" target="_blank">Visit</a>
+  <a href="${resource.url}" target="_blank" title="Open ${resource.name}"><i data-lucide="arrow-up-right"></i></a>
 </div>
 `
       )
@@ -151,15 +166,13 @@ export class ReactToolkitViewProvider implements vscode.WebviewViewProvider {
             <span>Star on GitHub</span>
           </a>
           <a href="https://ko-fi.com/dayanperez" target="_blank" class="footer-button" title="Support me on Ko-fi, every donation is appreciated">
-            <i data-lucide="coffee "></i>
+            <i data-lucide="coffee"></i>
             <span>Support me</span>
           </a>
         </div>
       </footer>
-      <script src="https://unpkg.com/lucide@latest"></script>
-      <script>
-        lucide.createIcons();
-      </script>
+      <script src="${lucideUri}"></script>
+      <script>lucide.createIcons();</script>
       <script nonce="${nonce}" src="${scriptUri}"></script>
     </body>
     </html>`;
