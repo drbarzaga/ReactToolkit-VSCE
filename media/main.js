@@ -9,108 +9,103 @@
     const searchResults = document.getElementById('search-results');
     let isSticky = false;
 
+    // ── Sticky search bar ──
     function handleScroll() {
         const shouldBeSticky = window.pageYOffset > 0;
         if (shouldBeSticky !== isSticky) {
             isSticky = shouldBeSticky;
-            if (isSticky) {
-                searchContainer.classList.add('sticky');
-            } else {
-                searchContainer.classList.remove('sticky');
-            }
+            searchContainer.classList.toggle('sticky', isSticky);
         }
     }
-
     window.addEventListener('scroll', handleScroll);
+    handleScroll();
 
-    searchInput.focus();
-
+    // ── Category toggle ──
     categoryElements.forEach(category => {
-        const title = category.querySelector('h2');
-        const toggle = category.querySelector('.category-toggle');
-
-        title.addEventListener('click', () => {
-            toggleCategory(category);
+        category.querySelector('h2').addEventListener('click', () => {
+            // User manually toggled — clear any search-opened marker
+            delete category.dataset.searchOpened;
+            category.classList.toggle('expanded');
+            updateCategoryVisuals(category);
         });
     });
 
-    function toggleCategory(category) {
-        category.classList.toggle('expanded');
-        updateCategoryVisuals(category);
-    }
-
     function updateCategoryVisuals(category) {
         const isExpanded = category.classList.contains('expanded');
-        const toggle = category.querySelector('.category-toggle svg');
+        const toggleSvg = category.querySelector('.category-toggle svg');
         const resources = category.querySelector('.resources');
-        toggle.style.transform = isExpanded ? 'rotate(180deg)' : 'rotate(0deg)';
-        resources.style.display = isExpanded ? 'grid' : 'none';
+        if (toggleSvg) toggleSvg.style.transform = isExpanded ? 'rotate(180deg)' : '';
+        if (resources) resources.style.display = isExpanded ? 'flex' : 'none';
     }
 
-    function scrollToTop() {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    }
-
+    // ── Search ──
     function performSearch() {
-        const searchTerm = searchInput.value.toLowerCase();
+        const searchTerm = searchInput.value.toLowerCase().trim();
 
-        let visibleResourcesCount = 0;
-        categoryElements.forEach(category => {
-            const resources = category.querySelectorAll('.resource');
-            let categoryHasMatch = false;
+        // When search is cleared: restore original (collapsed) state
+        if (!searchTerm) {
+            categoryElements.forEach(category => {
+                category.style.display = '';
+                category.querySelectorAll('.resource').forEach(r => r.style.display = '');
 
-            resources.forEach(resource => {
-                const name = resource.dataset.name;
-                const categoryName = resource.dataset.category;
-                const isVisible = name.includes(searchTerm) || categoryName.includes(searchTerm);
-                resource.style.display = isVisible ? '' : 'none';
-                if (isVisible) {
-                    categoryHasMatch = true;
-                    visibleResourcesCount++;
+                // Only collapse categories that were opened by search, not by the user
+                if (category.dataset.searchOpened) {
+                    category.classList.remove('expanded');
+                    updateCategoryVisuals(category);
+                    delete category.dataset.searchOpened;
                 }
             });
+            searchResults.textContent = '';
+            emptyState.style.display = 'none';
+            document.getElementById('categories').style.display = '';
+            return;
+        }
 
-            if (categoryHasMatch) {
+        let visibleCount = 0;
+
+        categoryElements.forEach(category => {
+            const resources = category.querySelectorAll('.resource');
+            let hasMatch = false;
+
+            resources.forEach(resource => {
+                const matches =
+                    resource.dataset.name.includes(searchTerm) ||
+                    resource.dataset.category.includes(searchTerm);
+                resource.style.display = matches ? '' : 'none';
+                if (matches) { hasMatch = true; visibleCount++; }
+            });
+
+            if (hasMatch) {
                 category.style.display = '';
                 if (!category.classList.contains('expanded')) {
                     category.classList.add('expanded');
+                    category.dataset.searchOpened = 'true'; // mark: opened by search
                     updateCategoryVisuals(category);
                 }
             } else {
-                category.style.display = searchTerm ? 'none' : '';
-                if (category.classList.contains('expanded') && searchTerm) {
-                    category.classList.remove('expanded');
-                    updateCategoryVisuals(category);
-                }
+                category.style.display = 'none';
             }
         });
 
-        // Update search results count
-        if (searchTerm) {
-            searchResults.textContent = `${visibleResourcesCount} result${visibleResourcesCount !== 1 ? 's' : ''}`;
-        } else {
-            searchResults.textContent = '';
-        }
+        // Results badge
+        searchResults.textContent = `${visibleCount} result${visibleCount !== 1 ? 's' : ''}`;
 
-        // Show/hide empty state
-        if (visibleResourcesCount === 0 && searchTerm) {
+        // Empty state
+        if (visibleCount === 0) {
             emptyState.style.display = 'flex';
             document.getElementById('categories').style.display = 'none';
         } else {
             emptyState.style.display = 'none';
-            document.getElementById('categories').style.display = 'block';
+            document.getElementById('categories').style.display = '';
         }
 
-        // Scroll to top if not already there
         if (window.pageYOffset > 0) {
-            scrollToTop();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
     }
 
     searchInput.addEventListener('input', performSearch);
+    searchInput.focus();
 
     clearSearchButton.addEventListener('click', () => {
         searchInput.value = '';
@@ -118,20 +113,11 @@
         searchInput.focus();
     });
 
-    // Trigger initial check for sticky state
-    handleScroll();
-
-    // Footer button click handlers
+    // ── Footer links ──
     document.querySelectorAll('.footer-button').forEach(button => {
-        button.addEventListener('click', (e) => {
+        button.addEventListener('click', e => {
             e.preventDefault();
-            vscode.postMessage({
-                command: 'openExternalLink',
-                url: button.href
-            });
+            vscode.postMessage({ command: 'openExternalLink', url: button.href });
         });
     });
 })();
-
-
-

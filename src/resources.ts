@@ -1489,6 +1489,20 @@ export const categories: Category[] = [
         url: "https://redux.js.org/tutorials/fundamentals/part-4-store#redux-devtools",
         logo: "https://redux.js.org/img/favicon/favicon.ico",
       },
+      {
+        name: "React Grab",
+        description:
+          "Capture React component trees and pass them as context to AI coding agents directly from the browser.",
+        url: "https://www.react-grab.com/",
+        logo: "media/logos/devtools/react-grab.png",
+      },
+      {
+        name: "React Doctor",
+        description:
+          "AI-powered diagnostic tool that analyzes your React code for performance issues, security problems, and best practices.",
+        url: "https://github.com/millionco/react-doctor",
+        logo: "media/logos/devtools/react-doctor.svg",
+      },
     ],
   },
 
@@ -1617,13 +1631,6 @@ export const categories: Category[] = [
           "Scan for React performance issues and eliminate slow renders in your app.",
         url: "https://react-scan.million.dev/",
         logo: "/media/logos/performance/react-scan.svg",
-      },
-      {
-        name: "Million",
-        description:
-          "A React performance tool that helps you identify and fix performance issues in your React applications.",
-        url: "https://million.dev/",
-        logo: "/media/logos/performance/million.svg",
       },
       {
         name: "React Lazy Load",
@@ -1758,6 +1765,142 @@ export const categories: Category[] = [
         description: "A logger for just about everything.",
         url: "https://github.com/winstonjs/winston",
         logo: "/media/logos/utilities/winston.png",
+      },
+    ],
+  },
+
+  // AI & LLM Integration
+  {
+    name: "AI & LLM Integration",
+    icon: { type: "lucide", value: "bot" },
+    resources: [
+      {
+        name: "Vercel AI SDK",
+        description:
+          "The AI Toolkit for TypeScript. Build AI-powered products with React streaming UI and LLM integrations.",
+        url: "https://sdk.vercel.ai/",
+        logo: "https://sdk.vercel.ai/favicon.ico",
+      },
+      {
+        name: "LangChain.js",
+        description:
+          "A framework for developing applications powered by language models in JavaScript and TypeScript.",
+        url: "https://js.langchain.com/",
+        logo: "https://js.langchain.com/img/favicon.png",
+      },
+      {
+        name: "OpenAI Node SDK",
+        description:
+          "Official OpenAI SDK for TypeScript/JavaScript to integrate GPT models into your React applications.",
+        url: "https://github.com/openai/openai-node",
+        logo: "https://openai.com/favicon.ico",
+      },
+      {
+        name: "Anthropic SDK",
+        description:
+          "Official Anthropic TypeScript SDK for integrating Claude AI into your React applications.",
+        url: "https://github.com/anthropics/anthropic-sdk-typescript",
+        logo: "https://anthropic.com/favicon.ico",
+      },
+      {
+        name: "Transformers.js",
+        description:
+          "State-of-the-art machine learning models running directly in the browser, compatible with React.",
+        url: "https://huggingface.co/docs/transformers.js",
+        logo: "https://huggingface.co/favicon.ico",
+      },
+      {
+        name: "React Query AI",
+        description:
+          "Combine TanStack Query with AI APIs for seamless data fetching and streaming in React.",
+        url: "https://tanstack.com/query/latest",
+        logo: "https://tanstack.com/favicon.ico",
+      },
+    ],
+  },
+
+  // Component Development
+  {
+    name: "Component Development",
+    icon: { type: "lucide", value: "puzzle" },
+    resources: [
+      {
+        name: "Storybook",
+        description:
+          "Build, test, and document UI components in isolation. The industry standard for component-driven development.",
+        url: "https://storybook.js.org/",
+        logo: "https://storybook.js.org/favicon.ico",
+      },
+      {
+        name: "Chromatic",
+        description:
+          "Visual testing & review platform that catches UI bugs automatically before they reach production.",
+        url: "https://www.chromatic.com/",
+        logo: "https://www.chromatic.com/favicon.ico",
+      },
+      {
+        name: "Ladle",
+        description:
+          "A faster, drop-in alternative to Storybook for developing and testing React components.",
+        url: "https://ladle.dev/",
+        logo: "https://ladle.dev/favicon.ico",
+      },
+      {
+        name: "React Cosmos",
+        description:
+          "Sandbox for developing and testing React components in isolation with full context support.",
+        url: "https://reactcosmos.org/",
+        logo: "https://reactcosmos.org/favicon.ico",
+      },
+      {
+        name: "Bit",
+        description:
+          "A toolchain for component-driven development. Build, version, and reuse components across projects.",
+        url: "https://bit.dev/",
+        logo: "https://bit.dev/favicon.ico",
+      },
+    ],
+  },
+
+  // Monorepo Tools
+  {
+    name: "Monorepo Tools",
+    icon: { type: "lucide", value: "boxes" },
+    resources: [
+      {
+        name: "Turborepo",
+        description:
+          "High-performance build system for JavaScript and TypeScript monorepos with smart caching.",
+        url: "https://turbo.build/repo",
+        logo: "https://turbo.build/favicon.ico",
+      },
+      {
+        name: "Nx",
+        description:
+          "A powerful open-source build system with first-class React support and smart monorepo tooling.",
+        url: "https://nx.dev/",
+        logo: "https://nx.dev/favicon.ico",
+      },
+      {
+        name: "Lerna",
+        description:
+          "The original monorepo tool for managing and publishing multiple JavaScript packages from one repo.",
+        url: "https://lerna.js.org/",
+        logo: "https://lerna.js.org/img/logo.svg",
+      },
+      {
+        name: "Changesets",
+        description:
+          "A workflow tool for managing versioning and changelogs in monorepos with multiple packages.",
+        url: "https://github.com/changesets/changesets",
+        logo: "https://avatars.githubusercontent.com/u/67712834",
+      },
+      {
+        name: "PNPM Workspaces",
+        description:
+          "Native monorepo support in pnpm — fast, disk-efficient package management for multi-package repos.",
+        url: "https://pnpm.io/workspaces",
+        logo: "https://pnpm.io/img/favicon.png",
       },
     ],
   },
