@@ -3,8 +3,13 @@ import { categories } from "./resources";
 
 export class ReactToolkitViewProvider implements vscode.WebviewViewProvider {
   public static readonly viewType = "react-toolkit";
+  private static readonly STATE_KEY = "react-toolkit.expandedCategories";
 
-  constructor(private readonly _extensionUri: vscode.Uri) {}
+  constructor(private readonly _context: vscode.ExtensionContext) {}
+
+  private get _extensionUri() {
+    return this._context.extensionUri;
+  }
 
   public resolveWebviewView(
     webviewView: vscode.WebviewView,
@@ -17,6 +22,33 @@ export class ReactToolkitViewProvider implements vscode.WebviewViewProvider {
     };
 
     webviewView.webview.html = this.getWebviewContent(webviewView.webview);
+
+    webviewView.webview.onDidReceiveMessage(async (message) => {
+      switch (message.command) {
+        case "getState": {
+          const expandedCategories = this._context.globalState.get<string[]>(
+            ReactToolkitViewProvider.STATE_KEY,
+            []
+          );
+          webviewView.webview.postMessage({
+            command: "setState",
+            expandedCategories,
+          });
+          break;
+        }
+        case "saveState": {
+          await this._context.globalState.update(
+            ReactToolkitViewProvider.STATE_KEY,
+            message.expandedCategories
+          );
+          break;
+        }
+        case "openExternalLink": {
+          vscode.env.openExternal(vscode.Uri.parse(message.url));
+          break;
+        }
+      }
+    });
   }
 
   private getCategoryIcon(
@@ -51,7 +83,7 @@ export class ReactToolkitViewProvider implements vscode.WebviewViewProvider {
       vscode.Uri.joinPath(this._extensionUri, "media", "main.js")
     );
     const lucideUri = webview.asWebviewUri(
-      vscode.Uri.joinPath(this._extensionUri, "media", "lucide.min.js")
+      vscode.Uri.joinPath(this._extensionUri, "media", "icons.js")
     );
     const toolkitIconUri = webview.asWebviewUri(
       vscode.Uri.joinPath(this._extensionUri, "media", "icon.png")
@@ -88,30 +120,30 @@ export class ReactToolkitViewProvider implements vscode.WebviewViewProvider {
       <div class="search-container">
         <div class="search-wrapper">
           <i data-lucide="search" class="search-icon"></i>
-          <input type="text" id="search" placeholder="Search resources...">
-          <span id="search-results" class="search-results"></span>
+          <input type="text" id="search" placeholder="Search resources..." aria-label="Search resources" aria-controls="categories" aria-autocomplete="list">
+          <span id="search-results" class="search-results" aria-live="polite" aria-atomic="true"></span>
         </div>
       </div>
       <div id="categories">
         ${categories
           .map(
             (category) => `
-<div class="category">
-  <h2>
-    <span class="category-icon">
+<div class="category" data-category-name="${category.name}">
+  <h2 role="button" aria-expanded="false" aria-controls="resources-${category.name.toLowerCase().replace(/\s+/g, "-")}" tabindex="0">
+    <span class="category-icon" aria-hidden="true">
       ${this.getCategoryIcon(category, webview)}
     </span>
     ${category.name}
-    <span class="category-count">${category.resources.length}</span>
-    <span class="category-toggle">
+    <span class="category-count" aria-label="${category.resources.length} resources">${category.resources.length}</span>
+    <span class="category-toggle" aria-hidden="true">
       <i data-lucide="chevron-down"></i>
     </span>
   </h2>
-  <div class="resources">
+  <div class="resources" id="resources-${category.name.toLowerCase().replace(/\s+/g, "-")}" role="list">
     ${category.resources
       .map(
         (resource) => `
-<div class="resource" data-name="${resource.name.toLowerCase()}" data-category="${category.name.toLowerCase()}">
+<div class="resource" role="listitem" data-name="${resource.name.toLowerCase()}" data-category="${category.name.toLowerCase()}">
   <div class="resource-content">
     <div class="resource-logo-container">
       ${
@@ -138,7 +170,7 @@ export class ReactToolkitViewProvider implements vscode.WebviewViewProvider {
       <p class="resource-text">${resource.description}</p>
     </div>
   </div>
-  <a href="${resource.url}" target="_blank" title="Open ${resource.name}"><i data-lucide="arrow-up-right"></i></a>
+  <a href="${resource.url}" target="_blank" title="Open ${resource.name}" aria-label="Open ${resource.name}"><i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
 </div>
 `
       )
@@ -153,7 +185,7 @@ export class ReactToolkitViewProvider implements vscode.WebviewViewProvider {
         <i data-lucide="search-x" class="empty-state-icon"></i>
         <h2>No results found</h2>
         <p>Try adjusting your search or explore our categories.</p>
-        <button id="clear-search" class="clear-search-button">Clear search</button>
+        <button id="clear-search" class="clear-search-button" aria-label="Clear search and show all categories">Clear search</button>
       </div>
       <footer class="footer">
         <div class="footer-content">
