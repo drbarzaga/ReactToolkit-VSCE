@@ -20,20 +20,59 @@
     window.addEventListener('scroll', handleScroll);
     handleScroll();
 
+    // ── State persistence ──
+    function saveState() {
+        const expanded = [];
+        categoryElements.forEach(cat => {
+            if (cat.classList.contains('expanded')) {
+                expanded.push(cat.dataset.categoryName);
+            }
+        });
+        vscode.postMessage({ command: 'saveState', expandedCategories: expanded });
+    }
+
+    window.addEventListener('message', event => {
+        const message = event.data;
+        if (message.command === 'setState') {
+            const expanded = new Set(message.expandedCategories);
+            categoryElements.forEach(cat => {
+                const name = cat.dataset.categoryName;
+                if (expanded.has(name)) {
+                    cat.classList.add('expanded');
+                } else {
+                    cat.classList.remove('expanded');
+                }
+                updateCategoryVisuals(cat);
+            });
+        }
+    });
+
+    vscode.postMessage({ command: 'getState' });
+
     // ── Category toggle ──
     categoryElements.forEach(category => {
-        category.querySelector('h2').addEventListener('click', () => {
-            // User manually toggled — clear any search-opened marker
+        const h2 = category.querySelector('h2');
+        function toggleCategory() {
             delete category.dataset.searchOpened;
             category.classList.toggle('expanded');
             updateCategoryVisuals(category);
+            saveState();
+        }
+        h2.addEventListener('click', toggleCategory);
+        h2.addEventListener('keydown', e => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                toggleCategory();
+            }
         });
     });
 
     function updateCategoryVisuals(category) {
         const isExpanded = category.classList.contains('expanded');
+        const h2 = category.querySelector('h2');
         const toggleSvg = category.querySelector('.category-toggle svg');
         const resources = category.querySelector('.resources');
+        if (h2) h2.setAttribute('aria-expanded', String(isExpanded));
         if (toggleSvg) toggleSvg.style.transform = isExpanded ? 'rotate(180deg)' : '';
         if (resources) resources.style.display = isExpanded ? 'flex' : 'none';
     }
@@ -104,10 +143,15 @@
         }
     }
 
-    searchInput.addEventListener('input', performSearch);
+    let debounceTimer;
+    searchInput.addEventListener('input', () => {
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(performSearch, 200);
+    });
     searchInput.focus();
 
     clearSearchButton.addEventListener('click', () => {
+        clearTimeout(debounceTimer);
         searchInput.value = '';
         performSearch();
         searchInput.focus();

@@ -2,7 +2,7 @@ import * as vscode from "vscode";
 import { ReactToolkitViewProvider } from "./ReactToolkitViewProvider";
 
 export function activate(context: vscode.ExtensionContext) {
-  const provider = new ReactToolkitViewProvider(context.extensionUri);
+  const provider = new ReactToolkitViewProvider(context);
 
   context.subscriptions.push(
     vscode.window.registerWebviewViewProvider(
