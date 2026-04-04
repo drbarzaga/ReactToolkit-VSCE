@@ -775,6 +775,24 @@
         "description": "Primitive and flexible state management for React applications.",
         "url": "https://jotai.org/",
         "logo": "/media/logos/state-management/jotai.png"
+      },
+      {
+        "name": "MobX",
+        "description": "Simple, scalable state management using observable data and reactive programming.",
+        "url": "https://mobx.js.org/",
+        "logo": "https://mobx.js.org/favicon.ico"
+      },
+      {
+        "name": "XState",
+        "description": "State machines and statecharts for modern JavaScript and React applications.",
+        "url": "https://xstate.js.org/",
+        "logo": "https://xstate.js.org/favicon.ico"
+      },
+      {
+        "name": "Valtio",
+        "description": "Proxy-based state management for React that makes state mutations feel natural.",
+        "url": "https://valtio.dev/",
+        "logo": "https://valtio.dev/favicon.ico"
       }
     ]
   },
@@ -820,6 +838,18 @@
         "description": "A modern interface for making HTTP requests in the browser.",
         "url": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
         "logo": "https://developer.mozilla.org/favicon-48x48.cbbd161b.png"
+      },
+      {
+        "name": "tRPC",
+        "description": "End-to-end typesafe APIs for React — no schemas, no code generation, full TypeScript inference.",
+        "url": "https://trpc.io/",
+        "logo": "https://trpc.io/favicon.ico"
+      },
+      {
+        "name": "URQL",
+        "description": "A highly customizable and versatile GraphQL client for React.",
+        "url": "https://commerce.nearform.com/open-source/urql/",
+        "logo": "https://commerce.nearform.com/favicon.ico"
       }
     ]
   },
@@ -871,6 +901,18 @@
         "description": "Toolkit for component-oriented styling.",
         "url": "https://styletron.org/",
         "logo": "/media/logos/styling/styletron.png"
+      },
+      {
+        "name": "Panda CSS",
+        "description": "CSS-in-JS with build-time generated styles, RSC compatible, multi-variant support, and great developer experience.",
+        "url": "https://panda-css.com/",
+        "logo": "https://panda-css.com/favicon.ico"
+      },
+      {
+        "name": "UnoCSS",
+        "description": "Instant on-demand atomic CSS engine — flexible, powerful, and blazing fast.",
+        "url": "https://unocss.dev/",
+        "logo": "https://unocss.dev/favicon.ico"
       }
     ]
   },
@@ -1091,6 +1133,18 @@
         "description": "A framework-agnostic tool that smoothly transitions one element into another with just a few lines of code.",
         "url": "https://blendy.tahazsh.com/",
         "logo": "/media/logos/animations/blendy.svg"
+      },
+      {
+        "name": "AutoAnimate",
+        "description": "A zero-config animation utility that adds smooth transitions to your React app with a single hook.",
+        "url": "https://auto-animate.formkit.com/",
+        "logo": "https://auto-animate.formkit.com/favicon.ico"
+      },
+      {
+        "name": "GSAP",
+        "description": "Professional-grade JavaScript animation library with a React integration for high-performance animations.",
+        "url": "https://gsap.com/",
+        "logo": "https://gsap.com/favicon.ico"
       }
     ]
   },
@@ -1336,6 +1390,24 @@
         "description": "A zero-configuration build tool for the web.",
         "url": "https://parceljs.org/",
         "logo": "/media/logos/bundlers/parcel.svg"
+      },
+      {
+        "name": "Rollup",
+        "description": "A module bundler for JavaScript that compiles small pieces of code into larger bundles, ideal for libraries.",
+        "url": "https://rollupjs.org/",
+        "logo": "https://rollupjs.org/favicon.png"
+      },
+      {
+        "name": "Turbopack",
+        "description": "An incremental bundler optimized for JavaScript and TypeScript, written in Rust — the successor to Webpack.",
+        "url": "https://turbo.build/pack",
+        "logo": "https://turbo.build/favicon.ico"
+      },
+      {
+        "name": "esbuild",
+        "description": "An extremely fast JavaScript bundler and minifier, written in Go.",
+        "url": "https://esbuild.github.io/",
+        "logo": "https://esbuild.github.io/favicon.svg"
       }
     ]
   },
@@ -1429,6 +1501,12 @@
         "description": "Simple and complete testing utilities that encourage good testing practices",
         "url": "https://testing-library.com/",
         "logo": "/media/logos/testing/react-testing-library.png"
+      },
+      {
+        "name": "Mock Service Worker",
+        "description": "API mocking library that intercepts requests on the network level for seamless testing and development.",
+        "url": "https://mswjs.io/",
+        "logo": "https://mswjs.io/favicon.ico"
       }
     ]
   },
@@ -1522,7 +1600,7 @@
         "description": "A library for rendering large lists and tabular data efficiently.",
         "url": "https://react-window.vercel.app/",
         "logo": ""
-      }
+      },
     ]
   },
   {
@@ -1636,6 +1714,18 @@
         "description": "A logger for just about everything.",
         "url": "https://github.com/winstonjs/winston",
         "logo": "/media/logos/utilities/winston.png"
+      },
+      {
+        "name": "clsx",
+        "description": "A tiny utility for constructing className strings conditionally in React components.",
+        "url": "https://github.com/lukeed/clsx",
+        "logo": "https://github.com/favicon.ico"
+      },
+      {
+        "name": "Immer",
+        "description": "Create the next immutable state by mutating the current one — simplifies complex React state updates.",
+        "url": "https://immerjs.github.io/immer/",
+        "logo": "https://immerjs.github.io/immer/img/immer-logo.svg"
       }
     ]
   },
