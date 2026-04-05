@@ -1462,6 +1462,12 @@
         "description": "AI-powered diagnostic tool that analyzes your React code for performance issues, security problems, and best practices.",
         "url": "https://github.com/millionco/react-doctor",
         "logo": "media/logos/devtools/react-doctor.svg"
+      },
+      {
+        "name": "Route Auditor",
+        "description": "Scans App Router, Pages Router, and API Routes — detecting missing auth, CSRF gaps, permissive CORS, hardcoded secrets, and more.",
+        "url": "https://route-auditor.vercel.app/",
+        "logo": "media/logos/devtools/route-auditor.svg"
       }
     ]
   },
@@ -1600,7 +1606,7 @@
         "description": "A library for rendering large lists and tabular data efficiently.",
         "url": "https://react-window.vercel.app/",
         "logo": ""
-      },
+      }
     ]
   },
   {
