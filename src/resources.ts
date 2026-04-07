@@ -3,6 +3,7 @@ export interface Resource {
   description: string;
   url: string;
   logo?: string;
+  isNew?: boolean;
 }
 
 export interface Category {

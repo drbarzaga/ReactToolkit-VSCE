@@ -111,7 +111,7 @@ h1 {
 
 .search-icon {
   position: absolute;
-  left: 26px;
+  left: 10px;
   top: 50%;
   transform: translateY(-50%);
   width: 14px;
@@ -276,7 +276,7 @@ h1 {
   gap: 10px;
   flex: 1;
   min-width: 0;
-  padding: 9px 40px 9px 10px; /* right padding reserves space for arrow */
+  padding: 9px 60px 9px 10px; /* right padding reserves space for heart + arrow */
 }
 
 /* Logo */
@@ -347,7 +347,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding-right: 12px;
+  padding-right: 10px;
   text-decoration: none;
   color: transparent; /* arrow hidden by default */
   transition: color 0.12s ease;
@@ -452,4 +452,119 @@ h1 {
   width: 12px;
   height: 12px;
   flex-shrink: 0;
+}
+
+/* ── Search row (search + favorites toggle) ── */
+.search-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 14px;
+}
+
+.search-row .search-wrapper {
+  flex: 1;
+  padding: 0;
+  position: relative;
+}
+
+/* ── Favorites filter button ─────────────── */
+.favorites-filter-btn {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--vscode-input-background);
+  border: 1px solid var(--vscode-input-border);
+  border-radius: 8px;
+  color: var(--vscode-descriptionForeground);
+  cursor: pointer;
+  transition: border-color 0.15s ease, color 0.15s ease, background 0.15s ease;
+}
+
+.favorites-filter-btn:hover {
+  border-color: #ff6b81;
+  color: #ff6b81;
+}
+
+.favorites-filter-btn.active {
+  border-color: #ff6b81;
+  color: #ff6b81;
+  background: rgba(255, 107, 129, 0.08);
+}
+
+.favorites-filter-btn svg {
+  width: 14px;
+  height: 14px;
+  display: block;
+}
+
+.favorites-filter-btn.active svg {
+  fill: #ff6b81;
+}
+
+/* ── Resource favorite button ────────────── */
+.resource-favorite {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--vscode-descriptionForeground);
+  opacity: 0;
+  padding: 0;
+  transition: opacity 0.12s ease, color 0.12s ease;
+}
+
+.resource:hover .resource-favorite {
+  opacity: 0.4;
+}
+
+.resource-favorite:hover {
+  opacity: 1 !important;
+  color: #ff6b81;
+}
+
+.resource-favorite.favorited {
+  opacity: 1 !important;
+  color: #ff6b81;
+}
+
+.resource-favorite.favorited svg {
+  fill: #ff6b81;
+}
+
+.resource-favorite svg {
+  width: 12px;
+  height: 12px;
+  display: block;
+}
+
+/* ── New badge ───────────────────────────── */
+.badge-new {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  margin-left: 5px;
+  padding: 1px 5px;
+  font-size: 0.65em;
+  font-weight: 700;
+  border-radius: 4px;
+  background: rgba(97, 218, 251, 0.10);
+  color: var(--accent);
+  border: 1px solid rgba(97, 218, 251, 0.22);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  line-height: 1.4;
 }
