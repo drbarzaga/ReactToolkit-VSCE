@@ -780,19 +780,22 @@
         "name": "MobX",
         "description": "Simple, scalable state management using observable data and reactive programming.",
         "url": "https://mobx.js.org/",
-        "logo": "https://mobx.js.org/favicon.ico"
+        "logo": "https://mobx.js.org/favicon.ico",
+        "isNew": true
       },
       {
         "name": "XState",
         "description": "State machines and statecharts for modern JavaScript and React applications.",
         "url": "https://xstate.js.org/",
-        "logo": "https://xstate.js.org/favicon.ico"
+        "logo": "https://xstate.js.org/favicon.ico",
+        "isNew": true
       },
       {
         "name": "Valtio",
         "description": "Proxy-based state management for React that makes state mutations feel natural.",
         "url": "https://valtio.dev/",
-        "logo": "https://valtio.dev/favicon.ico"
+        "logo": "https://valtio.dev/favicon.ico",
+        "isNew": true
       }
     ]
   },
@@ -843,13 +846,15 @@
         "name": "tRPC",
         "description": "End-to-end typesafe APIs for React — no schemas, no code generation, full TypeScript inference.",
         "url": "https://trpc.io/",
-        "logo": "https://trpc.io/favicon.ico"
+        "logo": "https://trpc.io/favicon.ico",
+        "isNew": true
       },
       {
         "name": "URQL",
         "description": "A highly customizable and versatile GraphQL client for React.",
         "url": "https://commerce.nearform.com/open-source/urql/",
-        "logo": "https://commerce.nearform.com/favicon.ico"
+        "logo": "https://commerce.nearform.com/favicon.ico",
+        "isNew": true
       }
     ]
   },
@@ -906,13 +911,15 @@
         "name": "Panda CSS",
         "description": "CSS-in-JS with build-time generated styles, RSC compatible, multi-variant support, and great developer experience.",
         "url": "https://panda-css.com/",
-        "logo": "https://panda-css.com/favicon.ico"
+        "logo": "https://panda-css.com/favicon.ico",
+        "isNew": true
       },
       {
         "name": "UnoCSS",
         "description": "Instant on-demand atomic CSS engine — flexible, powerful, and blazing fast.",
         "url": "https://unocss.dev/",
-        "logo": "https://unocss.dev/favicon.ico"
+        "logo": "https://unocss.dev/favicon.ico",
+        "isNew": true
       }
     ]
   },
@@ -1138,13 +1145,15 @@
         "name": "AutoAnimate",
         "description": "A zero-config animation utility that adds smooth transitions to your React app with a single hook.",
         "url": "https://auto-animate.formkit.com/",
-        "logo": "https://auto-animate.formkit.com/favicon.ico"
+        "logo": "https://auto-animate.formkit.com/favicon.ico",
+        "isNew": true
       },
       {
         "name": "GSAP",
         "description": "Professional-grade JavaScript animation library with a React integration for high-performance animations.",
         "url": "https://gsap.com/",
-        "logo": "https://gsap.com/favicon.ico"
+        "logo": "https://gsap.com/favicon.ico",
+        "isNew": true
       }
     ]
   },
@@ -1236,7 +1245,8 @@
         "name": "Jspreadsheet",
         "description": "Fully customizable JavaScript spreadsheet library, offering various components to enhance web development projects.",
         "url": "https://bossanova.uk/jspreadsheet/",
-        "logo": "/media/logos/file-handling/jspreadsheet.png"
+        "logo": "/media/logos/file-handling/jspreadsheet.png",
+        "isNew": true
       }
     ]
   },
@@ -1395,19 +1405,22 @@
         "name": "Rollup",
         "description": "A module bundler for JavaScript that compiles small pieces of code into larger bundles, ideal for libraries.",
         "url": "https://rollupjs.org/",
-        "logo": "https://rollupjs.org/favicon.png"
+        "logo": "https://rollupjs.org/favicon.png",
+        "isNew": true
       },
       {
         "name": "Turbopack",
         "description": "An incremental bundler optimized for JavaScript and TypeScript, written in Rust — the successor to Webpack.",
         "url": "https://turbo.build/pack",
-        "logo": "https://turbo.build/favicon.ico"
+        "logo": "https://turbo.build/favicon.ico",
+        "isNew": true
       },
       {
         "name": "esbuild",
         "description": "An extremely fast JavaScript bundler and minifier, written in Go.",
         "url": "https://esbuild.github.io/",
-        "logo": "https://esbuild.github.io/favicon.svg"
+        "logo": "https://esbuild.github.io/favicon.svg",
+        "isNew": true
       }
     ]
   },
@@ -1455,19 +1468,22 @@
         "name": "React Grab",
         "description": "Capture React component trees and pass them as context to AI coding agents directly from the browser.",
         "url": "https://www.react-grab.com/",
-        "logo": "media/logos/devtools/react-grab.png"
+        "logo": "media/logos/devtools/react-grab.png",
+        "isNew": true
       },
       {
         "name": "React Doctor",
         "description": "AI-powered diagnostic tool that analyzes your React code for performance issues, security problems, and best practices.",
         "url": "https://github.com/millionco/react-doctor",
-        "logo": "media/logos/devtools/react-doctor.svg"
+        "logo": "media/logos/devtools/react-doctor.svg",
+        "isNew": true
       },
       {
         "name": "Route Auditor",
         "description": "Scans App Router, Pages Router, and API Routes — detecting missing auth, CSRF gaps, permissive CORS, hardcoded secrets, and more.",
         "url": "https://route-auditor.vercel.app/",
-        "logo": "media/logos/devtools/route-auditor.svg"
+        "logo": "media/logos/devtools/route-auditor.svg",
+        "isNew": true
       }
     ]
   },
@@ -1512,7 +1528,8 @@
         "name": "Mock Service Worker",
         "description": "API mocking library that intercepts requests on the network level for seamless testing and development.",
         "url": "https://mswjs.io/",
-        "logo": "https://mswjs.io/favicon.ico"
+        "logo": "https://mswjs.io/favicon.ico",
+        "isNew": true
       }
     ]
   },
@@ -1725,13 +1742,15 @@
         "name": "clsx",
         "description": "A tiny utility for constructing className strings conditionally in React components.",
         "url": "https://github.com/lukeed/clsx",
-        "logo": "https://github.com/favicon.ico"
+        "logo": "https://github.com/favicon.ico",
+        "isNew": true
       },
       {
         "name": "Immer",
         "description": "Create the next immutable state by mutating the current one — simplifies complex React state updates.",
         "url": "https://immerjs.github.io/immer/",
-        "logo": "https://immerjs.github.io/immer/img/immer-logo.svg"
+        "logo": "https://immerjs.github.io/immer/img/immer-logo.svg",
+        "isNew": true
       }
     ]
   },
@@ -1746,31 +1765,36 @@
         "name": "Vercel AI SDK",
         "description": "The AI Toolkit for TypeScript. Build AI-powered products with React streaming UI and LLM integrations.",
         "url": "https://sdk.vercel.ai/",
-        "logo": "https://sdk.vercel.ai/favicon.ico"
+        "logo": "https://sdk.vercel.ai/favicon.ico",
+        "isNew": true
       },
       {
         "name": "LangChain.js",
         "description": "A framework for developing applications powered by language models in JavaScript and TypeScript.",
         "url": "https://js.langchain.com/",
-        "logo": "https://js.langchain.com/img/favicon.png"
+        "logo": "https://js.langchain.com/img/favicon.png",
+        "isNew": true
       },
       {
         "name": "OpenAI Node SDK",
         "description": "Official OpenAI SDK for TypeScript/JavaScript to integrate GPT models into your React applications.",
         "url": "https://github.com/openai/openai-node",
-        "logo": "https://openai.com/favicon.ico"
+        "logo": "https://openai.com/favicon.ico",
+        "isNew": true
       },
       {
         "name": "Anthropic SDK",
         "description": "Official Anthropic TypeScript SDK for integrating Claude AI into your React applications.",
         "url": "https://github.com/anthropics/anthropic-sdk-typescript",
-        "logo": "https://anthropic.com/favicon.ico"
+        "logo": "https://anthropic.com/favicon.ico",
+        "isNew": true
       },
       {
         "name": "Transformers.js",
         "description": "State-of-the-art machine learning models running directly in the browser, compatible with React.",
         "url": "https://huggingface.co/docs/transformers.js",
-        "logo": "https://huggingface.co/favicon.ico"
+        "logo": "https://huggingface.co/favicon.ico",
+        "isNew": true
       },
       {
         "name": "React Query AI",
@@ -1797,25 +1821,29 @@
         "name": "Chromatic",
         "description": "Visual testing & review platform that catches UI bugs automatically before they reach production.",
         "url": "https://www.chromatic.com/",
-        "logo": "https://www.chromatic.com/favicon.ico"
+        "logo": "https://www.chromatic.com/favicon.ico",
+        "isNew": true
       },
       {
         "name": "Ladle",
         "description": "A faster, drop-in alternative to Storybook for developing and testing React components.",
         "url": "https://ladle.dev/",
-        "logo": "https://ladle.dev/favicon.ico"
+        "logo": "https://ladle.dev/favicon.ico",
+        "isNew": true
       },
       {
         "name": "React Cosmos",
         "description": "Sandbox for developing and testing React components in isolation with full context support.",
         "url": "https://reactcosmos.org/",
-        "logo": "https://reactcosmos.org/favicon.ico"
+        "logo": "https://reactcosmos.org/favicon.ico",
+        "isNew": true
       },
       {
         "name": "Bit",
         "description": "A toolchain for component-driven development. Build, version, and reuse components across projects.",
         "url": "https://bit.dev/",
-        "logo": "https://bit.dev/favicon.ico"
+        "logo": "https://bit.dev/favicon.ico",
+        "isNew": true
       }
     ]
   },
@@ -1830,31 +1858,36 @@
         "name": "Turborepo",
         "description": "High-performance build system for JavaScript and TypeScript monorepos with smart caching.",
         "url": "https://turbo.build/repo",
-        "logo": "https://turbo.build/favicon.ico"
+        "logo": "https://turbo.build/favicon.ico",
+        "isNew": true
       },
       {
         "name": "Nx",
         "description": "A powerful open-source build system with first-class React support and smart monorepo tooling.",
         "url": "https://nx.dev/",
-        "logo": "https://nx.dev/favicon.ico"
+        "logo": "https://nx.dev/favicon.ico",
+        "isNew": true
       },
       {
         "name": "Lerna",
         "description": "The original monorepo tool for managing and publishing multiple JavaScript packages from one repo.",
         "url": "https://lerna.js.org/",
-        "logo": "https://lerna.js.org/img/logo.svg"
+        "logo": "https://lerna.js.org/img/logo.svg",
+        "isNew": true
       },
       {
         "name": "Changesets",
         "description": "A workflow tool for managing versioning and changelogs in monorepos with multiple packages.",
         "url": "https://github.com/changesets/changesets",
-        "logo": "https://avatars.githubusercontent.com/u/67712834"
+        "logo": "https://avatars.githubusercontent.com/u/67712834",
+        "isNew": true
       },
       {
         "name": "PNPM Workspaces",
         "description": "Native monorepo support in pnpm — fast, disk-efficient package management for multi-package repos.",
         "url": "https://pnpm.io/workspaces",
-        "logo": "https://pnpm.io/img/favicon.png"
+        "logo": "https://pnpm.io/img/favicon.png",
+        "isNew": true
       }
     ]
   },

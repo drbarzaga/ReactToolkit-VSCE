@@ -4,6 +4,7 @@ import { categories } from "./resources";
 export class ReactToolkitViewProvider implements vscode.WebviewViewProvider {
   public static readonly viewType = "react-toolkit";
   private static readonly STATE_KEY = "react-toolkit.expandedCategories";
+  private static readonly STATE_KEY_FAVORITES = "react-toolkit.favorites";
 
   constructor(private readonly _context: vscode.ExtensionContext) {}
 
@@ -45,6 +46,33 @@ export class ReactToolkitViewProvider implements vscode.WebviewViewProvider {
         }
         case "openExternalLink": {
           vscode.env.openExternal(vscode.Uri.parse(message.url));
+          break;
+        }
+        case "getFavorites": {
+          const favorites = this._context.globalState.get<string[]>(
+            ReactToolkitViewProvider.STATE_KEY_FAVORITES,
+            []
+          );
+          webviewView.webview.postMessage({ command: "setFavorites", favorites });
+          break;
+        }
+        case "toggleFavorite": {
+          const favorites = this._context.globalState.get<string[]>(
+            ReactToolkitViewProvider.STATE_KEY_FAVORITES,
+            []
+          );
+          const url = message.url as string;
+          const idx = favorites.indexOf(url);
+          if (idx >= 0) {
+            favorites.splice(idx, 1);
+          } else {
+            favorites.push(url);
+          }
+          await this._context.globalState.update(
+            ReactToolkitViewProvider.STATE_KEY_FAVORITES,
+            favorites
+          );
+          webviewView.webview.postMessage({ command: "setFavorites", favorites });
           break;
         }
       }
@@ -118,10 +146,15 @@ export class ReactToolkitViewProvider implements vscode.WebviewViewProvider {
         </div>
       </header>
       <div class="search-container">
-        <div class="search-wrapper">
-          <i data-lucide="search" class="search-icon"></i>
-          <input type="text" id="search" placeholder="Search resources..." aria-label="Search resources" aria-controls="categories" aria-autocomplete="list">
-          <span id="search-results" class="search-results" aria-live="polite" aria-atomic="true"></span>
+        <div class="search-row">
+          <div class="search-wrapper">
+            <i data-lucide="search" class="search-icon"></i>
+            <input type="text" id="search" placeholder="Search resources..." aria-label="Search resources" aria-controls="categories" aria-autocomplete="list">
+            <span id="search-results" class="search-results" aria-live="polite" aria-atomic="true"></span>
+          </div>
+          <button id="favorites-filter" class="favorites-filter-btn" title="Show favorites" aria-pressed="false">
+            <i data-lucide="heart"></i>
+          </button>
         </div>
       </div>
       <div id="categories">
@@ -143,7 +176,7 @@ export class ReactToolkitViewProvider implements vscode.WebviewViewProvider {
     ${category.resources
       .map(
         (resource) => `
-<div class="resource" role="listitem" data-name="${resource.name.toLowerCase()}" data-category="${category.name.toLowerCase()}">
+<div class="resource" role="listitem" data-name="${resource.name.toLowerCase()}" data-category="${category.name.toLowerCase()}" data-url="${resource.url}">
   <div class="resource-content">
     <div class="resource-logo-container">
       ${
@@ -154,7 +187,7 @@ export class ReactToolkitViewProvider implements vscode.WebviewViewProvider {
                 : webview.asWebviewUri(
                     vscode.Uri.joinPath(this._extensionUri, resource.logo)
                   )
-            }" 
+            }"
           alt="${resource.name} logo"
           loading="lazy"
           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
@@ -166,10 +199,13 @@ export class ReactToolkitViewProvider implements vscode.WebviewViewProvider {
       }"></i>
     </div>
     <div class="resource-info">
-      <h3>${resource.name}</h3>
+      <h3>${resource.name}${resource.isNew ? '<span class="badge-new">New</span>' : ""}</h3>
       <p class="resource-text">${resource.description}</p>
     </div>
   </div>
+  <button class="resource-favorite" data-url="${resource.url}" aria-label="Add ${resource.name} to favorites" title="Add to favorites">
+    <i data-lucide="heart"></i>
+  </button>
   <a href="${resource.url}" target="_blank" title="Open ${resource.name}" aria-label="Open ${resource.name}"><i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
 </div>
 `
@@ -183,8 +219,8 @@ export class ReactToolkitViewProvider implements vscode.WebviewViewProvider {
       </div>
       <div id="empty-state" class="empty-state" style="display: none;">
         <i data-lucide="search-x" class="empty-state-icon"></i>
-        <h2>No results found</h2>
-        <p>Try adjusting your search or explore our categories.</p>
+        <h2 id="empty-state-title">No results found</h2>
+        <p id="empty-state-msg">Try adjusting your search or explore our categories.</p>
         <button id="clear-search" class="clear-search-button" aria-label="Clear search and show all categories">Clear search</button>
       </div>
       <footer class="footer">
