@@ -18,6 +18,15 @@ export function activate(context: vscode.ExtensionContext) {
       );
     })
   );
+
+  context.subscriptions.push(
+    vscode.commands.registerCommand("react-toolkit.openPanel", () => {
+      provider.openAsPanel();
+    })
+  );
+
+  // Show status bar notification immediately if there are unseen new resources
+  provider.initStatusBar();
 }
 
 export function deactivate() {}
