@@ -16,7 +16,7 @@
         "name": "React Repository",
         "description": "Official React GitHub repository",
         "url": "https://github.com/facebook/react",
-        "logo": "/media/logos/official/github.svg"
+        "logo": "/media/logos/official/github-mark-white.svg"
       },
       {
         "name": "React Community",
@@ -211,13 +211,13 @@
         "name": "Swapy",
         "description": "A framework-agnostic tool that converts any layout into a drag-to-swap one with just a few lines of code.",
         "url": "https://swapy.tahazsh.com/",
-        "logo": "https://swapy.tahazsh.com/favicon.ico"
+        "logo": "https://swapy.tahazsh.com/favicon.svg"
       },
       {
         "name": "DnDKit",
         "description": "A lightweight, performant, accessible and extensible drag & drop toolkit for React.",
         "url": "https://dndkit.com/",
-        "logo": "https://dndkit.com/favicon.ico"
+        "logo": "https://dndkit.com/mintlify-assets/_mintlify/favicons/dnd-kit/UbC02hFRZwz2NbjC/_generated/favicon/favicon-32x32.png"
       },
       {
         "name": "React Beautiful DnD",
@@ -304,7 +304,7 @@
         "name": "React Spectrum Libraries",
         "description": "A collection of libraries and tools that help you build adaptive, accessible, and robust user experiences.",
         "url": "https://react-spectrum.adobe.com/",
-        "logo": "https://react-spectrum.adobe.com/favicon.ico"
+        "logo": "https://react-spectrum.adobe.com/server/rsp-favicon.3fd52c8d.svg"
       },
       {
         "name": "Flowbite React",
@@ -316,7 +316,7 @@
         "name": "Next UI",
         "description": "A modern design system for building beautiful React applications.",
         "url": "https://nextui.org/",
-        "logo": "https://nextui.org/favicon.ico"
+        "logo": "https://nextui.org/icons/favicon.svg"
       },
       {
         "name": "Evergreen",
@@ -583,13 +583,13 @@
         "name": "React Data Grid",
         "description": "Excel-like grid component built with React.",
         "url": "https://adazzle.github.io/react-data-grid/",
-        "logo": "https://adazzle.github.io/react-data-grid/favicon.ico"
+        "logo": "https://avatars.githubusercontent.com/u/1763971?s=64"
       },
       {
         "name": "Griddle",
         "description": "A simple grid component for use with React.",
         "url": "https://griddlegriddle.github.io/Griddle/",
-        "logo": "https://griddlegriddle.github.io/Griddle/favicon.ico"
+        "logo": "https://avatars.githubusercontent.com/u/11590679?s=64"
       },
       {
         "name": "Tabulator",
@@ -667,7 +667,7 @@
         "name": "React Use",
         "description": "A library of essential React hooks.",
         "url": "https://github.com/streamich/react-use",
-        "logo": ""
+        "logo": "/media/logos/official/github-mark-white.svg"
       },
       {
         "name": "ahooks",
@@ -706,7 +706,7 @@
         "name": "Reapop",
         "description": "A simple and customizable React notifications system.",
         "url": "https://louisbarranqueiro.github.io/reapop/",
-        "logo": "https://louisbarranqueiro.github.io/reapop/favicon.ico"
+        "logo": "/media/logos/official/github-mark-white.svg"
       },
       {
         "name": "React Hot Toast",
@@ -718,7 +718,7 @@
         "name": "React Notification System",
         "description": "A complete and totally customizable component for notifications in React.",
         "url": "https://igorprado.github.io/react-notification-system/",
-        "logo": "https://igorprado.github.io/react-notification-system/favicon.ico"
+        "logo": "/media/logos/official/github-mark-white.svg"
       },
       {
         "name": "React Toast Notifications",
@@ -729,7 +729,8 @@
       {
         "name": "pheralb/toast",
         "description": "An accessible and beautiful toast library for React.",
-        "url": "https://toast.pheralb.dev/"
+        "url": "https://toast.pheralb.dev/",
+        "logo": "/media/logos/notifications/pheralb-toast.svg"
       }
     ]
   },
@@ -780,7 +781,7 @@
         "name": "MobX",
         "description": "Simple, scalable state management using observable data and reactive programming.",
         "url": "https://mobx.js.org/",
-        "logo": "https://mobx.js.org/favicon.ico",
+        "logo": "https://mobx.js.org/img/favicon.png",
         "isNew": true
       },
       {
@@ -840,13 +841,13 @@
         "name": "Fetch API",
         "description": "A modern interface for making HTTP requests in the browser.",
         "url": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
-        "logo": "https://developer.mozilla.org/favicon-48x48.cbbd161b.png"
+        "logo": "https://developer.mozilla.org/favicon.ico"
       },
       {
         "name": "tRPC",
         "description": "End-to-end typesafe APIs for React — no schemas, no code generation, full TypeScript inference.",
         "url": "https://trpc.io/",
-        "logo": "https://trpc.io/favicon.ico",
+        "logo": "https://trpc.io/img/logo.svg",
         "isNew": true
       },
       {
@@ -934,7 +935,7 @@
         "name": "Recharts",
         "description": "A composable charting library built on React components.",
         "url": "https://recharts.org/en-US",
-        "logo": "https://recharts.org/favicon.ico"
+        "logo": "https://avatars.githubusercontent.com/u/13690587?s=64"
       },
       {
         "name": "Victory",
@@ -946,7 +947,7 @@
         "name": "Nivo",
         "description": "Provides a rich set of data visualization components, built on top of D3 and React.",
         "url": "https://nivo.rocks/",
-        "logo": "https://nivo.rocks/favicon.ico"
+        "logo": "/media/logos/official/github-mark-white.svg"
       },
       {
         "name": "Chart.js",
@@ -963,7 +964,8 @@
       {
         "name": "ECharts for React",
         "description": "A React wrapper for Apache ECharts.",
-        "url": "https://git.hust.cc/echarts-for-react/"
+        "url": "https://git.hust.cc/echarts-for-react/",
+        "logo": "/media/logos/charts/echarts.png"
       },
       {
         "name": "Visx",
@@ -1010,7 +1012,8 @@
       {
         "name": "Semiotic",
         "description": "A data visualization framework for React.",
-        "url": "https://semiotic.nteract.io/"
+        "url": "https://semiotic.nteract.io/",
+        "logo": "/media/logos/miscellaneous/semiotic.png"
       }
     ]
   },
@@ -1031,7 +1034,7 @@
         "name": "Virtua",
         "description": "A virtual list and grid library for React.",
         "url": "https://github.com/inokawa/virtua",
-        "logo": ""
+        "logo": "/media/logos/official/github-mark-white.svg"
       },
       {
         "name": "React Virtualized",
@@ -1145,7 +1148,7 @@
         "name": "AutoAnimate",
         "description": "A zero-config animation utility that adds smooth transitions to your React app with a single hook.",
         "url": "https://auto-animate.formkit.com/",
-        "logo": "https://auto-animate.formkit.com/favicon.ico",
+        "logo": "https://auto-animate.formkit.com/assets/favicon-BstHBk68.ico",
         "isNew": true
       },
       {
@@ -1239,7 +1242,8 @@
       {
         "name": "React Spreadsheet",
         "description": "Simple, customizable yet performant spreadsheet for React.",
-        "url": "https://iddan.github.io/react-spreadsheet/"
+        "url": "https://iddan.github.io/react-spreadsheet/",
+        "logo": "/media/logos/file-handling/react-spreadsheet.ico"
       },
       {
         "name": "Jspreadsheet",
@@ -1288,19 +1292,19 @@
         "name": "React Player",
         "description": "A React component for playing a variety of URLs, including YouTube, SoundCloud, and more.",
         "url": "https://github.com/cookpete/react-player",
-        "logo": "https://github.com/favicon.ico"
+        "logo": "/media/logos/official/github-mark-white.svg"
       },
       {
         "name": "React Webcam",
         "description": "A React component for accessing the user's webcam.",
         "url": "https://github.com/mozmorris/react-webcam",
-        "logo": "https://github.com/favicon.ico"
+        "logo": "/media/logos/official/github-mark-white.svg"
       },
       {
         "name": "React Sound",
         "description": "A sound component to play audio in your React applications.",
         "url": "https://github.com/leoasis/react-sound",
-        "logo": "https://github.com/favicon.ico"
+        "logo": "/media/logos/official/github-mark-white.svg"
       }
     ]
   },
@@ -1315,19 +1319,19 @@
         "name": "React Helmet",
         "description": "A reusable React component that manages changes to the document head.",
         "url": "https://github.com/nfl/react-helmet",
-        "logo": "https://github.com/favicon.ico"
+        "logo": "/media/logos/official/github-mark-white.svg"
       },
       {
         "name": "React Meta Tags",
         "description": "A library for managing meta tags in React applications.",
         "url": "https://www.npmjs.com/package/react-meta-tags",
-        "logo": "https://static.npmjs.com/favicon.ico"
+        "logo": "https://avatars.githubusercontent.com/u/6078720?s=64"
       },
       {
         "name": "Next SEO",
         "description": "A plugin that makes managing SEO easier in Next.js projects.",
         "url": "https://github.com/garmeeh/next-seo",
-        "logo": "https://github.com/favicon.ico"
+        "logo": "/media/logos/official/github-mark-white.svg"
       }
     ]
   },
@@ -1528,7 +1532,7 @@
         "name": "Mock Service Worker",
         "description": "API mocking library that intercepts requests on the network level for seamless testing and development.",
         "url": "https://mswjs.io/",
-        "logo": "https://mswjs.io/favicon.ico",
+        "logo": "https://mswjs.io/icon.svg",
         "isNew": true
       }
     ]
@@ -1540,12 +1544,6 @@
       "value": "book-open"
     },
     "resources": [
-      {
-        "name": "Storybook",
-        "description": "A tool for UI development that allows you to create and test components in isolation.",
-        "url": "https://storybook.js.org/",
-        "logo": "/media/logos/documentation/storybook.svg"
-      },
       {
         "name": "Docz",
         "description": "It makes it easy to write and publish beautiful interactive documentation for your code.",
@@ -1574,7 +1572,7 @@
         "name": "Nextra",
         "description": "Simple, powerful and flexible site generation framework with everything you love from Next.js.",
         "url": "https://nextra.site/",
-        "logo": "https://nextra.site/favicon.ico"
+        "logo": "https://nextra.site/icon.svg"
       }
     ]
   },
@@ -1616,13 +1614,13 @@
         "name": "React Lazy Load",
         "description": "A library that helps you defer loading content in your React application until it becomes visible in the viewport.",
         "url": "https://github.com/loktar00/react-lazy-load",
-        "logo": ""
+        "logo": "/media/logos/official/github-mark-white.svg"
       },
       {
         "name": "React Window",
         "description": "A library for rendering large lists and tabular data efficiently.",
         "url": "https://react-window.vercel.app/",
-        "logo": ""
+        "logo": "/media/logos/official/github-mark-white.svg"
       }
     ]
   },
@@ -1637,7 +1635,7 @@
         "name": "React Error Boundary",
         "description": "A React component that catches JavaScript errors anywhere in their child component tree, logs those errors, and displays a fallback UI.",
         "url": "https://www.npmjs.com/package/react-error-boundary",
-        "logo": "https://static.npmjs.com/favicon.ico"
+        "logo": "/media/logos/official/github-mark-white.svg"
       },
       {
         "name": "Sentry",
@@ -1658,13 +1656,13 @@
         "name": "Loadable Components",
         "description": "A library for code-splitting React components and loading them on demand.",
         "url": "https://loadable-components.com/",
-        "logo": "https://loadable-components.com/favicon.ico"
+        "logo": "https://loadable-components.com/static/23e8db798737956abd14222d0bf41379/5f18b/logo.png"
       },
       {
         "name": "React Loadable",
         "description": "A higher order component for loading components with dynamic imports.",
         "url": "https://github.com/jamiebuilds/react-loadable",
-        "logo": "https://github.com/favicon.ico"
+        "logo": "/media/logos/official/github-mark-white.svg"
       }
     ]
   },
@@ -1685,7 +1683,7 @@
         "name": "Netlify",
         "description": "A platform for automating modern web projects, with continuous deployment, serverless functions, and more.",
         "url": "https://www.netlify.com/",
-        "logo": "https://www.netlify.com/favicon.ico"
+        "logo": "https://www.netlify.com/favicon/favicon.ico"
       },
       {
         "name": "Firebase",
@@ -1742,7 +1740,7 @@
         "name": "clsx",
         "description": "A tiny utility for constructing className strings conditionally in React components.",
         "url": "https://github.com/lukeed/clsx",
-        "logo": "https://github.com/favicon.ico",
+        "logo": "/media/logos/official/github-mark-white.svg",
         "isNew": true
       },
       {
@@ -1772,14 +1770,14 @@
         "name": "LangChain.js",
         "description": "A framework for developing applications powered by language models in JavaScript and TypeScript.",
         "url": "https://js.langchain.com/",
-        "logo": "https://js.langchain.com/img/favicon.png",
+        "logo": "https://avatars.githubusercontent.com/u/126733545?s=64",
         "isNew": true
       },
       {
         "name": "OpenAI Node SDK",
         "description": "Official OpenAI SDK for TypeScript/JavaScript to integrate GPT models into your React applications.",
         "url": "https://github.com/openai/openai-node",
-        "logo": "https://openai.com/favicon.ico",
+        "logo": "https://avatars.githubusercontent.com/u/14957082?s=64",
         "isNew": true
       },
       {
@@ -1815,20 +1813,20 @@
         "name": "Storybook",
         "description": "Build, test, and document UI components in isolation. The industry standard for component-driven development.",
         "url": "https://storybook.js.org/",
-        "logo": "https://storybook.js.org/favicon.ico"
+        "logo": "https://storybook.js.org/icon.svg"
       },
       {
         "name": "Chromatic",
         "description": "Visual testing & review platform that catches UI bugs automatically before they reach production.",
         "url": "https://www.chromatic.com/",
-        "logo": "https://www.chromatic.com/favicon.ico",
+        "logo": "https://www.chromatic.com/favicon/favicon-default.png",
         "isNew": true
       },
       {
         "name": "Ladle",
         "description": "A faster, drop-in alternative to Storybook for developing and testing React components.",
         "url": "https://ladle.dev/",
-        "logo": "https://ladle.dev/favicon.ico",
+        "logo": "https://ladle.dev/img/favicon.svg",
         "isNew": true
       },
       {
@@ -1842,7 +1840,7 @@
         "name": "Bit",
         "description": "A toolchain for component-driven development. Build, version, and reuse components across projects.",
         "url": "https://bit.dev/",
-        "logo": "https://bit.dev/favicon.ico",
+        "logo": "https://bit.dev/favicon.png",
         "isNew": true
       }
     ]
@@ -1872,14 +1870,14 @@
         "name": "Lerna",
         "description": "The original monorepo tool for managing and publishing multiple JavaScript packages from one repo.",
         "url": "https://lerna.js.org/",
-        "logo": "https://lerna.js.org/img/logo.svg",
+        "logo": "https://lerna.js.org/images/favicon.ico",
         "isNew": true
       },
       {
         "name": "Changesets",
         "description": "A workflow tool for managing versioning and changelogs in monorepos with multiple packages.",
         "url": "https://github.com/changesets/changesets",
-        "logo": "https://avatars.githubusercontent.com/u/67712834",
+        "logo": "https://avatars.githubusercontent.com/u/51163350?s=64",
         "isNew": true
       },
       {
@@ -1919,43 +1917,50 @@
       {
         "name": "ReactTooltip",
         "description": "Awesome React Tooltip component.",
-        "url": "https://react-tooltip.com/"
+        "url": "https://react-tooltip.com/",
+        "logo": "/media/logos/miscellaneous/react-tooltip.ico"
       },
       {
         "name": "React Content Loader",
         "description": "SVG-Powered component to easily create skeleton loadings.",
-        "url": "https://skeletonreact.com/"
+        "url": "https://skeletonreact.com/",
+        "logo": "/media/logos/official/github-mark-white.svg"
       },
       {
         "name": "Kbar",
         "description": "Fast, portable, and extensible command+k interface for React.",
-        "url": "https://kbar.vercel.app/"
+        "url": "https://kbar.vercel.app/",
+        "logo": "/media/logos/official/github-mark-white.svg"
       },
       {
         "name": "Cmdk",
         "description": "Fast, composable, unstyled command menu for React.",
         "url": "https://cmdk.paco.me/",
-        "logo": "https://cmdk.paco.me/favicon.ico"
+        "logo": "/media/logos/official/github-mark-white.svg"
       },
       {
         "name": "React Compare Image",
         "description": "React component to compare two images using slider.",
-        "url": "https://github.com/tam315/react-compare-image"
+        "url": "https://github.com/tam315/react-compare-image",
+        "logo": "/media/logos/official/github-mark-white.svg"
       },
       {
         "name": "React Intense",
         "description": "A React component for viewing large images up close.",
-        "url": "https://bryce.io/react-intense/"
+        "url": "https://bryce.io/react-intense/",
+        "logo": "/media/logos/official/github-mark-white.svg"
       },
       {
         "name": "React Youtube",
         "description": "React.js powered YouTube player component.",
-        "url": "https://tjallingt.github.io/react-youtube/"
+        "url": "https://tjallingt.github.io/react-youtube/",
+        "logo": "/media/logos/official/github-mark-white.svg"
       },
       {
         "name": "Video React",
         "description": "The web video player built from the ground up for an HTML5 world using React library.",
-        "url": "https://video-react.js.org/"
+        "url": "https://video-react.js.org/",
+        "logo": "/media/logos/official/github-mark-white.svg"
       },
       {
         "name": "Advanced Cropper",
@@ -1966,12 +1971,14 @@
       {
         "name": "React Easy Crop",
         "description": "A React component to crop images with easy interactions.",
-        "url": "https://valentinh.github.io/react-easy-crop/"
+        "url": "https://valentinh.github.io/react-easy-crop/",
+        "logo": "/media/logos/official/github-mark-white.svg"
       },
       {
         "name": "React Image Crop",
         "description": "A responsive image cropping tool for React.",
-        "url": "https://github.com/DominicTobias/react-image-crop"
+        "url": "https://github.com/DominicTobias/react-image-crop",
+        "logo": "/media/logos/official/github-mark-white.svg"
       },
       {
         "name": "Interweave",

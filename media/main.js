@@ -1,5 +1,12 @@
 (function () {
     const vscode = acquireVsCodeApi();
+    const isPanelMode = document.body.classList.contains('panel-mode');
+
+    // ── Panel mode ────────────────────────────────────────────────
+    if (isPanelMode) {
+        initPanelMode();
+        return;
+    }
 
     const categoryElements = document.querySelectorAll('.category');
     const searchInput = document.getElementById('search');
@@ -85,7 +92,7 @@
         const resources = category.querySelector('.resources');
         if (h2) h2.setAttribute('aria-expanded', String(isExpanded));
         if (toggleSvg) toggleSvg.style.transform = isExpanded ? 'rotate(180deg)' : '';
-        if (resources) resources.style.display = isExpanded ? 'flex' : 'none';
+        if (resources) resources.style.display = isExpanded ? (isPanelMode ? 'grid' : 'flex') : 'none';
     }
 
     // ── Favorites ──
@@ -252,11 +259,186 @@
         searchInput.focus();
     });
 
-    // ── Footer links ──
-    document.querySelectorAll('.footer-button').forEach(button => {
-        button.addEventListener('click', e => {
-            e.preventDefault();
-            vscode.postMessage({ command: 'openExternalLink', url: button.href });
+    // ── New resources banner ──
+    const dismissNewBtn = document.getElementById('dismiss-new');
+    if (dismissNewBtn) {
+        dismissNewBtn.addEventListener('click', () => {
+            document.getElementById('new-banner')?.remove();
+            vscode.postMessage({ command: 'dismissNew' });
         });
+    }
+
+    const showNewBtn = document.getElementById('show-new');
+    if (showNewBtn) {
+        showNewBtn.addEventListener('click', () => {
+            // Filter to show only resources with badge-new
+            let count = 0;
+            categoryElements.forEach(category => {
+                const resources = category.querySelectorAll('.resource');
+                let hasNew = false;
+                resources.forEach(resource => {
+                    const isNew = resource.querySelector('.badge-new') !== null;
+                    resource.style.display = isNew ? '' : 'none';
+                    if (isNew) { hasNew = true; count++; }
+                });
+                if (hasNew) {
+                    category.style.display = '';
+                    if (!category.classList.contains('expanded')) {
+                        category.classList.add('expanded');
+                        updateCategoryVisuals(category);
+                    }
+                } else {
+                    category.style.display = 'none';
+                }
+            });
+            document.getElementById('new-banner')?.remove();
+            vscode.postMessage({ command: 'dismissNew' });
+        });
+    }
+
+    // ── Pop out panel ──
+    document.getElementById('open-panel-btn')?.addEventListener('click', () => {
+        vscode.postMessage({ command: 'openPanel' });
     });
+
+    // ── Panel mode init ───────────────────────────────────────────
+    function initPanelMode() {
+        const cards = document.querySelectorAll('.pcard');
+        const grid = document.getElementById('panel-grid');
+        const emptyState = document.getElementById('empty-state');
+        const emptyStateTitle = document.getElementById('empty-state-title');
+        const emptyStateMsg = document.getElementById('empty-state-msg');
+        const clearSearchBtn = document.getElementById('clear-search');
+        const searchInput = document.getElementById('search');
+        const searchResults = document.getElementById('search-results');
+        const navItems = document.querySelectorAll('.pnav-item');
+        const favBtn = document.getElementById('favorites-filter');
+        let favorites = new Set();
+        let activeFilter = 'all';
+        let searchTerm = '';
+        let showingFavorites = false;
+
+        // Message handler
+        window.addEventListener('message', event => {
+            const msg = event.data;
+            if (msg.command === 'setFavorites') {
+                favorites = new Set(msg.favorites);
+                updateFavButtons();
+                if (showingFavorites) applyFilters();
+            }
+        });
+
+        vscode.postMessage({ command: 'getFavorites' });
+
+        // Favorite buttons
+        function updateFavButtons() {
+            document.querySelectorAll('.resource-favorite').forEach(btn => {
+                const isFav = favorites.has(btn.dataset.url);
+                btn.classList.toggle('favorited', isFav);
+                btn.setAttribute('aria-label', isFav ? 'Remove from favorites' : 'Add to favorites');
+                const svg = btn.querySelector('svg');
+                if (svg) svg.style.fill = isFav ? '#ff6b81' : '';
+                if (svg) svg.style.color = isFav ? '#ff6b81' : '';
+            });
+        }
+
+        document.querySelectorAll('.resource-favorite').forEach(btn => {
+            btn.addEventListener('click', e => {
+                e.preventDefault();
+                e.stopPropagation();
+                vscode.postMessage({ command: 'toggleFavorite', url: btn.dataset.url });
+            });
+        });
+
+        // External links
+        document.querySelectorAll('.header-action-btn').forEach(btn => {
+            if (btn.tagName === 'A') return; // handled by target="_blank" natively
+        });
+
+        // Nav filter
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                navItems.forEach(n => n.classList.remove('active'));
+                item.classList.add('active');
+                activeFilter = item.dataset.filter;
+                showingFavorites = false;
+                favBtn.classList.remove('active');
+                favBtn.setAttribute('aria-pressed', 'false');
+                applyFilters();
+            });
+        });
+
+        // Favorites filter
+        favBtn?.addEventListener('click', () => {
+            showingFavorites = !showingFavorites;
+            favBtn.classList.toggle('active', showingFavorites);
+            favBtn.setAttribute('aria-pressed', String(showingFavorites));
+            if (showingFavorites) {
+                navItems.forEach(n => n.classList.remove('active'));
+                activeFilter = 'all';
+            }
+            applyFilters();
+        });
+
+        // Search
+        let debounce;
+        searchInput?.addEventListener('input', () => {
+            clearTimeout(debounce);
+            debounce = setTimeout(() => {
+                searchTerm = searchInput.value.toLowerCase().trim();
+                applyFilters();
+            }, 150);
+        });
+
+        clearSearchBtn?.addEventListener('click', () => {
+            searchInput.value = '';
+            searchTerm = '';
+            applyFilters();
+            searchInput.focus();
+        });
+
+        function applyFilters() {
+            let visible = 0;
+            cards.forEach(card => {
+                const matchCat = activeFilter === 'all' || card.dataset.category === activeFilter.toLowerCase();
+                const matchSearch = !searchTerm ||
+                    card.dataset.name.includes(searchTerm) ||
+                    card.dataset.desc.includes(searchTerm) ||
+                    card.dataset.category.includes(searchTerm);
+                const matchFav = !showingFavorites || favorites.has(card.dataset.url);
+                const show = matchCat && matchSearch && matchFav;
+                card.style.display = show ? '' : 'none';
+                if (show) visible++;
+            });
+
+            if (searchTerm) {
+                searchResults.textContent = `${visible} result${visible !== 1 ? 's' : ''}`;
+            } else {
+                searchResults.textContent = '';
+            }
+
+            const hasResults = visible > 0;
+            grid.style.display = hasResults ? '' : 'none';
+            emptyState.style.display = hasResults ? 'none' : 'flex';
+
+            if (!hasResults) {
+                if (showingFavorites) {
+                    emptyStateTitle.textContent = 'No favorites yet';
+                    emptyStateMsg.textContent = 'Click the ♡ on any card to save it here.';
+                    clearSearchBtn.style.display = 'none';
+                } else {
+                    emptyStateTitle.textContent = 'No results found';
+                    emptyStateMsg.textContent = 'Try a different search term or category.';
+                    clearSearchBtn.style.display = '';
+                }
+            }
+        }
+
+        // Collapse button
+        document.getElementById('collapse-panel-btn')?.addEventListener('click', () => {
+            vscode.postMessage({ command: 'collapsePanel' });
+        });
+
+        searchInput?.focus();
+    }
 })();

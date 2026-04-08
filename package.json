@@ -16,7 +16,7 @@
     "type": "git",
     "url": "https://github.com/drbarzaga/ReactToolkit-VSCE"
   },
-  "version": "1.6.0",
+  "version": "1.7.0",
   "engines": {
     "vscode": "^1.60.0"
   },
@@ -48,6 +48,11 @@
       {
         "command": "react-toolkit.showResources",
         "title": "ReactToolkit"
+      },
+      {
+        "command": "react-toolkit.openPanel",
+        "title": "ReactToolkit: Open as Full Panel",
+        "icon": "$(maximize)"
       }
     ],
     "viewsContainers": {
