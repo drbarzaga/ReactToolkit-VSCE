@@ -260,6 +260,13 @@
         "description": "Drag and drop for your React lists and tables.",
         "url": "https://react-movable.pages.dev",
         "logo": "/media/logos/drag-and-drop/react-movable.svg"
+      },
+      {
+        "name": "GridstackJS",
+        "description": "Mobile-friendly modern TypeScript library for dashboard layout and creation. Drag-and-drop, multi-column responsive dashboards with bindings for React, Angular, Vue and more.",
+        "url": "https://gridstackjs.com",
+        "logo": "https://avatars.githubusercontent.com/u/31674162",
+        "isNew": true
       }
     ]
   },
