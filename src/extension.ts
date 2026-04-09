@@ -25,8 +25,10 @@ export function activate(context: vscode.ExtensionContext) {
     })
   );
 
-  // Show status bar notification immediately if there are unseen new resources
-  provider.initStatusBar();
+  // Load resources from Supabase, then init status bar with fresh data
+  provider.loadCategories().then(() => {
+    provider.initStatusBar();
+  });
 }
 
 export function deactivate() {}

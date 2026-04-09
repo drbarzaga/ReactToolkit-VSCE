@@ -1,5 +1,5 @@
 import * as vscode from "vscode";
-import { categories } from "./resources";
+import { fetchCategories, setCategories, type Category } from "./resources";
 
 export class ReactToolkitViewProvider implements vscode.WebviewViewProvider {
   public static readonly viewType = "react-toolkit";
@@ -11,8 +11,21 @@ export class ReactToolkitViewProvider implements vscode.WebviewViewProvider {
   private _view?: vscode.WebviewView;
   private _panel?: vscode.WebviewPanel;
   private _statusBarItem?: vscode.StatusBarItem;
+  private _categories: Category[] = [];
+  private _loadError = false;
 
   constructor(private readonly _context: vscode.ExtensionContext) {}
+
+  public async loadCategories(): Promise<void> {
+    try {
+      this._categories = await fetchCategories();
+      this._loadError = false;
+      setCategories(this._categories);
+    } catch (e) {
+      this._loadError = true;
+      console.error("[ReactToolkit] Failed to load from Supabase:", e);
+    }
+  }
 
   public initStatusBar(): void {
     const seenVersion = this._context.globalState.get<string>(
@@ -20,7 +33,7 @@ export class ReactToolkitViewProvider implements vscode.WebviewViewProvider {
     );
     if (seenVersion === ReactToolkitViewProvider.CURRENT_VERSION) { return; }
 
-    const newCatCount = categories.filter((cat) =>
+    const newCatCount = this._categories.filter((cat) =>
       cat.resources.some((r) => r.isNew)
     ).length;
     if (newCatCount === 0) { return; }
@@ -57,14 +70,28 @@ export class ReactToolkitViewProvider implements vscode.WebviewViewProvider {
       localResourceRoots: [this._extensionUri],
     };
 
-    webviewView.webview.html = this.getWebviewContent(webviewView.webview);
+    // Show loading state immediately
+    webviewView.webview.html = this._getLoadingHtml();
+
+    // Fetch from Supabase then render
+    fetchCategories()
+      .then((cats) => {
+        this._categories = cats;
+        this._loadError = false;
+        setCategories(cats);
+        webviewView.webview.html = this.getWebviewContent(webviewView.webview);
+      })
+      .catch(() => {
+        this._loadError = true;
+        webviewView.webview.html = this._getErrorHtml();
+      });
 
     // Show badge if there are new resources the user hasn't seen yet
     const seenVersion = this._context.globalState.get<string>(
       ReactToolkitViewProvider.STATE_KEY_SEEN_VERSION, ""
     );
     if (seenVersion !== ReactToolkitViewProvider.CURRENT_VERSION) {
-      const newCatCount = categories.filter((cat) =>
+      const newCatCount = this._categories.filter((cat) =>
         cat.resources.some((r) => r.isNew)
       ).length;
       if (newCatCount > 0) {
@@ -242,10 +269,10 @@ export class ReactToolkitViewProvider implements vscode.WebviewViewProvider {
     const toolkitIconUri = webview.asWebviewUri(vscode.Uri.joinPath(this._extensionUri, "media", "icon.png"));
     const nonce = getNonce();
 
-    const totalResources = categories.reduce((sum, cat) => sum + cat.resources.length, 0);
-    const totalCategories = categories.length;
+    const totalResources = this._categories.reduce((sum, cat) => sum + cat.resources.length, 0);
+    const totalCategories = this._categories.length;
 
-    const logoHtml = (resource: (typeof categories)[0]["resources"][0]) => {
+    const logoHtml = (resource: (typeof this._categories)[0]["resources"][0]) => {
       if (!resource.logo) return `<i data-lucide="package" class="resource-logo-fallback" style="display:flex"></i>`;
       const src = resource.logo.startsWith("http")
         ? resource.logo
@@ -255,7 +282,7 @@ export class ReactToolkitViewProvider implements vscode.WebviewViewProvider {
         <i data-lucide="package" class="resource-logo-fallback" style="display:none"></i>`;
     };
 
-    const navItems = categories.map(cat => {
+    const navItems = this._categories.map(cat => {
       const icon = this.getCategoryIcon(cat, webview);
       return `<button class="pnav-item" data-filter="${cat.name}" title="${cat.name}">
         <span class="pnav-icon">${icon}</span>
@@ -264,7 +291,7 @@ export class ReactToolkitViewProvider implements vscode.WebviewViewProvider {
       </button>`;
     }).join("");
 
-    const cards = categories.map(cat =>
+    const cards = this._categories.map(cat =>
       cat.resources.map(r => `
 <div class="pcard" data-category="${cat.name.toLowerCase()}" data-name="${r.name.toLowerCase()}" data-desc="${r.description.toLowerCase()}" data-url="${r.url}">
   <div class="pcard-header">
@@ -362,7 +389,7 @@ export class ReactToolkitViewProvider implements vscode.WebviewViewProvider {
   }
 
   private getCategoryIcon(
-    category: (typeof categories)[0],
+    category: (typeof this._categories)[0],
     webview: vscode.Webview
   ): string {
     switch (category.icon.type) {
@@ -400,18 +427,18 @@ export class ReactToolkitViewProvider implements vscode.WebviewViewProvider {
     );
 
     const nonce = getNonce();
-    const totalResources = categories.reduce(
+    const totalResources = this._categories.reduce(
       (sum, cat) => sum + cat.resources.length,
       0
     );
-    const totalCategories = categories.length;
+    const totalCategories = this._categories.length;
 
     const seenVersion = this._context.globalState.get<string>(
       ReactToolkitViewProvider.STATE_KEY_SEEN_VERSION, ""
     );
     const showBanner = seenVersion !== ReactToolkitViewProvider.CURRENT_VERSION;
     const newCategories = showBanner
-      ? categories.filter((cat) => cat.resources.some((r) => r.isNew))
+      ? this._categories.filter((cat) => cat.resources.some((r) => r.isNew))
       : [];
     const newCount = newCategories.reduce(
       (sum, cat) => sum + cat.resources.filter((r) => r.isNew).length, 0
@@ -483,7 +510,7 @@ export class ReactToolkitViewProvider implements vscode.WebviewViewProvider {
         </div>
       </div>
       <div id="categories">
-        ${categories
+        ${this._categories
           .map(
             (category) => `
 <div class="category" data-category-name="${category.name}">
@@ -545,7 +572,7 @@ export class ReactToolkitViewProvider implements vscode.WebviewViewProvider {
       <div id="empty-state" class="empty-state" style="display: none;">
         <i data-lucide="search-x" class="empty-state-icon"></i>
         <h2 id="empty-state-title">No results found</h2>
-        <p id="empty-state-msg">Try adjusting your search or explore our categories.</p>
+        <p id="empty-state-msg">Try adjusting your search or explore our this._categories.</p>
         <button id="clear-search" class="clear-search-button" aria-label="Clear search and show all categories">Clear search</button>
       </div>
       <script src="${lucideUri}"></script>
@@ -553,6 +580,44 @@ export class ReactToolkitViewProvider implements vscode.WebviewViewProvider {
       <script nonce="${nonce}" src="${scriptUri}"></script>
     </body>
     </html>`;
+  }
+
+  private _getLoadingHtml(): string {
+    return `<!DOCTYPE html><html><head><meta charset="UTF-8">
+      <style>
+        body { margin:0; display:flex; align-items:center; justify-content:center;
+               height:100vh; background:var(--vscode-editor-background);
+               font-family:var(--vscode-font-family); color:var(--vscode-foreground); }
+        .loading { display:flex; flex-direction:column; align-items:center; gap:10px; opacity:0.5; }
+        .spinner { width:20px; height:20px; border:2px solid currentColor;
+                   border-top-color:transparent; border-radius:50%;
+                   animation:spin 0.7s linear infinite; }
+        @keyframes spin { to { transform:rotate(360deg); } }
+        p { font-size:12px; margin:0; }
+      </style></head><body>
+      <div class="loading">
+        <div class="spinner"></div>
+        <p>Loading resources…</p>
+      </div>
+    </body></html>`;
+  }
+
+  private _getErrorHtml(): string {
+    return `<!DOCTYPE html><html><head><meta charset="UTF-8">
+      <style>
+        body { margin:0; display:flex; align-items:center; justify-content:center;
+               height:100vh; background:var(--vscode-editor-background);
+               font-family:var(--vscode-font-family); color:var(--vscode-foreground); }
+        .error { display:flex; flex-direction:column; align-items:center; gap:8px;
+                 text-align:center; padding:24px; opacity:0.6; }
+        p { font-size:12px; margin:0; }
+        .title { font-size:13px; font-weight:600; }
+      </style></head><body>
+      <div class="error">
+        <p class="title">Could not load resources</p>
+        <p>Check your internet connection<br>and reload the extension.</p>
+      </div>
+    </body></html>`;
   }
 }
 
