@@ -98,7 +98,7 @@
     // ── Favorites ──
     function updateFavoriteButtons() {
         document.querySelectorAll('.resource-favorite').forEach(btn => {
-            const url = btn.dataset.url;
+            const url = btn.dataset.favId || btn.dataset.url;
             const isFav = favorites.has(url);
             btn.classList.toggle('favorited', isFav);
             btn.setAttribute('aria-label', isFav ? 'Remove from favorites' : 'Add to favorites');
@@ -110,7 +110,7 @@
         btn.addEventListener('click', e => {
             e.preventDefault();
             e.stopPropagation();
-            vscode.postMessage({ command: 'toggleFavorite', url: btn.dataset.url });
+            vscode.postMessage({ command: 'toggleFavorite', id: btn.dataset.favId || btn.dataset.url });
         });
     });
 
@@ -133,7 +133,7 @@
             const resources = category.querySelectorAll('.resource');
             let hasMatch = false;
             resources.forEach(resource => {
-                const isFav = favorites.has(resource.dataset.url);
+                const isFav = favorites.has(resource.querySelector('.resource-favorite')?.dataset.favId || resource.dataset.url);
                 resource.style.display = isFav ? '' : 'none';
                 if (isFav) { hasMatch = true; count++; }
             });
@@ -213,6 +213,7 @@
             resources.forEach(resource => {
                 const matches =
                     resource.dataset.name.includes(searchTerm) ||
+                    (resource.dataset.desc || '').includes(searchTerm) ||
                     resource.dataset.category.includes(searchTerm);
                 resource.style.display = matches ? '' : 'none';
                 if (matches) { hasMatch = true; visibleCount++; }
@@ -333,7 +334,7 @@
         // Favorite buttons
         function updateFavButtons() {
             document.querySelectorAll('.resource-favorite').forEach(btn => {
-                const isFav = favorites.has(btn.dataset.url);
+                const isFav = favorites.has(btn.dataset.favId || btn.dataset.url);
                 btn.classList.toggle('favorited', isFav);
                 btn.setAttribute('aria-label', isFav ? 'Remove from favorites' : 'Add to favorites');
                 const svg = btn.querySelector('svg');
@@ -346,7 +347,7 @@
             btn.addEventListener('click', e => {
                 e.preventDefault();
                 e.stopPropagation();
-                vscode.postMessage({ command: 'toggleFavorite', url: btn.dataset.url });
+                vscode.postMessage({ command: 'toggleFavorite', id: btn.dataset.favId || btn.dataset.url });
             });
         });
 
@@ -405,7 +406,7 @@
                     card.dataset.name.includes(searchTerm) ||
                     card.dataset.desc.includes(searchTerm) ||
                     card.dataset.category.includes(searchTerm);
-                const matchFav = !showingFavorites || favorites.has(card.dataset.url);
+                const matchFav = !showingFavorites || favorites.has(card.querySelector('.resource-favorite')?.dataset.favId || card.dataset.url);
                 const show = matchCat && matchSearch && matchFav;
                 card.style.display = show ? '' : 'none';
                 if (show) visible++;

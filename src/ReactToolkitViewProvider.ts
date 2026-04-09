@@ -152,12 +152,12 @@ export class ReactToolkitViewProvider implements vscode.WebviewViewProvider {
             ReactToolkitViewProvider.STATE_KEY_FAVORITES,
             []
           );
-          const url = message.url as string;
-          const idx = favorites.indexOf(url);
+          const id = (message.id ?? message.url) as string;
+          const idx = favorites.indexOf(id);
           if (idx >= 0) {
             favorites.splice(idx, 1);
           } else {
-            favorites.push(url);
+            favorites.push(id);
           }
           await this._context.globalState.update(
             ReactToolkitViewProvider.STATE_KEY_FAVORITES,
@@ -302,7 +302,7 @@ export class ReactToolkitViewProvider implements vscode.WebviewViewProvider {
   <div class="pcard-footer">
     <span class="pcard-cat">${cat.name}</span>
     <div class="pcard-actions">
-      <button class="resource-favorite" data-url="${r.url}" aria-label="Add ${r.name} to favorites"><i data-lucide="heart"></i></button>
+      <button class="resource-favorite" data-fav-id="${r.id}" data-url="${r.url}" aria-label="Add ${r.name} to favorites"><i data-lucide="heart"></i></button>
       <a href="${r.url}" target="_blank" title="Open ${r.name}" aria-label="Open ${r.name}"><i data-lucide="arrow-up-right"></i></a>
     </div>
   </div>
@@ -528,7 +528,7 @@ export class ReactToolkitViewProvider implements vscode.WebviewViewProvider {
     ${category.resources
       .map(
         (resource) => `
-<div class="resource" role="listitem" data-name="${resource.name.toLowerCase()}" data-category="${category.name.toLowerCase()}" data-url="${resource.url}">
+<div class="resource" role="listitem" data-name="${resource.name.toLowerCase()}" data-desc="${resource.description.toLowerCase()}" data-category="${category.name.toLowerCase()}" data-url="${resource.url}">
   <div class="resource-content">
     <div class="resource-logo-container">
       ${
@@ -555,7 +555,7 @@ export class ReactToolkitViewProvider implements vscode.WebviewViewProvider {
       <p class="resource-text">${resource.description}</p>
     </div>
   </div>
-  <button class="resource-favorite" data-url="${resource.url}" aria-label="Add ${resource.name} to favorites" title="Add to favorites">
+  <button class="resource-favorite" data-fav-id="${resource.id}" data-url="${resource.url}" aria-label="Add ${resource.name} to favorites" title="Add to favorites">
     <i data-lucide="heart"></i>
   </button>
   <a href="${resource.url}" target="_blank" title="Open ${resource.name}" aria-label="Open ${resource.name}"><i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
